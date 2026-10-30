@@ -1,4 +1,4 @@
-# 🏫     SI_Comunicacao_Escolar
+# 🏫 SI_Comunicacao_Escolar
 
 > **Quadro Digital de Avisos — Solução para Falhas na Comunicação Escolar**
 
@@ -39,7 +39,7 @@ Embora o sistema não seja implementado em código, o projeto cumpre rigorosamen
     *   **MER** (Modelo Entidade-Relacionamento).
     *   **DER** (Diagrama Entidade-Relacionamento).
     *   **MR** (Modelo Relacional — Esquema lógico de tabelas com chaves `PK` e `FK`).
-*   **Entrega 4: Prototipação e Integração**
+*   **Entrega 4: Prototipação e Integration**
     *   Design de interface de usuário (UI/UX) mapeando as jornadas de Emissão, Avaliação e Recebimento de avisos.
 
 ---
@@ -60,15 +60,20 @@ O núcleo operacional planejado para o sistema baseia-se em 6 requisitos fundame
 ## 📁 Estrutura de Pastas do Repositório
 
 ```text
-├── documentacao/         # Relatórios textuais consolidados das entregas (Markdown/PDF)
-│   ├── entrega1-diagnostico.md
-│   └── entrega2-requisitos.md
-├── modelagem/            # Artefatos visuais e lógicos do projeto
-│   ├── bpmn/             # Diagramas de Processo Organizacional (AS-IS / TO-BE)
-│   ├── mer/              # Modelo Entidade-Relacionamento (Conceitual)
-│   └── der_mr/           # Diagrama e Tabelas do Modelo Relacional (Lógico)
-├── prototipos/           # Telas, Wireframes e links de navegação (ex: Figma)
-└── README.md             # Página principal com a visão geral do projeto
+├── entregas/         # Relatórios textuais consolidados das entregas em formato PDF
+│   ├── CIC0101_SI_Entrega_1_Projeto_Integrador.pdf
+│   └── CIC0101_SI_Entrega_2_Projeto_Integrador.pdf
+├── src/              # Artefatos visuais, diagramas e modelos lógicos
+│   └── uml/          # Modelagem unificada do sistema
+│       ├── conceitual/
+│       │   └── mer.md          # Especificação textual do Modelo Entidade-Relacionamento
+│       ├── diagrama/
+│       │   ├── DER.brM3        # Arquivo fonte de modelagem conceitual no brModelo
+│       │   └── der.jpeg        # Imagem exportada do Diagrama Entidade-Relacionamento
+│       └── mr/
+│            
+├── prototipos/       # Telas, Wireframes e links de navegação (ex: Figma)
+└── README.md         # Página principal com a visão geral do projeto
 ```
 
 ---

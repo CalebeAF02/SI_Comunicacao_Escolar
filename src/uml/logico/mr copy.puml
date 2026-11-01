@@ -94,7 +94,6 @@ package "Estrutura Acadêmica" #E8F5E9 {
     status_matricula : enum("MATRICULADO", "DESMATRICULADO", "TRANSFERIDO", "CONCLUIDO")
   }
 
-  ' Tabela associativa com nome mais limpo
   entity OFERTA_ACADEMICA {
     * id : int <<PK>>
     turma_id : int <<FK>>
@@ -148,7 +147,6 @@ package "Comunicação e Avisos" #FFFDE7 {
     status : varchar(30)
   }
 
-  ' Entitade para segmentação de avisos, permite que um aviso seja direcionado a diferentes tipos de usuários.
   entity AVISO_SEGMENTACAO {
     * id : int <<PK>>
     aviso_id : int <<FK>>
@@ -228,7 +226,6 @@ package "Engajamento e Interações" #F3E5F5 {
     texto : text
     data_criacao : datetime
   }
-
 }
 
 ' ==========================================
@@ -244,7 +241,6 @@ RESPONSAVEL ||--o{ PARENTESCO : possui
 ALUNO ||--o{ PARENTESCO : possui
 
 ' Estrutura Acadêmica (Domínio 2)
-FUNCIONARIO ||--o{ TURMA : orienta
 ALUNO ||--o{ ALUNO_TURMA : matricula
 TURMA ||--o{ ALUNO_TURMA : engloba
 
@@ -264,8 +260,8 @@ AVISO ||--o{ AVISO_SEGMENTACAO : segmenta
 AVISO ||--o{ AUTORIZACAO_AVISO : pode_requerer
 FUNCIONARIO ||--o{ AUTORIZACAO_AVISO : avalia
 
-PESSOA ||--o{ MENSAGEM : "envia (remetente)"
-PESSOA ||--o{ MENSAGEM : "recebe (destinatario)"
+PESSOA ||--o{ MENSAGEM : envia
+PESSOA ||--o{ MENSAGEM : recebe
 MENSAGEM ||--o{ RESPOSTA_MENSAGEM : possui
 
 ' Engajamento e Interações (Domínio 4)
@@ -294,3 +290,5 @@ end note
 note right of REACAO_AVISO 
   PK = (aviso_id,pessoa_id)
 end note
+
+@enduml

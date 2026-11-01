@@ -1,18 +1,12 @@
 # 🏫 SI_Comunicacao_Escolar
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 > **Quadro Digital de Avisos — Solução para Falhas na Comunicação Escolar**
 
 Este repositório contém o planejamento, a engenharia de requisitos, a modelagem de dados e o design de interface de um Sistema de Informação (SI) voltado para a centralização, moderação e segmentação da comunicação institucional em escolas de ensino fundamental.
 
 O projeto foi desenvolvido para a disciplina **CIC0101 — Sistemas de Informação (Turma 02 - 2026.2)** do Departamento de Ciência da Computação (CIC) da **Universidade de Brasília (UnB)**, sob a orientação da Profa. Drª. Patrícia Araújo de Oliveira.
-
----
-
-## 👥 Integrantes (Grupo 01)
-* Calebe
-* Leonardo
-* Luan
-* Maíra
 
 ---
 
@@ -77,4 +71,11 @@ O núcleo operacional planejado para o sistema baseia-se em 6 requisitos fundame
 ```
 
 ---
+
+## Licença
+
+Este projeto está licenciado sob a licença **MIT**. Consulte o arquivo [LICENSE](LICENSE) para obter os termos completos.
+
+---
+
 *Este é um projeto estritamente acadêmico com fins didáticos focados em Governança de TI, Engenharia de Requisitos e Arquitetura de Dados.*

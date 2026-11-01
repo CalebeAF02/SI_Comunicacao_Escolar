@@ -1,0 +1,1 @@
+./build/exportar_mr.bat // Para Gerar o Diagrama mr 

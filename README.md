@@ -70,8 +70,8 @@ O núcleo operacional planejado para o sistema baseia-se em 6 requisitos fundame
 │       ├── diagrama/
 │       │   ├── DER.brM3        # Arquivo fonte de modelagem conceitual no brModelo
 │       │   └── der.jpeg        # Imagem exportada do Diagrama Entidade-Relacionamento
-│       └── mr/
-│            
+│       └── logico/
+│           └── mr.puml        # 
 ├── prototipos/       # Telas, Wireframes e links de navegação (ex: Figma)
 └── README.md         # Página principal com a visão geral do projeto
 ```

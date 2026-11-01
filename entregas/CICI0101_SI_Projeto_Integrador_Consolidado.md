@@ -317,6 +317,97 @@ O problema central de falhas na comunicação escolar gera ruídos e atrasos que
 | Os dados identificados dão suporte a todos os requisitos? | Sim. A matriz de organização de dados relaciona explicitamente cada um dos requisitos funcionais (RF01 a RF19) aos seus respectivos grupos de informações ("Assuntos"), abrangendo Mensagens e Atendimento, Avisos e Comunicados, Segmentação e Público-Alvo, Canais de Divulgação, Moderação e Autorização e Visualização e Destinatários. Desse modo, todos os requisitos possuem dados mapeados para armazenamento e consulta. |
 | O processo futuro (TO-BE) resolve as limitações do AS-IS? | Sim. Enquanto o processo atual (AS-IS) sofre com a dispersão de mensagens em canais informais (como WhatsApp e avisos impressos) e falta de controle sobre a entrega, o fluxo futuro estruturado soluciona essas limitações ao introduzir uma plataforma centralizada com etapas claras de criação, moderação prévia, direcionamento por público-alvo e registro de respostas. |
 
+# FICHA 1 — Construção do MER
+
+## Entidades, atributos e identificadores
+
+> Uma entidade representa um assunto sobre o qual o sistema precisa registrar informações. O identificador distingue uma ocorrência das demais. 
+
+| Entidade | Atributos necessários | Identificador | RF relacionado(s) |
+| :--- | :--- | :--- | :--- |
+| **PESSOA** | usuario, email, nome, cpf, telefone, senha_hash, nivel_acesso_id | id | RF01, RF05, RF11, RF19 |
+| **ALUNO** | matricula, serie | pessoa_id | RF03, RF19 |
+| **RESPONSAVEL** | telefone_emergencia | pessoa_id | RF01, RF04 |
+| **PARENTESCO** | grau_parentesco | aluno_id, responsavel_id | RF01, RF03 |
+| **FUNCIONARIO** | registro_funcional, tipo | pessoa_id | RF05, RF06, RF11, RF15 |
+| **NIVEL_ACESSO** | descricao, criar_msm, dist_msm, resp_msm, criar_aviso, aval_aviso, rcb_aviso | id | RF06, RF10 |
+| **TURMA** | nome, ano, sala, inicio_vigencia, fim_vigencia | id | RF03 |
+| **DISCIPLINA** | nome, codigo | id | RF03 |
+| **ALUNO_TURMA** | data_matricula, status_matricula | aluno_id, turma_id | RF03 |
+| **OFERTA_ACADEMICA** | turma_id, disciplina_id, professor_id, dias, turnos, horarios, hora_inicio, hora_fim | id | RF03 |
+| **NOTA** | valor_nota, nome_avaliacao, data_lancamento | id | RF03, RF19 |
+| **FREQUENCIA** | data_aula, status_presenca | id | RF03, RF19 |
+| **AVISO** | autor_id, titulo, descricao, formato, url, exige_autorizacao, nivel_urgencia, data_criacao, data_publicacao, status | id | RF02, RF03, RF15, RF16, RF17 |
+| **AVISO_SEGMENTACAO** | aviso_id, tipo_alvo, alvo_id | id | RF03 |
+| **MENSAGEM** | remetente_id, destinatario_id, titulo, descricao, formato, url, tipo, data_criacao, status | id | RF01, RF05, RF11, RF12, RF13 |
+| **RESPOSTA_MENSAGEM** | mensagem_id, titulo, descricao, data_criacao | id | RF14, RF18 |
+| **AUTORIZACAO_AVISO** | aviso_id, avaliador_id, data_solicitacao, data_avaliacao, status, feedback | id | RF06, RF07, RF08, RF09, RF10 |
+| **ENVIO** | aviso_id, data_envio, canal, tipo_segmentacao | id | RF04, RF16 |
+| **VISUALIZACAO** | data_hora_visualizacao | aviso_id, pessoa_id | RF11, RF19 |
+| **REACAO_AVISO** | tipo | aviso_id, pessoa_id | RF19 |
+| **COMENTARIO** | texto, data_criacao | id | RF19 |
+
+## Relacionamentos e regras de negócio
+
+> Descrevam cada relação usando um verbo. Anotem o que precisam confirmar no processo real. <br> Exemplo de continuidade: BPMN registra análise de solicitação → RF permite registrar pendência → dados: solicitação e pendência → MER: SOLICITAÇÃO possui PENDÊNCIA. A quantidade de pendências depende da regra real do processo.
+
+
+| Entidade A | Relação (verbo) | Entidade B | Regra / dúvida a validar |
+| :--- | :--- | :--- | :--- |
+| **Nível de Acesso** | define | Pessoa | Quais permissões específicas (criar/distribuir mensagens, avisos e visualização do feed) cada nível de acesso possui[cite: 1]? |
+| **Responsável** | possui | Parentesco | Qual é o grau de parentesco exato e quantos responsáveis um aluno pode ter vinculados simultaneamente? |
+| **Aluno** | possui | Parentesco | Como o sistema valida o vínculo de parentesco e a responsabilidade legal pelo aluno? |
+| **Funcionário** | orienta | Turma | Um funcionário (professor orientador) pode orientar mais de uma turma no mesmo período letivo[cite: 1]? |
+| **Aluno** | matricula | Aluno_Turma | Como o sistema deve registrar o histórico de turmas anteriores e o status do aluno (matriculado, desmatriculado, transferido, concluído)? |
+| **Turma** | engloba | Aluno_Turma | Qual é a capacidade máxima de alunos permitida por turma em cada ano letivo? |
+| **Turma** | possui | Oferta Acadêmica | Como são estruturadas as disciplinas, dias da semana, turnos e horários associados à grade da turma? |
+| **Disciplina** | compoe | Oferta Acadêmica | Uma mesma disciplina pode ser ofertada múltiplas vezes para a mesma turma em horários diferentes? |
+| **Funcionário** | ministra | Oferta Acadêmica | Um professor pode lecionar a mesma oferta acadêmica em conjunto com outro docente ou há apenas um responsável por oferta? |
+| **Oferta Acadêmica** | registra | Nota | Quais são os critérios de lançamento de notas, etapas de avaliação permitidas e pesos por atividade? |
+| **Aluno** | recebe | Nota | Como o aluno e seus responsáveis consultam o boletim e as notas parciais lançadas pelo professor? |
+| **Oferta Acadêmica** | controla | Frequência | A frequência é lançada por aula diária/horário ou consolidada por período/dia letivo? |
+| **Aluno** | acumula | Frequência | Como é calculada a porcentagem de presença mínima obrigatória e o registro de faltas justificadas? |
+| **Funcionário** | cria | Aviso | Quais categorias de funcionários têm autonomia para criar avisos institucionais e quais exigem moderação prévia? |
+| **Aviso** | segmenta | Aviso_Segmentação | Um aviso pode ser direcionado simultaneamente para múltiplas turmas, séries específicas ou para toda a escola? |
+| **Aviso** | pode_requerer | Autorização Aviso | Todo aviso criado exige aprovação prévia de um avaliador (diretor/coordenador) antes de sua liberação? |
+| **Funcionário** | avalia | Autorização Aviso | O avaliador pode retornar o aviso com feedback para correções do autor antes da aprovação final? |
+| **Pessoa** | envia | Mensagem | Como funciona o fluxo de envio e direcionamento de dúvidas ou mensagens diretas entre usuários do sistema? |
+| **Pessoa** | recebe | Mensagem | O destinatário recebe notificações em tempo real ao ser acionado em uma nova mensagem? |
+| **Mensagem** | possui | Resposta Mensagem | É permitida uma árvore de respostas encadeadas ou apenas um fluxo linear de réplica para as mensagens? |
+| **Aviso** | gera | Envio | Quais canais de transmissão (notificação no app, portal, e-mail) são acionados automaticamente na publicação do aviso? |
+| **Aviso** | compoe | Reação Aviso | Quais tipos de reações (curtidas, emojis) os usuários podem registrar em relação aos avisos publicados? |
+| **Pessoa** | compoe | Reação Aviso | Cada usuário pode registrar apenas uma reação por aviso ou alterá-la posteriormente? |
+| **Aviso** | compoe | Comentário | Os comentários feitos nos avisos passam por moderação prévia antes de ficarem visíveis para os demais usuários? |
+| **Pessoa** | compoe | Comentário | Quem tem permissão para excluir comentários inadequados realizados em um aviso institucional? |
+| **Pessoa** | recebe | Visualização | Como é feito o registro do carimbo de data/hora para comprovar a leitura de um aviso obrigatório? |
+| **Aviso** | registra | Visualização | O sistema gera relatórios consolidados para a diretoria indicando quem visualizou ou deixou de visualizar o aviso? |
+
+## Conferência com os requisitos
+
+> Releiam TODOS os RF, as histórias de usuário e os cenários BDD. Para cada RF, identifiquem onde estão os dados e relacionamentos necessários. Consultem o BPMN para conferir o contexto e registrem dúvidas sobre regras ainda não confirmadas.
+
+| RF / necessidade | Dados e entidades que o atendem | Ajuste ou dúvida |
+| :--- | :--- | :--- |
+| **RF01**: Permitir que o tutor crie e envie uma mensagem com o conteúdo da demanda particular[cite: 1]. | **Mensagem**: `remetente_id`, `destinatario_id`, `titulo`, `descricao`, `tipo`, `data_criacao`, `status`[cite: 1]. | Confirmar o fluxo de direcionamento inicial da demanda particular para o setor correto[cite: 1]. |
+| **RF02**: Permitir que o emissor crie e salve um aviso ou comunicado institucional[cite: 1]. | **Aviso**: `autor_id`, `titulo`, `descricao`, `formato`, `status`, `data_criacao`[cite: 1]. | Quais categorias de avisos exigem submissão prévia de moderação pela escola[cite: 1]? |
+| **RF03**: Permitir a seleção do público-alvo (tutores, alunos, turmas ou professores) para o aviso[cite: 1]. | **Aviso_Segmentacao**, **Turma**, **Aluno**, **Aluno_Turma**, **Oferta_Academica**[cite: 1]. | Como validar se a segmentação por série ou turma atinge corretamente todos os alunos e responsáveis vinculados[cite: 1]? |
+| **RF04**: Permitir a seleção dos canais de divulgação do comunicado[cite: 1]. | **Envio**: `canal`, `data_envio`, `tipo_segmentacao`[cite: 1]. | Confirmar quais canais externos (como WhatsApp ou portal) devem ser integrados de forma automatizada[cite: 1]. |
+| **RF05**: Permitir direcionar e distribuir a mensagem recebida para a fila do respondente adequado[cite: 1]. | **Mensagem**: `remetente_id`, `destinatario_id`, `status`[cite: 1]. | Como o sistema identifica automaticamente o setor ou respondente competente pela demanda[cite: 1]? |
+| **RF06**: Permitir que o avaliador visualize e avalie a solicitação de divulgação de um aviso[cite: 1]. | **Autorizacao_Aviso**: `aviso_id`, `avaliador_id`, `status`[cite: 1]. | Definir quais papéis exatos possuem permissão de avaliadores institucionais[cite: 1]. |
+| **RF07**: O sistema deve direcionar o fluxo do aviso conforme o resultado da decisão de autorização (Sim/Não)[cite: 1]. | **Autorizacao_Aviso**: `status`, `feedback`[cite: 1]. | O fluxo segue automaticamente para publicação imediata após a aprovação (Sim)[cite: 1]? |
+| **RF08**: Permitir registrar o motivo da inviabilidade e notificar o emissor sobre o indeferimento[cite: 1]. | **Autorizacao_Aviso**: `feedback`, `status`; **Aviso**: `status`[cite: 1]. | Como notificar de forma motivada e formal o autor sobre os motivos da rejeição[cite: 1]? |
+| **RF09**: Emitir uma comunicação de aprovação para o emissor prosseguir com a postagem[cite: 1]. | **Autorizacao_Aviso**: `status`; **Aviso**: `status`[cite: 1]. | A comunicação de aprovação é interna no painel do usuário ou gera notificação externa[cite: 1]? |
+| **RF10**: Indicar se o aviso requer autorização prévia conforme regras da instituição[cite: 1]. | **Aviso**: `exige_autorizacao`; **Nivel_Acesso**[cite: 1]. | A regra de obrigatoriedade de autorização é baseada no nível de acesso do autor ou na categoria do aviso[cite: 1]? |
+| **RF11**: Permitir que o respondente avalie a mensagem recebida do tutor[cite: 1]. | **Mensagem**, **Visualizacao**[cite: 1]. | É necessário registrar o carimbo de data/hora da análise de pertinência pelo respondente[cite: 1]? |
+| **RF12**: Permitir que o respondente responda diretamente ou devolva a mensagem por incorreção[cite: 1]. | **Mensagem**: `status`[cite: 1]. | Como estruturar a interface para o registro rápido da decisão de devolução ou resposta[cite: 1]? |
+| **RF13**: Retornar a mensagem para a fila de distribuição geral caso o respondente não seja o correto[cite: 1]. | **Mensagem**: `status` de redistribuição[cite: 1]. | Para qual fila ou painel específico a mensagem retorna ao ser devolvida[cite: 1]? |
+| **RF14**: Permitir ao respondente enviar a resposta estruturada e definitiva ao tutor[cite: 1]. | **Resposta_Mensagem**: `mensagem_id`, `titulo`, `descricao`, `data_criacao`[cite: 1]. | O tutor pode interagir respondendo à devolutiva recebida (diálogo encadeado)[cite: 1]? |
+| **RF15**: Submeter o aviso para a etapa de solicitação de autorização[cite: 1]. | **Autorizacao_Aviso**, **Aviso**: `status`[cite: 1]. | O envio para submissão bloqueia temporariamente a edição do aviso pelo autor[cite: 1]? |
+| **RF16**: Efetivar o envio e a publicação do aviso aprovado ou dispensado de autorização[cite: 1]. | **Envio**, **Aviso**: `status` (publicado)[cite: 1]. | O sistema suporta o agendamento de publicações de avisos para datas futuras[cite: 1]? |
+| **RF17**: Permitir que o emissor cancele um aviso em elaboração ou inviabilizado[cite: 1]. | **Aviso**: `status` (cancelado)[cite: 1]. | Quais status específicos permitem o cancelamento de um aviso (ex: apenas em rascunho)[cite: 1]? |
+| **RF18**: Disponibilizar ao tutor a resposta oficial enviada pela escola[cite: 1]. | **Resposta_Mensagem**, **Mensagem**[cite: 1]. | O tutor é alertado imediatamente por canal externo ao receber a resposta oficial[cite: 1]? |
+| **RF19**: Garantir que o público-alvo destinatário consulte o comunicado final divulgado[cite: 1]. | **Visualizacao**, **Reacao_Aviso**, **Comentario**, **Nota**, **Frequencia**[cite: 1]. | É obrigatório registrar o controle de confirmação de leitura (ciência) para todos os avisos críticos[cite: 1]? |
+
 # Entrega 3
 
 ### Descrição Conceitual e Regras de Negócio do Modelo Conceitual

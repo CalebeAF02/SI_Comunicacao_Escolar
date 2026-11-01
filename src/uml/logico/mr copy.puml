@@ -1,0 +1,296 @@
+@startuml
+
+skinparam linetype ortho
+skinparam padding 10
+skinparam margin 20
+skinparam nodesep 100
+skinparam ranksep 150
+skinparam minClassWidth 150
+
+' ==========================================
+' DOMÍNIO 1: USUÁRIOS E PERFIS (Tom Azul/Claro)
+' ==========================================
+package "Usuários e Perfil" #E3F2FD {
+
+  entity PESSOA {
+    * id : int <<PK>>
+    --
+    usuario : varchar(100) unique
+    email : varchar(100) unique
+    nome : varchar(100)
+    cpf : varchar(11)
+    telefone : varchar(20)
+    senha_hash : varchar(255)
+    nivel_acesso_id : int <<FK>>
+  }
+
+  entity ALUNO {
+    * pessoa_id : int <<PK,FK>>
+    --
+    matricula : varchar(20)
+    serie : varchar(20)
+  }
+
+  entity RESPONSAVEL {
+    * pessoa_id : int <<PK,FK>>
+    --
+    telefone_emergencia : varchar(20)
+  }
+
+  entity PARENTESCO {
+    * aluno_id : int <<PK,FK>>
+    * responsavel_id : int <<PK,FK>>
+    --
+    grau_parentesco : varchar(50)
+  }
+
+  entity FUNCIONARIO {
+    * pessoa_id : int <<PK,FK>>
+    --
+    registro_funcional : varchar(30)
+    tipo : enum("PROFESSOR", "CORDENADOR", "DIRETOR", "CANTINA", "SEGURANCA", "FAXINA")
+  }
+
+  entity NIVEL_ACESSO {
+    * id : int <<PK>>
+    --
+    descricao : varchar(50)
+    criar_msm : boolean
+    dist_msm : boolean
+    resp_msm : boolean
+    criar_aviso : boolean
+    aval_aviso : boolean
+    rcb_aviso : boolean
+  }
+}
+
+' ==========================================
+' DOMÍNIO 2: ESTRUTURA ACADÊMICA (Tom Verde/Claro)
+' ==========================================
+package "Estrutura Acadêmica" #E8F5E9 {
+
+  entity TURMA {
+    * id : int <<PK>>
+    --
+    nome : varchar(50)
+    ano : int
+    sala : varchar(20)
+    inicio_vigencia : date
+    fim_vigencia : date
+  }
+
+  entity DISCIPLINA {
+    * id : int <<PK>>
+    --
+    nome : varchar(100)
+    codigo : varchar(20)
+  }
+
+  entity ALUNO_TURMA {
+    * aluno_id : int <<PK,FK>>
+    * turma_id : int <<PK,FK>>
+    --
+    data_matricula : date
+    status_matricula : enum("MATRICULADO", "DESMATRICULADO", "TRANSFERIDO", "CONCLUIDO")
+  }
+
+  ' Tabela associativa com nome mais limpo
+  entity OFERTA_ACADEMICA {
+    * id : int <<PK>>
+    turma_id : int <<FK>>
+    disciplina_id : int <<FK>>
+    professor_id : int <<FK>>
+    --
+    dias : enum("SEGUNDA", "TERCA", "QUARTA", "QUINTA", "SEXTA")
+    turnos : enum("MANHA", "TARDE", "NOITE")
+    horarios : enum("1", "2", "3", "4", "5", "6")
+    hora_inicio : time
+    hora_fim : time
+  }
+
+  entity NOTA {
+    * id : int <<PK>>
+    oferta_academica_id : int <<FK>>
+    aluno_id : int <<FK>>
+    --
+    valor_nota : decimal(5,2)
+    nome_avaliacao : varchar(30)
+    data_lancamento : datetime
+  }
+
+  entity FREQUENCIA {
+    * id : int <<PK>>
+    oferta_academica_id : int <<FK>>
+    aluno_id : int <<FK>>
+    --
+    data_aula : date
+    status_presenca : enum("PRESENTE", "AUSENTE", "JUSTIFICADO")
+  }
+}
+
+' ==========================================
+' DOMÍNIO 3: COMUNICAÇÃO E AVISOS (Tom Amarelo/Laranja Claro)
+' ==========================================
+package "Comunicação e Avisos" #FFFDE7 {
+
+  entity AVISO {
+    * id : int <<PK>>
+    autor_id : int <<FK>>
+    --
+    titulo : varchar(150)
+    descricao : text
+    formato : enum("TEXTO","IMAGEM","DOCUMENTO")
+    url : varchar(500)
+    exige_autorizacao : boolean
+    nivel_urgencia : varchar(20)
+    data_criacao : datetime
+    data_publicacao : datetime
+    status : varchar(30)
+  }
+
+  ' Entitade para segmentação de avisos, permite que um aviso seja direcionado a diferentes tipos de usuários.
+  entity AVISO_SEGMENTACAO {
+    * id : int <<PK>>
+    aviso_id : int <<FK>>
+    --
+    tipo_alvo : enum("TURMA", "SERIE", "PESSOA", "TODOS")
+    alvo_id : int <<FK, nullable>>
+  }
+
+  entity MENSAGEM {
+    * id : int <<PK>>
+    remetente_id : int <<FK>>
+    destinatario_id : int <<FK>>
+    --
+    titulo : varchar(150)
+    descricao : text
+    formato : enum("TEXTO","IMAGEM","DOCUMENTO")
+    url : varchar(500)
+    tipo : enum("SUGESTAO","DUVIDA","CRITICA","ELOGIO","DENUNCIA","OUTRO")
+    data_criacao : datetime
+    status : enum("AGUARDANDO DISTRIBUIÇÃO","EM ANÁLISE","AGUARDANDO REDISTRIBUIÇÃO","RESPONDIDO")
+  }
+
+  entity RESPOSTA_MENSAGEM {
+    * id : int <<PK>>
+    mensagem_id : int <<FK>>
+    --
+    titulo : varchar(150)
+    descricao : text
+    data_criacao : datetime
+  }
+
+  entity AUTORIZACAO_AVISO {
+    * id : int <<PK>>
+    aviso_id : int <<FK>>
+    avaliador_id : int <<FK>>
+    --
+    data_solicitacao : datetime
+    data_avaliacao : datetime
+    status : enum("CONFIRMADA","RECUSADA","EM_ANALISE","NAO_VISUALIZADA","CORRECAO")
+    feedback : text
+  }
+}
+
+' ==========================================
+' DOMÍNIO 4: ENGAJAMENTO E INTERAÇÕES (Tom Roxo/Claro)
+' ==========================================
+package "Engajamento e Interações" #F3E5F5 {
+
+  entity ENVIO {
+    * id : int <<PK>>
+    aviso_id : int <<FK>>
+    --
+    data_envio : datetime
+    canal : varchar(30)
+    tipo_segmentacao : varchar(30)
+  }
+
+  entity VISUALIZACAO {
+    * aviso_id : int <<PK,FK>>
+    * pessoa_id : int <<PK,FK>>
+    --
+    data_hora_visualizacao : datetime
+  }
+
+  entity REACAO_AVISO {
+    * aviso_id : int <<PK,FK>>
+    * pessoa_id : int <<PK,FK>>
+    --
+    tipo : enum("CURTIR","DUVIDA","IMPORTANTE")
+  }
+
+  entity COMENTARIO {
+    * id : int <<PK>>
+    aviso_id : int <<FK>>
+    pessoa_id : int <<FK>>
+    --
+    texto : text
+    data_criacao : datetime
+  }
+
+}
+
+' ==========================================
+' RELACIONAMENTOS ENTRE ENTIDADES
+' ==========================================
+
+' Herança e Perfis (Domínio 1)
+PESSOA <|-- ALUNO
+PESSOA <|-- RESPONSAVEL
+PESSOA <|-- FUNCIONARIO
+NIVEL_ACESSO ||--o{ PESSOA : define
+RESPONSAVEL ||--o{ PARENTESCO : possui
+ALUNO ||--o{ PARENTESCO : possui
+
+' Estrutura Acadêmica (Domínio 2)
+FUNCIONARIO ||--o{ TURMA : orienta
+ALUNO ||--o{ ALUNO_TURMA : matricula
+TURMA ||--o{ ALUNO_TURMA : engloba
+
+TURMA ||--o{ OFERTA_ACADEMICA : possui
+DISCIPLINA ||--o{ OFERTA_ACADEMICA : compoe
+FUNCIONARIO ||--o{ OFERTA_ACADEMICA : ministra
+
+OFERTA_ACADEMICA ||--o{ NOTA : registra
+ALUNO ||--o{ NOTA : recebe
+
+OFERTA_ACADEMICA ||--o{ FREQUENCIA : controla
+ALUNO ||--o{ FREQUENCIA : acumula
+
+' Comunicação, Avisos e Moderação (Domínio 3)
+FUNCIONARIO ||--o{ AVISO : cria
+AVISO ||--o{ AVISO_SEGMENTACAO : segmenta
+AVISO ||--o{ AUTORIZACAO_AVISO : pode_requerer
+FUNCIONARIO ||--o{ AUTORIZACAO_AVISO : avalia
+
+PESSOA ||--o{ MENSAGEM : "envia (remetente)"
+PESSOA ||--o{ MENSAGEM : "recebe (destinatario)"
+MENSAGEM ||--o{ RESPOSTA_MENSAGEM : possui
+
+' Engajamento e Interações (Domínio 4)
+AVISO ||--o{ ENVIO : gera
+AVISO ||--o{ REACAO_AVISO : compoe
+PESSOA ||--o{ REACAO_AVISO : compoe
+
+AVISO ||--o{ COMENTARIO : compoe
+PESSOA ||--o{ COMENTARIO : compoe
+
+PESSOA ||--o{ VISUALIZACAO : recebe
+AVISO ||--|| VISUALIZACAO : registra
+
+' ==========================================
+' NOTAS DE CHAVES COMPOSTAS
+' ==========================================
+
+note right of PARENTESCO
+  PK = (aluno_id,responsavel_id)
+end note
+
+note right of VISUALIZACAO
+  PK = (aviso_id,pessoa_id)
+end note
+
+note right of REACAO_AVISO 
+  PK = (aviso_id,pessoa_id)
+end note

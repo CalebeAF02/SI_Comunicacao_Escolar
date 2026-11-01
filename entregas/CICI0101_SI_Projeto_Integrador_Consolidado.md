@@ -1,16 +1,15 @@
-UNIVERSIDADE DE BRASÍLIA
+UNIVERSIDADE DE BRASÍLIA <br>
+FACULDADE DE TECNOLOGIA / INSTITUTO DE CIÊNCIAS EXATAS <br>
+DEPARTAMENTO DE CIÊNCIA DA COMPUTAÇÃO <br>
+CIC0101 - SISTEMAS DE INFORMAÇÃO - TURMA 02 - 2026/2 <br>
+PROFA. DRª. PATRÍCIA ARAÚJO DE OLIVEIRA <br>
 
-FACULDADE DE TECNOLOGIA / INSTITUTO DE CIÊNCIAS EXATAS
-
-DEPARTAMENTO DE CIÊNCIA DA COMPUTAÇÃO
-
-CIC0101 - SISTEMAS DE INFORMAÇÃO - TURMA 02 - 2026/2
-
-PROFA. DRª. PATRÍCIA ARAÚJO DE OLIVEIRA
-
-Grupo: 01
-
-Integrantes: Luan, Leonardo, Calebe, Maíra
+Grupo: 01 <br>
+Integrantes: <br>
+Luan Moura <br>
+Leonardo <br>
+Calebe <br>
+Maíra <br>
 
 Título / situação-problema: Quadro Digital de avisos / Falhas na comunicação escolar
 
@@ -182,7 +181,7 @@ integrador.
 Para além dos fluxos de comunicação desordenados explicados na Entrega 1, o fluxo que os
 comunicados devem seguir, consta no fluxograma a seguir:
 
-![Diagrama BPMN do Processo](../assets/diagrama_processo_v2.svg)
+![Diagrama BPMN do Processo](../assets/diagrama_processo_v3.svg)
 
 | Stakeholder / papel | Participação no processo | Necessidade identificada | Origem / evidência | Exemplo |
 | :--- | :--- | :--- | :--- | :--- |
@@ -254,6 +253,25 @@ comunicados devem seguir, consta no fluxograma a seguir:
 
 | Assunto (grupo de informações) | Características (dados desse assunto) | Quais RFs precisam desses dados? |
 |-|-|-|
+| **RF01** | Conteúdo e dados de envio da demanda particular feita pelo tutor. | Mensagens e Atendimento (RF01) |
+| **RF02** | Título, texto, metadados e registro do comunicado institucional. | Avisos e Comunicados (RF02) |
+| **RF03** | Critérios de seleção de turmas, séries e grupos de destinatários. | Segmentação e Público-Alvo (RF03) |
+| **RF04** | Opções e preferências de canais de transmissão (WhatsApp, aviso, impresso). | Canais de Divulgação (RF04) |
+| **RF05** | Dados de triagem e encaminhamento da mensagem para a fila do setor/respondente. | Mensagens e Atendimento (RF05) |
+| **RF06** | Dados da solicitação de divulgação e visualização de pendências pelo avaliador. | Moderação e Autorização (RF06) |
+| **RF07** | Status e direcionamento do fluxo conforme o resultado da decisão (Sim/Não). | Moderação e Autorização (RF07) |
+| **RF08** | Registro da justificativa motivada e notificação de inviabilidade ao emissor. | Moderação e Autorização (RF08) |
+| **RF09** | Emissão e registro da comunicação formal de aprovação para o emissor. | Moderação e Autorização (RF09) |
+| **RF10** | Parâmetro de verificação e indicação de obrigatoriedade de autorização prévia. | Moderação e Autorização (RF10) |
+| **RF11** | Dados de leitura, visualização e análise de pertinência da mensagem pelo respondente. | Mensagens e Atendimento (RF11) |
+| **RF12** | Definição de atendimento direto ou devolução por incorreção de setor. | Mensagens e Atendimento (RF12) |
+| **RF13** | Registro de retorno da mensagem para a fila de distribuição geral/triagem. | Mensagens e Atendimento (RF13) |
+| **RF14** | Conteúdo textual e envio da resposta estruturada e definitiva ao tutor. | Mensagens e Atendimento (RF14) |
+| **RF15** | Dados de submissão do aviso para a fila de análise e solicitação de autorização. | Avisos e Comunicados (RF15) |
+| **RF16** | Efetivação do envio, publicação e liberação oficial do aviso nos canais. | Avisos e Comunicados (RF16) |
+| **RF17** | Status e registro de cancelamento de avisos em rascunho ou inviabilizados. | Avisos e Comunicados (RF17) |
+| **RF18** | Histórico e exibição da devolutiva oficial enviada pela escola ao perfil do tutor. | Mensagens e Atendimento (RF18) |
+| **RF19** | Registro de disponibilização e consulta ao aviso postado pelo público-alvo. | Visualização e Destinatários (RF19) |
 
 
 ### Organizando os dados por assunto
@@ -262,13 +280,22 @@ comunicados devem seguir, consta no fluxograma a seguir:
 
 | Assunto (grupo de informações) | Características (dados desse assunto) | Quais RFs precisam desses dados? |
 |-|-|-|
-
+| **Mensagens e Atendimento** | Conteúdo da mensagem particular, tipo de demanda, status de atendimento, data de criação e histórico de devolutivas. | RF01, RF05, RF11, RF12, RF13, RF14, RF18 |
+| **Avisos e Comunicados** | Título, descrição, formato, nível de urgência, data de criação e status do aviso. | RF02, RF15, RF16, RF17 |
+| **Segmentação e Público-Alvo** | Definição de turmas, séries, perfis de destinatários e filtros de abrangência do comunicado. | RF03 |
+| **Canais de Divulgação** | Opções de meios de transmissão (WhatsApp, painel de avisos, impresso físico) e preferências de entrega. | RF04 |
+| **Moderação e Autorização** | Status de aprovação, justificativa de inviabilidade, feedback e controle de dependência de liberação prévia. | RF06, RF07, RF08, RF09, RF10 |
+| **Visualização e Destinatários** | Registro de entrega, confirmação de leitura e acesso dos destinatários aos comunicados postados. | RF19 |
 
 ### Como os assuntos se conectam?
 
-> Escrevam pelo menos frases simples que descrevam como os assuntos do seu projeto se conectam. 
+> Escrevam frases simples que descrevam como os assuntos do seu projeto se conectam. 
 
-1. 
+1. O assunto Mensagens e Atendimento conecta-se com o fluxo de triagem para que demandas particulares de tutores sejam direcionadas aos respondentes competentes.
+2. O assunto Avisos e Comunicados conecta-se com o assunto Segmentação e Público-Alvo para definir exatamente quais grupos de interesse receberão o conteúdo gerado pelos emissores.
+3. O assunto Canais de Divulgação conecta-se com o assunto Avisos e Comunicados para determinar por quais vias os comunicados institucionais serão transmitidos externamente.
+4. O assunto Moderação e Autorização conecta-se com o assunto Avisos e Comunicados para condicionar a publicação de conteúdos à validação prévia e registro de eventuais inviabilidades.
+5. O assunto Visualização e Destinatários conecta-se com o assunto Avisos e Comunicados para garantir que a comunidade escolar acesse e consulte as informações devidamente publicadas.
 
 ### O que ainda precisamos descobrir?
 
@@ -286,9 +313,32 @@ O problema central de falhas na comunicação escolar gera ruídos e atrasos que
 
 | Ponto de verificação | Situação no projeto / ajustes necessários |
 |-|-|
-| Os requisitos respondem a necessidades ligadas ao problema? | |
-| Os dados identificados dão suporte a todos os requisitos? | |
-| O processo futuro (TO-BE) resolve as limitações do AS-IS? | |
+| Os requisitos respondem a necessidades ligadas ao problema? | Sim. Os requisitos funcionais (RF01 a RF19) foram derivados diretamente das necessidades levantadas para cada stakeholder (emissores, avaliadores, tutores, etc.) a fim de solucionar o problema central de perda, atraso e fragmentação de informações na comunicação escolar. Há total rastreabilidade entre as dores mapeadas no processo e as funcionalidades planejadas. |
+| Os dados identificados dão suporte a todos os requisitos? | Sim. A matriz de organização de dados relaciona explicitamente cada um dos requisitos funcionais (RF01 a RF19) aos seus respectivos grupos de informações ("Assuntos"), abrangendo Mensagens e Atendimento, Avisos e Comunicados, Segmentação e Público-Alvo, Canais de Divulgação, Moderação e Autorização e Visualização e Destinatários. Desse modo, todos os requisitos possuem dados mapeados para armazenamento e consulta. |
+| O processo futuro (TO-BE) resolve as limitações do AS-IS? | Sim. Enquanto o processo atual (AS-IS) sofre com a dispersão de mensagens em canais informais (como WhatsApp e avisos impressos) e falta de controle sobre a entrega, o fluxo futuro estruturado soluciona essas limitações ao introduzir uma plataforma centralizada com etapas claras de criação, moderação prévia, direcionamento por público-alvo e registro de respostas. |
 
 # Entrega 3
 
+### Descrição Conceitual e Regras de Negócio do Modelo Conceitual
+
+1. **PESSOA, ALUNO, PAIS, PROFESSOR, COORDENADOR e DIRETOR (Herança e Nível de Acesso):** A entidade Pessoa concentra os dados comuns necessários ao sistema: id, nome, email, telefone, senha_hash e nivel_acesso. Pessoa se especializa de forma exclusiva em ALUNO, PAIS, PROFESSOR, COORDENADOR ou DIRETOR, sendo cada especialização identificada pela chave pessoa_id, que referencia Pessoa.id. ALUNO possui matricula; PAIS possui grau_parentesco; PROFESSOR possui registro_funcional; COORDENADOR possui setor; DIRETOR não exige atributos próprios além dos dados herdados. O atributo nivel_acesso define as funcionalidades, permissões, segmentação dos avisos e visualização do feed: DIRETOR, COORDENADOR, PROFESSOR, PAIS ou ALUNO.
+
+2. **TURMA:** A entidade Turma representa uma divisão acadêmica organizada pela escola. Seus atributos são id, professor_orientador_id, nome, ano, turno, inicio_vigencia e fim_vigencia. professor_orientador_id é uma chave estrangeira que referencia PROFESSOR e indica o professor responsável pela orientação da Turma. Uma Turma possui um professor orientador e pode oferecer uma ou mais Disciplinas.
+
+3. **DISCIPLINA:** A entidade Disciplina corresponde aos componentes curriculares comunicados pela escola. Ela possui os atributos id, nome e codigo. Uma Disciplina pode estar associada a uma ou mais Turmas, dependendo da organização acadêmica do período.
+
+4. **TURMA_DISCIPLINA_PROFESSOR_HORARIO (Oferta Acadêmica):** TURMA, DISCIPLINA e PROFESSOR se relacionam por meio da entidade associativa TURMA_DISCIPLINA_PROFESSOR_HORARIO. Cada registro contém turma_id, disciplina_id e professor_id e identifica a associação da disciplina ministrada pelo professor em uma turma. Esta entidade associativa se relaciona com HORARIO, que possui id, dia_semana, hora_inicio e hora_fim. O atributo dia_semana é um enum limitado aos dias úteis, podendo assumir SEGUNDA, TERCA, QUARTA, QUINTA ou SEXTA. hora_inicio e hora_fim são atributos do tipo time. Uma turma pode possuir várias ofertas, uma disciplina pode ser ministrada em várias turmas, um professor pode ministrar várias ofertas e cada oferta pode possuir um ou mais horários.
+
+5. **ALUNO_TURMA (Matrícula na Turma):** ALUNO e TURMA se relacionam por meio da entidade associativa n:m ALUNO_TURMA. Cada registro contém aluno_id e turma_id, que juntas identificam de forma única o vínculo entre o estudante e a Turma. Um ALUNO pode estar vinculado a várias Turmas ao longo de sua trajetória escolar, enquanto uma Turma pode conter vários Alunos.
+
+6. **CATEGORIA_AVISO:** A entidade Categoria_Aviso agrupa os avisos de acordo com sua finalidade institucional. Ela possui os atributos id, nome e exige_moderacao. Uma Categoria pode classificar vários Avisos, mas cada Aviso pertence a uma única Categoria. O atributo exige_moderacao determina se o fluxo de aprovação institucional deve ser iniciado antes da publicação.
+
+7. **AVISO:** A entidade Aviso representa a comunicação criada e distribuída pelo sistema. Seus atributos são id, autor_id, categoria_id, titulo, descricao, arquivo, tipo, nivel_urgencia, data_criacao, data_publicacao e status. Cada Aviso é criado por uma única Pessoa, que exerce a função de autor, e deve estar vinculado a uma única Categoria_Aviso. O status registra se o Aviso está em elaboração, aguardando avaliação, aprovado, publicado ou rejeitado.
+
+8. **SOLICITACAO_AUTORIZACAO (Moderação):** A entidade Solicitação_Autorizacao registra o fluxo de aprovação dos Avisos restritos ou sujeitos à moderação. Ela possui os atributos id, aviso_id, avaliador_id, data_solicitacao, data_avaliacao, decisao e feedback. Cada solicitação é vinculada a um único Aviso e a uma única Pessoa responsável pela avaliação. Um Aviso pode gerar uma ou mais solicitações, permitindo correções, nova avaliação ou histórico de decisões.
+
+9. **ENVIO:** A entidade Envio representa a operacionalização da distribuição de um Aviso já liberado para publicação. Seus atributos são id, aviso_id, data_envio, canal e tipo_segmentacao. Um Aviso pode gerar um ou mais Envios, mas cada Envio pertence a um único Aviso. O canal indica o meio utilizado para a comunicação, enquanto tipo_segmentacao informa se os destinatários foram definidos por turma, grupo, função ou seleção específica.
+
+10. **ENVIO_DESTINATARIO (Segmentação):** O relacionamento n:m entre Envio e Pessoa é representado pela entidade associativa Envio_Destinatario. Cada registro é identificado pelas chaves envio_id e pessoa_id, que juntas formam uma chave composta. Um Envio pode ser direcionado a várias Pessoas, e uma Pessoa pode receber vários Envios. Essa entidade permite segmentar cada comunicação sem duplicar o conteúdo do Aviso.
+
+11. **CONTROLE_RECEBIMENTO:** A entidade Controle_Recebimento registra a interação dos destinatários com cada Envio. Seus atributos são id, envio_destinatario_envio_id, envio_destinatario_pessoa_id, data_visualizacao e data_recebimento. Cada registro é associado a um único par Envio-Destinatário e mantém o histórico da entrega e da visualização da comunicação. A identificação do perfil do destinatário é obtida por PESSOA.nivel_acesso, permitindo controlar separadamente o recebimento e a visualização dos avisos pelos perfis DIRETOR, COORDENADOR, PROFESSOR, PAIS e ALUNO.

@@ -1,1 +1,9 @@
 ./build/exportar_mr.bat // Para Gerar o Diagrama mr 
+
+./build/exemplo.bat  // Para Gerar o Exemplo de Documentação do overlif, a partir de um codigo latex 
+./build/ficha_mer.bat  // Para Gerar a Documentação de Entrega Ficha Mer, a partir de um codigo latex 
+./build/ficha_der.bat  // Para Gerar a Documentação de Entrega Ficha Der, a partir de um codigo latex 
+
+./build/entrega1.bat  // Para Gerar a Documentação de Entrega entrega1, a partir de um codigo latex 
+./build/entrega2.bat  // Para Gerar a Documentação de Entrega entrega2, a partir de um codigo latex 
+./build/entrega3.bat  // Para Gerar a Documentação de Entrega entrega3, a partir de um codigo latex 

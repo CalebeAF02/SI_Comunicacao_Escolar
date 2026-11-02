@@ -1,0 +1,40 @@
+\section{Organização inicial dos dados}
+\subsection{Requisitos para assuntos de informação}
+\begin{table}[!ht]\centering\small\renewcommand{\arraystretch}{1.45}
+\begin{tabularx}{\linewidth}{|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|>{\centering\arraybackslash}p{2cm}|}
+\hline
+\textbf{Assunto / grupo} & \textbf{Características} & \textbf{RFs} \\
+\hline
+Aviso & ID, título, conteúdo, categoria, status, criação, publicação & RF01--RF06 \\
+\hline
+Usuário & ID, nome, papel, credenciais, nível de acesso & RF01, RF03--RF06 \\
+\hline
+Categoria de Aviso & ID, nome, indicador de moderação & RF02 \\
+\hline
+Solicitação de autorização & ID, aviso, avaliador, decisão, feedback, datas & RF03--RF05 \\
+\hline
+Avaliação & ID, parecer, decisão, data e status & RF04--RF05 \\
+\hline
+Público-alvo & ID, descrição, turma, função ou seleção específica & RF06 \\
+\hline
+Envio & Aviso, canal, data, tipo de segmentação & RF03--RF06 \\
+\hline
+\end{tabularx}
+\end{table}
+
+\subsection{Conexões entre os assuntos}
+\begin{itemize}
+\item Um emissor cria um ou mais avisos.
+\item Um aviso pode possuir uma ou mais solicitações de autorização.
+\item Um avaliador realiza uma avaliação para um aviso pendente.
+\item Um aviso é direcionado a um ou mais públicos-alvo.
+\item Um destinatário visualiza avisos vinculados ao seu público.
+\end{itemize}
+
+\subsection{Informações ainda a confirmar}
+\begin{enumerate}
+\item Quais categorias exigem moderação obrigatória?
+\item Como os vínculos entre responsáveis, alunos e turmas devem ser cadastrados?
+\item É necessário confirmar digitalmente a leitura de avisos críticos?
+\item Quais atributos e estados do processo precisam ser persistidos para auditoria?
+\end{enumerate}

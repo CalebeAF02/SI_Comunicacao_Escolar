@@ -1,0 +1,36 @@
+% ---------------- Math macros ----------------
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\E}{\mathbb{E}}
+\renewcommand{\Pr}{\mathbb{P}}
+% \O already exists in LaTeX (the letter O-slash), so keep it for text mode
+% and use \mathcal{O} (Big-O) in math mode.
+\let\oslashletter\O
+\renewcommand{\O}{\ifmmode\mathcal{O}\else\oslashletter\fi}
+\newcommand{\norm}[1]{\left\lVert #1 \right\rVert}
+\newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
+\newcommand{\inner}[2]{\left\langle #1, #2 \right\rangle}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+% Nicer QED symbol
+\renewcommand{\qedsymbol}{$\blacksquare$}
+
+% Inline code:  \code{merge\_sort(A)}
+\newcommand{\code}[1]{\colorbox{codebg}{\texttt{\small #1}}}
+
+\newcommand{\grupointegrantes}[2]{%
+  \begin{tcolorbox}[colback=white!92!accent, colbacktitle=accent,
+    colframe=accent, coltitle=white, coltext=black,
+    title={\sffamily\bfseries #1 --- Integrantes},
+    boxrule=0.6pt, arc=1pt, left=14pt, right=14pt, top=6pt, bottom=6pt,
+    toptitle=4pt, bottomtitle=4pt]
+    \small
+    \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X r
+                                    >{\raggedright\arraybackslash}X r@{}}
+      #2
+    \end{tabularx}
+  \end{tcolorbox}%
+  \vspace{8pt}%
+}

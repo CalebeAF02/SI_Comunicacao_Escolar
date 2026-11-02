@@ -1,0 +1,45 @@
+\section{Relacionamentos e regras de negócio}
+
+Descrevam cada relação usando um verbo e anotem o que precisa ser confirmado no processo real.
+
+\begin{table}[!ht]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.75}
+\begin{tabularx}{\linewidth}{|>{\raggedright\arraybackslash}X
+                              |>{\centering\arraybackslash}X
+                              |>{\raggedright\arraybackslash}X
+                              |>{\raggedright\arraybackslash}X|}
+\hline
+\textbf{Entidade A} &
+\textbf{Relação (verbo)} &
+\textbf{Entidade B} &
+\textbf{Regra / dúvida a validar} \\
+\hline
+\textbf{Estudante} & realiza & \textbf{Solicitação} &
+Quantas solicitações um estudante pode realizar? \\
+\hline
+ & & & \\ \hline
+ & & & \\ \hline
+ & & & \\ \hline
+ & & & \\ \hline
+ & & & \\ \hline
+ & & & \\ \hline
+ & & & \\ \hline
+ & & & \\ \hline
+ & & & \\ \hline
+ & & & \\ \hline
+ & & & \\ \hline
+\end{tabularx}
+\end{table}
+
+\begin{example}{Exemplo de continuidade}{continuidademer}
+O BPMN registra a análise da solicitação, um requisito permite registrar a pendência
+e os dados identificados são \emph{solicitação} e \emph{pendência}. Assim, no MER,
+\textbf{SOLICITAÇÃO possui PENDÊNCIA}. A quantidade de pendências depende da regra real do processo.
+\end{example}
+
+\begin{warnbox}[Observação]
+Se faltar linha, continue registrando os relacionamentos na parte de trás da folha ou em uma folha adicional.
+\end{warnbox}

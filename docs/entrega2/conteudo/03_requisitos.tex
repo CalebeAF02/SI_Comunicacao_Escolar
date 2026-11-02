@@ -1,0 +1,46 @@
+\section{Documentação dos requisitos funcionais}
+\begin{table}[!ht]\centering\tiny\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\linewidth}{|>{\centering\arraybackslash}p{0.75cm}|>{\raggedright\arraybackslash}p{2.4cm}|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|>{\centering\arraybackslash}p{1.15cm}|>{\raggedright\arraybackslash}X|}
+\hline
+\textbf{ID} & \textbf{Origem/evidência} & \textbf{Necessidade} & \textbf{Requisito} & \textbf{Tipo} & \textbf{Como verificar} \\
+\hline
+RF01 & BPMN: Criar uma mensagem & Registrar demandas particulares do tutor & Permitir criar e enviar uma mensagem ao setor competente & Funcional & Enviar uma mensagem e verificar o registro \\
+\hline
+RF02 & BPMN: Criar o aviso & Registrar comunicados escolares & Permitir criar e salvar aviso ou comunicado institucional & Funcional & Preencher campos, salvar e conferir o registro \\
+\hline
+RF03 & BPMN: Selecionar o público & Direcionar o aviso ao público correto & Permitir selecionar turmas, tutores, alunos ou perfis destinatários & Funcional & Configurar público e testar a restrição \\
+\hline
+RF04 & BPMN: Selecionar os canais & Garantir transmissão pelas vias adequadas & Permitir selecionar canais de divulgação & Funcional & Selecionar canais e conferir a configuração \\
+\hline
+RF05 & BPMN: Distribuir a mensagem & Encaminhar ao setor competente & Direcionar a mensagem à fila do respondente adequado & Funcional & Encaminhar uma mensagem e verificar a fila \\
+\hline
+RF06 & BPMN: Avaliar a solicitação & Analisar a publicação do aviso & Permitir visualizar e avaliar solicitação pendente & Funcional & Avaliar um aviso pendente no painel \\
+\hline
+RF07 & BPMN: Autorizou? & Direcionar o fluxo conforme a decisão & Encaminhar avisos aprovados e rejeitados aos fluxos correspondentes & Funcional & Testar aprovação e rejeição \\
+\hline
+RF08 & BPMN: Comunicar inviabilidade & Justificar indeferimento & Registrar motivo e notificar o emissor & Funcional & Rejeitar com justificativa e verificar status \\
+\hline
+RF09 & BPMN: Comunicar aprovação & Informar formalmente a liberação & Emitir comunicação de aprovação ao emissor & Funcional & Aprovar e verificar a notificação \\
+\hline
+RF10 & BPMN: Decisão Precisa de autorização? & Verificar moderação prévia & Identificar avisos que requerem ou não autorização & Funcional & Testar avisos simples e restritos \\
+\hline
+RF11 & BPMN: Avaliar a mensagem & Verificar pertinência da demanda & Permitir que o respondente avalie a mensagem recebida & Funcional & Abrir a mensagem e registrar a avaliação \\
+\hline
+RF12 & BPMN: O respondente está correto? & Responder ou redistribuir corretamente & Permitir atendimento direto ou devolução da mensagem & Funcional & Testar resposta direta e devolução \\
+\hline
+RF13 & BPMN: Devolver para redistribuição & Reencaminhar ao setor competente & Retornar a mensagem à fila de distribuição geral & Funcional & Devolver e verificar a fila de triagem \\
+\hline
+RF14 & BPMN: Responder mensagem & Redigir retorno oficial & Permitir envio de resposta estruturada ao tutor & Funcional & Responder e verificar a entrega ao tutor \\
+\hline
+RF15 & BPMN: Solicitar autorização & Enviar aviso à análise & Registrar solicitação na fila do avaliador & Funcional & Solicitar autorização e verificar a fila \\
+\hline
+RF16 & BPMN: Enviar/postar & Publicar comunicado aprovado & Efetivar envio nos canais selecionados & Funcional & Publicar e consultar o resultado \\
+\hline
+RF17 & BPMN: Cancelar aviso & Interromper publicação inviável ou desnecessária & Permitir cancelar e encerrar o fluxo & Funcional & Cancelar e confirmar o encerramento \\
+\hline
+RF18 & BPMN: Receber resposta da mensagem & Acompanhar a devolutiva oficial & Disponibilizar resposta do respondente ao tutor & Funcional & Consultar a resposta no perfil do tutor \\
+\hline
+RF19 & BPMN: Receber aviso & Garantir acesso ao público selecionado & Disponibilizar aviso publicado aos destinatários corretos & Funcional & Testar destinatários dentro e fora do público \\
+\hline
+\end{tabularx}
+\end{table}

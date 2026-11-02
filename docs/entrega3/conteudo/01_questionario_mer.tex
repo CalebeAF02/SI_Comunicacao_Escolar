@@ -1,0 +1,76 @@
+\section{Descrição conceitual e regras de negócio}
+\begin{notebox}[Questões respondidas]
+As respostas abaixo correspondem ao consolidado de respostas do MER elaborado a partir da
+Entrega 2, das fichas de MER e DER, dos requisitos funcionais RF01--RF19 e do BPMN do projeto.
+\end{notebox}
+
+\subsection{Questão 1 — Pessoa, especializações e nível de acesso}
+\textbf{Resposta.} A entidade PESSOA concentra os dados comuns necessários ao sistema:
+\texttt{id}, nome, email, telefone, senha\_hash e nivel\_acesso. Ela se especializa de forma exclusiva
+em ALUNO, PAIS, PROFESSOR, COORDENADOR ou DIRETOR. Cada especialização é identificada por
+\texttt{pessoa\_id}, chave estrangeira que referencia PESSOA.
+
+ALUNO possui matricula; PAIS possui grau\_parentesco; PROFESSOR possui registro\_funcional;
+COORDENADOR possui setor; DIRETOR não exige atributos próprios além dos dados herdados.
+O nivel\_acesso define permissões, segmentação dos avisos e visualização do feed.
+
+\subsection{Questão 2 — Turma}
+\textbf{Resposta.} TURMA representa uma divisão acadêmica organizada pela escola. Seus atributos são
+\texttt{id}, \texttt{professor\_orientador\_id}, nome, ano, turno, inicio\_vigencia e fim\_vigencia.
+O atributo professor\_orientador\_id referencia PROFESSOR. Uma turma possui um professor orientador
+e pode oferecer uma ou mais disciplinas.
+
+\subsection{Questão 3 — Disciplina}
+\textbf{Resposta.} DISCIPLINA corresponde aos componentes curriculares comunicados pela escola.
+Possui \texttt{id}, nome e codigo. Uma disciplina pode estar associada a uma ou mais turmas,
+dependendo da organização acadêmica do período.
+
+\subsection{Questão 4 — Oferta acadêmica e horários}
+\textbf{Resposta.} TURMA, DISCIPLINA e PROFESSOR se relacionam pela entidade associativa
+TURMA\_DISCIPLINA\_PROFESSOR\_HORARIO. Cada registro associa turma, disciplina e professor.
+Essa entidade se relaciona com HORARIO, que possui \texttt{id}, dia\_semana, hora\_inicio e
+hora\_fim. O dia da semana é limitado a SEGUNDA, TERCA, QUARTA, QUINTA ou SEXTA.
+Uma turma pode possuir várias ofertas, uma disciplina pode ser ministrada em várias turmas,
+um professor pode ministrar várias ofertas e cada oferta pode possuir um ou mais horários.
+
+\subsection{Questão 5 — Matrícula na turma}
+\textbf{Resposta.} ALUNO e TURMA se relacionam pela entidade associativa ALUNO\_TURMA.
+Cada registro contém \texttt{aluno\_id}, \texttt{turma\_id}, data\_matricula e status\_matricula.
+As duas chaves juntas identificam de forma única o vínculo entre estudante e turma.
+Um aluno pode estar vinculado a várias turmas ao longo da trajetória escolar, e uma turma
+pode conter vários alunos.
+
+\subsection{Questão 6 — Categoria de aviso}
+\textbf{Resposta.} CATEGORIA\_AVISO agrupa os avisos conforme sua finalidade institucional.
+Possui \texttt{id}, nome e exige\_moderacao. Uma categoria pode classificar vários avisos, mas
+cada aviso pertence a uma única categoria. exige\_moderacao determina se o fluxo de aprovação
+institucional deve ser iniciado antes da publicação.
+
+\subsection{Questão 7 — Aviso}
+\textbf{Resposta.} AVISO representa a comunicação criada e distribuída pelo sistema. Seus atributos
+são \texttt{id}, autor\_id, categoria\_id, titulo, descricao, formato, url, nivel\_urgencia,
+data\_criacao, data\_publicacao e status. Cada aviso é criado por uma pessoa e vinculado a uma
+categoria. O status registra elaboração, aguardo de avaliação, aprovação, publicação ou rejeição.
+
+\subsection{Questão 8 — Solicitação de autorização}
+\textbf{Resposta.} SOLICITACAO\_AUTORIZACAO registra o fluxo de aprovação dos avisos sujeitos à
+moderação. Possui \texttt{id}, aviso\_id, avaliador\_id, data\_solicitacao, data\_avaliacao,
+decisao e feedback. Cada solicitação pertence a um único aviso e a um único avaliador.
+Um aviso pode gerar várias solicitações, preservando correções, novas avaliações e decisões.
+
+\subsection{Questão 9 — Envio}
+\textbf{Resposta.} ENVIO representa a operacionalização da distribuição de um aviso liberado.
+Possui \texttt{id}, aviso\_id, data\_envio, canal e tipo\_segmentacao. Um aviso pode gerar
+um ou mais envios. O canal indica o meio utilizado, e tipo\_segmentacao indica se o público foi
+definido por turma, grupo, função ou seleção específica.
+
+\subsection{Questão 10 — Destinatários da segmentação}
+\textbf{Resposta.} ENVIO\_DESTINATARIO representa o relacionamento n:m entre ENVIO e PESSOA.
+Cada registro usa envio\_id e pessoa\_id como chave composta. Um envio pode ser direcionado
+a várias pessoas, e uma pessoa pode receber vários envios.
+
+\subsection{Questão 11 — Controle de recebimento}
+\textbf{Resposta.} CONTROLE\_RECEBIMENTO registra a interação dos destinatários com cada envio.
+Possui \texttt{id}, envio\_destinatario\_envio\_id, envio\_destinatario\_pessoa\_id,
+data\_visualizacao e data\_recebimento. Cada registro está associado a um único par envio-destinatário
+e mantém o histórico de entrega e visualização. O perfil é obtido por PESSOA.nivel\_acesso.

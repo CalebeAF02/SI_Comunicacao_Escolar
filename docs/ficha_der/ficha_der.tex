@@ -1,0 +1,50 @@
+% ===============================================================
+% Ficha 2 - Construção do DER
+% Documento para preenchimento em grupo
+% ===============================================================
+
+\documentclass[11pt,a4paper]{article}
+
+\newcommand{\coursecode}{CIC0101}
+\newcommand{\coursename}{Sistemas de Informação}
+\newcommand{\lecnumber}{2}
+\newcommand{\lectitle}{Construção do DER}
+\newcommand{\lecturer}{Patrícia Araújo de Oliveira}
+\newcommand{\semester}{2026 / 2}
+\newcommand{\groupnumber}{01}
+
+\input{std/packages}
+\input{std/style}
+\input{std/macros}
+\input{std/boxes}
+\input{std/code}
+
+\begin{document}
+
+\makelecturetitle
+\vspace{2pt}
+
+\grupointegrantes{Grupo \groupnumber}{
+  \textcolor{accent}{Nome do integrante 1} & \textcolor{accent}{Matrícula} &
+  \textcolor{accent}{Nome do integrante 2} & \textcolor{accent}{Matrícula} \\
+  \textcolor{accent}{Nome do integrante 3} & \textcolor{accent}{Matrícula} &
+  \textcolor{accent}{Nome do integrante 4} & \textcolor{accent}{Matrícula}
+}
+
+\begin{notebox}[Ficha 2]
+Aula de 29/10/2026 \,$\cdot$\, Projeto Integrador \,$\cdot$\, Trabalho em grupo.
+\end{notebox}
+
+\begin{objectives}
+Representar graficamente o MER elaborado na aula anterior, utilizando uma notação consistente.
+\end{objectives}
+
+\tableofcontents
+\vspace{8pt}
+
+\input{conteudo/01_consolidar_entidades}
+\input{conteudo/02_cardinalidades}
+\input{conteudo/03_diagrama}
+\input{conteudo/04_verificacao}
+
+\end{document}

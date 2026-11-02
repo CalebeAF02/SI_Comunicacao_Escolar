@@ -1,0 +1,23 @@
+\section{Envios, segmentação e recebimento}
+\subsection{Envio}
+ENVIO representa a distribuição operacional de um aviso. Possui id, aviso\_id, data\_envio, canal e tipo\_segmentacao. Um aviso pode gerar vários envios, mas cada envio pertence a um único aviso. O canal identifica como a comunicação foi distribuída; a segmentação indica se o público foi definido por turma, grupo, função ou seleção específica.
+
+\subsection{Envio destinatário}
+ENVIO\_DESTINATARIO é uma entidade associativa entre ENVIO e PESSOA. Possui envio\_id e pessoa\_id como chave composta. Um envio pode atingir várias pessoas, e uma pessoa pode receber vários envios.
+
+\subsection{Controle de recebimento}
+CONTROLE\_RECEBIMENTO possui id, envio\_destinatario\_envio\_id, envio\_destinatario\_pessoa\_id, data\_visualizacao e data\_recebimento. Cada registro está associado a um único par envio-destinatário e mantém o histórico de entrega e visualização. A identificação do destinatário é obtida pelo nível de acesso da Pessoa.
+
+\begin{table}[!ht]\centering\small\renewcommand{\arraystretch}{1.4}
+\begin{tabularx}{\linewidth}{|>{\bfseries\raggedright\arraybackslash}p{4cm}|>{\raggedright\arraybackslash}X|}
+\hline
+Entidade associativa & Chave composta / principal \\
+\hline
+ALUNO\_TURMA & aluno\_id, turma\_id \\
+\hline
+ENVIO\_DESTINATARIO & envio\_id, pessoa\_id \\
+\hline
+CONTROLE\_RECEBIMENTO & envio\_destinatario\_envio\_id, envio\_destinatario\_pessoa\_id \\
+\hline
+\end{tabularx}
+\end{table}

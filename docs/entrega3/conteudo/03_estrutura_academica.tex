@@ -1,0 +1,10 @@
+\section{Estrutura acadêmica}
+\subsection{Turma e disciplina}
+TURMA representa uma divisão acadêmica. Seus atributos são id, professor\_orientador\_id, nome, ano, turno, inicio\_vigencia e fim\_vigencia. Uma turma possui um professor orientador e pode oferecer uma ou mais disciplinas.
+
+DISCIPLINA possui id, nome e codigo. Turmas, disciplinas, professores e horários são relacionados por uma entidade associativa que identifica cada oferta acadêmica.
+
+\subsection{Oferta acadêmica e matrícula}
+\textbf{TURMA\_DISCIPLINA\_PROFESSOR\_HORARIO} registra turma, disciplina, professor e horário envolvidos em uma oferta. HORARIO possui dia\_semana, hora\_inicio e hora\_fim; dia\_semana é limitado aos dias úteis.
+
+A relação entre ALUNO e TURMA é representada pela entidade associativa ALUNO\_TURMA, com aluno\_id e turma\_id como chave composta. Um aluno pode estar vinculado a várias turmas ao longo do tempo, e uma turma pode conter vários alunos.

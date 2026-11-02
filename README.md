@@ -70,6 +70,11 @@ O núcleo operacional planejado para o sistema baseia-se em 6 requisitos fundame
 └── README.md         # Página principal com a visão geral do projeto
 ```
 
+## Guia de compilação LaTeX
+
+Para instalar, configurar e testar o TeXstudio e o script de geração do PDF,
+consulte o [Guia do TeXstudio e exemplo.bat](docs/GUIA_TEXSTUDIO_EXEMPLO.md).
+
 ---
 
 ## Licença

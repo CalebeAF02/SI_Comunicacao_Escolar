@@ -1,0 +1,29 @@
+\section{Entidades, atributos e identificadores do MER}
+\begin{table}[!ht]\centering\scriptsize\renewcommand{\arraystretch}{1.45}
+\begin{tabularx}{\linewidth}{|>{\raggedright\arraybackslash}p{3.1cm}|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}p{2.7cm}|>{\raggedright\arraybackslash}p{2.1cm}|}
+\hline
+\textbf{Entidade} & \textbf{Atributos necessários} & \textbf{Identificador} & \textbf{RF} \\
+\hline
+PESSOA & usuario, email, nome, cpf, telefone, senha\_hash, nivel\_acesso\_id & id & 01,05,11,19 \\
+\hline ALUNO & matricula, serie, pessoa\_id & pessoa\_id & 03,19 \\
+\hline RESPONSAVEL & telefone\_emergencia, pessoa\_id & pessoa\_id & 01,04 \\
+\hline FUNCIONARIO & registro\_funcional, tipo, pessoa\_id & pessoa\_id & 05,06,11,15 \\
+\hline NIVEL\_ACESSO & descricao, permissões do perfil & id & 06,10 \\
+\hline TURMA & nome, ano, sala, inicio\_vigencia, fim\_vigencia & id & 03 \\
+\hline DISCIPLINA & nome, codigo & id & 03 \\
+\hline ALUNO\_TURMA & data\_matricula, status\_matricula & aluno\_id + turma\_id & 03 \\
+\hline OFERTA\_ACADEMICA & turma, disciplina, professor, dias, turnos, horários & id & 03 \\
+\hline NOTA & valor, nome\_avaliacao, data\_lancamento & id & 03,19 \\
+\hline FREQUENCIA & data\_aula, status\_presenca & id & 03,19 \\
+\hline AVISO & autor, titulo, descricao, formato, url, urgência, datas, status & id & 02,03,15,16,17 \\
+\hline AVISO\_SEGMENTACAO & aviso, tipo\_alvo, alvo\_id & id & 03 \\
+\hline MENSAGEM & remetente, destinatario, titulo, descricao, formato, tipo, status & id & 01,05,11,12,13 \\
+\hline RESPOSTA\_MENSAGEM & mensagem, titulo, descricao, data\_criacao & id & 14,18 \\
+\hline AUTORIZACAO\_AVISO & aviso, avaliador, datas, status, feedback & id & 06--10,15 \\
+\hline ENVIO & aviso, data\_envio, canal, tipo\_segmentacao & id & 04,16 \\
+\hline ENVIO\_DESTINATARIO & envio\_id, pessoa\_id & envio\_id + pessoa\_id & 03,19 \\
+\hline VISUALIZACAO & aviso, pessoa, data\_hora\_visualizacao & aviso\_id + pessoa\_id & 11,19 \\
+\hline REACAO\_AVISO & aviso, pessoa, tipo & aviso\_id + pessoa\_id & 19 \\
+\hline COMENTARIO & aviso, pessoa, texto, data\_criacao & id & 19 \\
+\hline\end{tabularx}
+\end{table}

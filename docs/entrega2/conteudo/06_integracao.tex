@@ -1,0 +1,20 @@
+\section{Integração e verificação de coerência}
+O problema central gera atrasos, ruídos e dispersão que afetam emissores, avaliadores e destinatários. No processo AS-IS, a dor aparece na utilização de canais informais, na falta de moderação uniforme e na ausência de rastreamento de quem recebeu e visualizou a comunicação.
+
+Os requisitos RF01 a RF06 reestruturam esse fluxo: o emissor cria avisos, o sistema verifica necessidade de autorização, o avaliador decide, o resultado é comunicado e o destinatário recebe a informação segmentada. As histórias e cenários BDD especificam fluxos principal e alternativo. Finalmente, os assuntos organizados dão suporte a esses comportamentos.
+
+\begin{table}[!ht]\centering\small\renewcommand{\arraystretch}{1.45}
+\begin{tabularx}{\linewidth}{|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|}
+\hline
+\textbf{Ponto de verificação} & \textbf{Situação no projeto} \\
+\hline
+Requisitos ligados às necessidades & Todos os RF foram derivados de stakeholders e etapas do BPMN. \\
+\hline
+Dados suficientes para os RFs & Aviso, usuário, avaliação, segmentação, envio e solicitação cobrem os fluxos. \\
+\hline
+Histórias e BDD coerentes & Cada requisito possui história e cenários de sucesso e exceção. \\
+\hline
+Processo futuro melhora o AS-IS & A centralização e a segmentação reduzem dispersão, perda e dependência de canais informais. \\
+\hline
+\end{tabularx}
+\end{table}

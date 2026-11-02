@@ -1,0 +1,65 @@
+% ===============================================================
+% LISTA DE ARQUIVOS 
+% Documento (compile com pdfLaTeX)
+%   Estrutura:
+%     std/        pacotes, estilo, macros, caixas, configurações de código
+%     conteudo/   um arquivo por seção
+%     imagens/    figuras TikZ / pgfplots (e coloque imagens aqui também)
+%     code/       arquivos-fonte exibidos com \lstinputlisting
+% ===============================================================
+
+\documentclass[11pt,a4paper]{article}
+
+% ----- Configurações -----
+
+\newcommand{\coursecode}{CIC0101}
+\newcommand{\coursename}{Sistemas de Informação}
+\newcommand{\lecnumber}{1}
+\newcommand{\lectitle}{Construção do MER}
+\newcommand{\lecturer}{Patrícia Araújo de Oliveira}
+\newcommand{\semester}{2026 / 2}
+\newcommand{\groupnumber}{01}
+
+% ----- Importações -----
+
+\input{std/packages}
+\input{std/style}
+\input{std/macros}
+\input{std/boxes}
+\input{std/code}
+
+% ----- Documento -----
+
+\begin{document}
+
+\makelecturetitle
+\vspace{2pt}
+
+% ----- Integrantes -----
+
+
+\grupointegrantes{Grupo 1}{
+  \textcolor{accent}{Luan Moura} & \textcolor{accent}{1111111111} &
+  \textcolor{accent}{Leonardo}   & \textcolor{accent}{22222222}   \\
+  \textcolor{accent}{Calebe}     & \textcolor{accent}{33333333}   &
+  \textcolor{accent}{Maíra}      & \textcolor{accent}{44444444}
+}
+
+
+% ----- Índice -----
+
+\tableofcontents
+
+% ----- Conteudo -----
+
+\vspace{8pt}
+
+\input{conteudo/01_introduction}
+\input{conteudo/02_math}
+\input{conteudo/03_algorithms}
+\input{conteudo/04_code}
+\input{conteudo/05_figures}
+\input{conteudo/06_exercises}
+\input{conteudo/07_reading}
+
+\end{document}

@@ -1,0 +1,27 @@
+\section{Cardinalidades consolidadas do DER}
+\begin{table}[!ht]\centering\scriptsize\renewcommand{\arraystretch}{1.42}
+\begin{tabularx}{\linewidth}{|>{\raggedright\arraybackslash}p{4.0cm}|>{\centering\arraybackslash}p{1.45cm}|>{\centering\arraybackslash}p{1.45cm}|>{\raggedright\arraybackslash}X|}
+\hline
+\textbf{Relacionamento} & \textbf{A $\rightarrow$ B} & \textbf{B $\rightarrow$ A} & \textbf{Justificativa} \\
+\hline
+NIVEL\_ACESSO --- define --- PESSOA & 1:N & N:1 & Um nível pode ser atribuído a várias pessoas. \\
+\hline PESSOA --- especializa --- ALUNO/RESPONSAVEL/FUNCIONARIO & 1:1 & 1:1 & Especialização exclusiva por perfil. \\
+\hline ALUNO --- participa --- ALUNO\_TURMA --- pertence --- TURMA & 1:N & N:1 & Histórico de matrículas em turmas. \\
+\hline TURMA --- possui --- OFERTA\_ACADEMICA & 1:N & N:1 & Uma turma possui várias ofertas. \\
+\hline DISCIPLINA --- compõe --- OFERTA\_ACADEMICA & 1:N & N:1 & Uma disciplina pode aparecer em várias ofertas. \\
+\hline FUNCIONARIO --- ministra --- OFERTA\_ACADEMICA & 1:N & N:1 & Um professor pode ministrar várias ofertas. \\
+\hline OFERTA\_ACADEMICA --- registra --- NOTA & 1:N & N:1 & Uma oferta contém várias avaliações. \\
+\hline OFERTA\_ACADEMICA --- controla --- FREQUENCIA & 1:N & N:1 & Várias frequências são registradas por oferta. \\
+\hline FUNCIONARIO --- cria --- AVISO & 1:N & N:1 & Uma pessoa cria vários avisos. \\
+\hline CATEGORIA\_AVISO --- classifica --- AVISO & 1:N & N:1 & Cada aviso possui uma categoria. \\
+\hline AVISO --- possui --- AUTORIZACAO\_AVISO & 1:N & N:1 & Correções podem gerar novas solicitações. \\
+\hline AVISO --- gera --- ENVIO & 1:N & N:1 & Um aviso pode ser enviado em diferentes canais ou momentos. \\
+\hline ENVIO --- direciona --- ENVIO\_DESTINATARIO --- Pessoa & N:M & M:N & Segmentação de vários destinatários por envio. \\
+\hline ENVIO\_DESTINATARIO --- possui --- CONTROLE\_RECEBIMENTO & 1:1 & 1:1 & Um par envio-destinatário possui um controle consolidado. \\
+\hline AVISO --- recebe --- VISUALIZACAO & 1:N & N:1 & Várias pessoas podem visualizar um aviso. \\
+\hline PESSOA --- envia --- MENSAGEM & 1:N & N:1 & Uma pessoa pode enviar várias mensagens. \\
+\hline PESSOA --- recebe --- MENSAGEM & 1:N & N:1 & Uma pessoa pode receber várias mensagens. \\
+\hline MENSAGEM --- possui --- RESPOSTA\_MENSAGEM & 1:N & N:1 & Uma mensagem pode ter resposta oficial ou histórico de respostas. \\
+\hline AVISO --- segmenta --- AVISO\_SEGMENTACAO & 1:N & N:1 & Um aviso pode atingir vários públicos. \\
+\hline\end{tabularx}
+\end{table}

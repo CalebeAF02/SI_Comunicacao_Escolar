@@ -1,0 +1,8 @@
+\section{Usuários e perfis}
+\subsection{Pessoa, herança e nível de acesso}
+\textbf{PESSOA} concentra os dados comuns: id, nome, email, telefone, senha\_hash e nivel\_acesso. Ela se especializa exclusivamente em ALUNO, PAIS, PROFESSOR, COORDENADOR ou DIRETOR. Cada especialização usa pessoa\_id como chave primária e estrangeira para Pessoa.
+
+ALUNO possui matrícula; PAIS possui grau\_parentesco; PROFESSOR possui registro\_funcional; COORDENADOR possui setor; DIRETOR não necessita de atributos próprios além dos dados herdados. O nivel\_acesso define permissões, segmentação e acesso ao feed.
+
+\subsection{Responsáveis, funcionários e categorias}
+Os usuários responsáveis por um aluno são associados por uma entidade de parentesco, preservando o grau de parentesco. Funcionários podem possuir uma ou mais categorias profissionais, como professor, coordenador ou diretor. As categorias definem papéis e responsabilidades no fluxo.

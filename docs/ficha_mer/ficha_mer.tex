@@ -1,0 +1,61 @@
+% ===============================================================
+% Ficha 1 - Construção do MER
+% Documento para preenchimento em grupo
+% ===============================================================
+
+\documentclass[11pt,a4paper]{article}
+
+\newcommand{\coursecode}{CIC0101}
+\newcommand{\coursename}{Sistemas de Informação}
+\newcommand{\lecnumber}{1}
+\newcommand{\lectitle}{Construção do MER}
+\newcommand{\lecturer}{Patrícia Araújo de Oliveira}
+\newcommand{\semester}{2026 / 2}
+\newcommand{\groupnumber}{01}
+
+\input{std/packages}
+\input{std/style}
+\input{std/macros}
+\input{std/boxes}
+\input{std/code}
+
+\begin{document}
+
+\makelecturetitle
+\vspace{2pt}
+
+\grupointegrantes{Grupo \groupnumber}{
+  \textcolor{accent}{Nome do integrante 1} & \textcolor{accent}{Matrícula} &
+  \textcolor{accent}{Nome do integrante 2} & \textcolor{accent}{Matrícula} \\
+  \textcolor{accent}{Nome do integrante 3} & \textcolor{accent}{Matrícula} &
+  \textcolor{accent}{Nome do integrante 4} & \textcolor{accent}{Matrícula}
+}
+
+\begin{notebox}[Ficha 1]
+Aula de 27/10/2026 \,$\cdot$\, Projeto Integrador \,$\cdot$\, Trabalho em grupo.
+\end{notebox}
+
+\begin{objectives}
+Descrever o modelo conceitual a partir de \textbf{todos os requisitos funcionais} e da
+atividade de organização dos dados da Entrega 2. Nesta etapa, não é necessário desenhar o DER.
+\end{objectives}
+
+\begin{notebox}[Antes de preencher]
+Retomem o BPMN (AS-IS), a matriz de rastreabilidade, as histórias e os cenários BDD,
+bem como as tabelas da última atividade assíncrona. Não comecem do zero: usem esses materiais
+para decidir o que o sistema precisa registrar.
+\end{notebox}
+
+\begin{keyidea}[Ligação entre as atividades]
+BPMN $\rightarrow$ necessidades $\rightarrow$ requisitos RF $\rightarrow$ dados identificados
+$\rightarrow$ MER (hoje) $\rightarrow$ DER (próxima aula).
+\end{keyidea}
+
+\tableofcontents
+\vspace{8pt}
+
+\input{conteudo/01_entidades}
+\input{conteudo/02_relacionamentos}
+\input{conteudo/03_conferencia}
+
+\end{document}

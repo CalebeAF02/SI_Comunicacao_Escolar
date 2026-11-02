@@ -1,0 +1,8 @@
+\section{Comunicação, avisos e moderação}
+\subsection{Categoria de aviso e aviso}
+CATEGORIA\_AVISO possui id, nome e exige\_moderacao. Cada aviso pertence a uma única categoria, e uma categoria pode classificar vários avisos.
+
+AVISO possui id, autor\_id, categoria\_id, titulo, descricao, arquivo, tipo, nivel\_urgencia, data\_criacao, data\_publicacao e status. Um aviso é criado por uma única pessoa e pode assumir os estados de elaboração, aguardando avaliação, aprovado, publicado ou rejeitado.
+
+\subsection{Solicitação de autorização}
+SOLICITACAO\_AUTORIZACAO registra id, aviso\_id, avaliador\_id, data\_solicitacao, data\_avaliacao, decisao e feedback. Cada solicitação pertence a um aviso e a um avaliador. Um aviso pode gerar várias solicitações, preservando o histórico de correções e novas avaliações.

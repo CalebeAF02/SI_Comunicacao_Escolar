@@ -1,0 +1,33 @@
+\section{Relacionamentos e regras de negócio}
+\begin{table}[!ht]\centering\scriptsize\renewcommand{\arraystretch}{1.38}
+\begin{tabularx}{\linewidth}{|>{\raggedright\arraybackslash}p{2.9cm}|>{\centering\arraybackslash}p{1.4cm}|>{\raggedright\arraybackslash}p{2.8cm}|>{\raggedright\arraybackslash}X|}
+\hline
+\textbf{Entidade A} & \textbf{Verbo} & \textbf{Entidade B} & \textbf{Regra ou dúvida a validar} \\
+\hline
+NIVEL\_ACESSO & define & PESSOA & Permissões de criar mensagens, distribuir avisos e visualizar o feed. \\
+\hline RESPONSAVEL & possui & PARENTESCO & Grau de parentesco e número máximo de responsáveis por aluno. \\
+\hline ALUNO & possui & PARENTESCO & Como validar vínculo de responsabilidade legal. \\
+\hline FUNCIONARIO & orienta & TURMA & Um professor pode orientar mais de uma turma. \\
+\hline ALUNO & matricula-se em & ALUNO\_TURMA & Status: matriculado, transferido, concluído ou desmatriculado. \\
+\hline TURMA & engloba & ALUNO\_TURMA & Capacidade máxima da turma. \\
+\hline TURMA & possui & OFERTA\_ACADEMICA & Estrutura da grade e dos horários do período letivo. \\
+\hline DISCIPLINA & compõe & OFERTA\_ACADEMICA & Uma disciplina pode ser oferecida várias vezes. \\
+\hline FUNCIONARIO & ministra & OFERTA\_ACADEMICA & Coexistência de mais de um professor na mesma oferta. \\
+\hline OFERTA\_ACADEMICA & registra & NOTA & Critérios, etapas e pesos das avaliações. \\
+\hline ALUNO & recebe & NOTA & Forma de consulta ao boletim pelo aluno e responsável. \\
+\hline OFERTA\_ACADEMICA & controla & FREQUENCIA & Frequência diária ou consolidada por período. \\
+\hline ALUNO & acumula & FREQUENCIA & Cálculo da presença mínima e faltas justificadas. \\
+\hline FUNCIONARIO & cria & AVISO & Categorias com autonomia e categorias sujeitas a moderação. \\
+\hline AVISO & segmenta & AVISO\_SEGMENTACAO & Direcionamento por turma, série, perfil ou toda a escola. \\
+\hline AVISO & pode requerer & AUTORIZACAO\_AVISO & Regra baseada em categoria ou nível de acesso. \\
+\hline FUNCIONARIO & avalia & AUTORIZACAO\_AVISO & Possibilidade de solicitar ajustes antes da aprovação. \\
+\hline PESSOA & envia & MENSAGEM & Direcionamento da demanda ao setor competente. \\
+\hline PESSOA & recebe & MENSAGEM & Notificação em tempo real no sistema ou externamente. \\
+\hline MENSAGEM & possui & RESPOSTA\_MENSAGEM & Fluxo linear ou diálogo encadeado. \\
+\hline AVISO & gera & ENVIO & Canais externos acionados automaticamente na publicação. \\
+\hline ENVIO & direciona & ENVIO\_DESTINATARIO & Como o público é resolvido e atualizado. \\
+\hline PESSOA & registra & VISUALIZACAO & Carimbo de data/hora e confirmação de ciência. \\
+\hline AVISO & recebe & REACAO\_AVISO & Tipos de reação permitidos e alteração posterior. \\
+\hline AVISO & contém & COMENTARIO & Existência de moderação e permissão de exclusão. \\
+\hline\end{tabularx}
+\end{table}

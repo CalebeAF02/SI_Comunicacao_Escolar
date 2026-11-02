@@ -1,0 +1,26 @@
+\section{Histórias de usuário e cenários BDD}
+\begin{table}[!ht]\centering\scriptsize\renewcommand{\arraystretch}{1.35}
+\begin{tabularx}{\linewidth}{|>{\centering\arraybackslash}p{0.7cm}|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|}
+\hline
+\textbf{RF} & \textbf{História de usuário} & \textbf{Cenários principais / alternativos} \\
+\hline
+RF01 & Como emissor, quero criar um aviso estruturado, para comunicar informações relevantes. &
+Dado que a criação possui os dados obrigatórios, o aviso é registrado. Se campos estiverem vazios, o registro é bloqueado. \\
+\hline
+RF02 & Como emissor, quero saber se o aviso exige moderação, para seguir o fluxo correto. &
+Uma categoria restrita é encaminhada à moderação. Uma categoria simples segue diretamente à seleção de público. \\
+\hline
+RF03 & Como emissor, quero solicitar a avaliação do aviso, para garantir autorização prévia. &
+A solicitação é registrada na fila do avaliador. Falha de conexão mantém o aviso como rascunho. \\
+\hline
+RF04 & Como avaliador, quero decidir sobre o aviso, para autorizar ou solicitar ajustes. &
+A aprovação libera o aviso. Ajustes registrados devolvem o aviso ao emissor. \\
+\hline
+RF05 & Como avaliador, quero registrar inviabilidade motivada, para evitar divulgação inadequada. &
+O aviso é cancelado com justificativa; tentativas posteriores de publicação são impedidas. \\
+\hline
+RF06 & Como destinatário, quero receber apenas avisos relevantes, para evitar ruído de informação. &
+O usuário do público selecionado visualiza o aviso; usuários fora dele não o visualizam em seu feed. \\
+\hline
+\end{tabularx}
+\end{table}

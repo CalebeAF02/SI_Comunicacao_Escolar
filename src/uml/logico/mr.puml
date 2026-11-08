@@ -21,31 +21,31 @@ package "Usuários e Perfil" #E3F2FD {
     cpf : varchar(11)
     telefone : varchar(20)
     senha_hash : varchar(255)
-    nivel_acesso_id : int <<FK>>
+    nivel_acesso_id : int <<FK, NIVEL_ACESSO(id)>>
   }
 
   entity ALUNO {
-    * pessoa_id : int <<PK,FK>>
+    * pessoa_id : int <<PK, FK, PESSOA(id)>>
     --
     matricula : varchar(20)
     serie : varchar(20)
   }
 
   entity RESPONSAVEL {
-    * pessoa_id : int <<PK,FK>>
+    * pessoa_id : int <<PK, FK, PESSOA(id)>>
     --
     telefone_emergencia : varchar(20)
   }
 
   entity PARENTESCO {
-    * aluno_id : int <<PK,FK>>
-    * responsavel_id : int <<PK,FK>>
+    * aluno_id : int <<PK, FK, ALUNO(pessoa_id)>>
+    * responsavel_id : int <<PK, FK, RESPONSAVEL(pessoa_id)>>
     --
     grau_parentesco : varchar(50)
   }
 
   entity FUNCIONARIO {
-    * pessoa_id : int <<PK,FK>>
+    * pessoa_id : int <<PK, FK, PESSOA(id)>>
     --
     registro_funcional : varchar(30)
     tipo : enum("PROFESSOR", "CORDENADOR", "DIRETOR", "CANTINA", "SEGURANCA", "FAXINA")
@@ -87,8 +87,8 @@ package "Estrutura Acadêmica" #E8F5E9 {
   }
 
   entity ALUNO_TURMA {
-    * aluno_id : int <<PK,FK>>
-    * turma_id : int <<PK,FK>>
+    * aluno_id : int <<PK, FK, ALUNO(pessoa_id)>>
+    * turma_id : int <<PK, FK, TURMA(id)>>
     --
     data_matricula : date
     status_matricula : enum("MATRICULADO", "DESMATRICULADO", "TRANSFERIDO", "CONCLUIDO")
@@ -96,9 +96,9 @@ package "Estrutura Acadêmica" #E8F5E9 {
 
   entity OFERTA_ACADEMICA {
     * id : int <<PK>>
-    turma_id : int <<FK>>
-    disciplina_id : int <<FK>>
-    professor_id : int <<FK>>
+    turma_id : int <<FK, TURMA(id)>>
+    disciplina_id : int <<FK, DISCIPLINA(id)>>
+    professor_id : int <<FK, FUNCIONARIO(pessoa_id)>>
     --
     dias : enum("SEGUNDA", "TERCA", "QUARTA", "QUINTA", "SEXTA")
     turnos : enum("MANHA", "TARDE", "NOITE")
@@ -109,8 +109,8 @@ package "Estrutura Acadêmica" #E8F5E9 {
 
   entity NOTA {
     * id : int <<PK>>
-    oferta_academica_id : int <<FK>>
-    aluno_id : int <<FK>>
+    oferta_academica_id : int <<FK, OFERTA_ACADEMICA(id)>>
+    aluno_id : int <<FK, ALUNO(pessoa_id)>>
     --
     valor_nota : decimal(5,2)
     nome_avaliacao : varchar(30)
@@ -119,8 +119,8 @@ package "Estrutura Acadêmica" #E8F5E9 {
 
   entity FREQUENCIA {
     * id : int <<PK>>
-    oferta_academica_id : int <<FK>>
-    aluno_id : int <<FK>>
+    oferta_academica_id : int <<FK, OFERTA_ACADEMICA(id)>>
+    aluno_id : int <<FK, ALUNO(pessoa_id)>>
     --
     data_aula : date
     status_presenca : enum("PRESENTE", "AUSENTE", "JUSTIFICADO")
@@ -134,7 +134,7 @@ package "Comunicação e Avisos" #FFFDE7 {
 
   entity AVISO {
     * id : int <<PK>>
-    autor_id : int <<FK>>
+    autor_id : int <<FK, FUNCIONARIO(pessoa_id)>>
     --
     titulo : varchar(150)
     descricao : text
@@ -149,16 +149,16 @@ package "Comunicação e Avisos" #FFFDE7 {
 
   entity AVISO_SEGMENTACAO {
     * id : int <<PK>>
-    aviso_id : int <<FK>>
+    aviso_id : int <<FK, AVISO(id)>>
     --
     tipo_alvo : enum("TURMA", "SERIE", "PESSOA", "TODOS")
-    alvo_id : int <<FK, nullable>>
+    alvo_id : int <<FK polimorfica, nullable>>
   }
 
   entity MENSAGEM {
     * id : int <<PK>>
-    remetente_id : int <<FK>>
-    destinatario_id : int <<FK>>
+    remetente_id : int <<FK, RESPONSAVEL(pessoa_id)>>
+    destinatario_id : int <<FK, FUNCIONARIO(pessoa_id)>>
     --
     titulo : varchar(150)
     descricao : text
@@ -171,7 +171,7 @@ package "Comunicação e Avisos" #FFFDE7 {
 
   entity RESPOSTA_MENSAGEM {
     * id : int <<PK>>
-    mensagem_id : int <<FK>>
+    mensagem_id : int <<FK, MENSAGEM(id)>>
     --
     titulo : varchar(150)
     descricao : text
@@ -180,8 +180,8 @@ package "Comunicação e Avisos" #FFFDE7 {
 
   entity AUTORIZACAO_AVISO {
     * id : int <<PK>>
-    aviso_id : int <<FK>>
-    avaliador_id : int <<FK>>
+    aviso_id : int <<FK, AVISO(id)>>
+    avaliador_id : int <<FK, FUNCIONARIO(pessoa_id)>>
     --
     data_solicitacao : datetime
     data_avaliacao : datetime
@@ -197,7 +197,7 @@ package "Engajamento e Interações" #F3E5F5 {
 
   entity ENVIO {
     * id : int <<PK>>
-    aviso_id : int <<FK>>
+    aviso_id : int <<FK, AVISO(id)>>
     --
     data_envio : datetime
     canal : varchar(30)
@@ -205,23 +205,23 @@ package "Engajamento e Interações" #F3E5F5 {
   }
 
   entity VISUALIZACAO {
-    * aviso_id : int <<PK,FK>>
-    * pessoa_id : int <<PK,FK>>
+    * aviso_id : int <<PK, FK, AVISO(id)>>
+    * pessoa_id : int <<PK, FK, PESSOA(id)>>
     --
     data_hora_visualizacao : datetime
   }
 
   entity REACAO_AVISO {
-    * aviso_id : int <<PK,FK>>
-    * pessoa_id : int <<PK,FK>>
+    * aviso_id : int <<PK, FK, AVISO(id)>>
+    * pessoa_id : int <<PK, FK, PESSOA(id)>>
     --
     tipo : enum("CURTIR","DUVIDA","IMPORTANTE")
   }
 
   entity COMENTARIO {
     * id : int <<PK>>
-    aviso_id : int <<FK>>
-    pessoa_id : int <<FK>>
+    aviso_id : int <<FK, AVISO(id)>>
+    pessoa_id : int <<FK, PESSOA(id)>>
     --
     texto : text
     data_criacao : datetime
@@ -260,8 +260,8 @@ AVISO ||--o{ AVISO_SEGMENTACAO : segmenta
 AVISO ||--o{ AUTORIZACAO_AVISO : pode_requerer
 FUNCIONARIO ||--o{ AUTORIZACAO_AVISO : avalia
 
-PESSOA ||--o{ MENSAGEM : envia
-PESSOA ||--o{ MENSAGEM : recebe
+RESPONSAVEL ||--o{ MENSAGEM : envia
+FUNCIONARIO ||--o{ MENSAGEM : recebe
 MENSAGEM ||--o{ RESPOSTA_MENSAGEM : possui
 
 ' Engajamento e Interações (Domínio 4)

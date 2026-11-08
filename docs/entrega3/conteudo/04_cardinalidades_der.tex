@@ -19,8 +19,8 @@ NIVEL\_ACESSO --- define --- PESSOA & 1:N & N:1 & Um nível pode ser atribuído 
 \hline ENVIO --- direciona --- ENVIO\_DESTINATARIO --- Pessoa & N:M & M:N & Segmentação de vários destinatários por envio. \\
 \hline ENVIO\_DESTINATARIO --- possui --- CONTROLE\_RECEBIMENTO & 1:1 & 1:1 & Um par envio-destinatário possui um controle consolidado. \\
 \hline AVISO --- recebe --- VISUALIZACAO & 1:N & N:1 & Várias pessoas podem visualizar um aviso. \\
-\hline PESSOA --- envia --- MENSAGEM & 1:N & N:1 & Uma pessoa pode enviar várias mensagens. \\
-\hline PESSOA --- recebe --- MENSAGEM & 1:N & N:1 & Uma pessoa pode receber várias mensagens. \\
+\hline RESPONSAVEL --- envia --- MENSAGEM & 1:N & N:1 & Um responsável pode enviar várias mensagens. \\
+\hline FUNCIONARIO --- recebe --- MENSAGEM & 1:N & N:1 & Um funcionário pode receber várias mensagens. \\
 \hline MENSAGEM --- possui --- RESPOSTA\_MENSAGEM & 1:N & N:1 & Uma mensagem pode ter resposta oficial ou histórico de respostas. \\
 \hline AVISO --- segmenta --- AVISO\_SEGMENTACAO & 1:N & N:1 & Um aviso pode atingir vários públicos. \\
 \hline\end{tabularx}

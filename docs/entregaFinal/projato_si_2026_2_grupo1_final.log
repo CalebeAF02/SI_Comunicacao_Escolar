@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.11.17)  22 NOV 2026 12:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.11.17)  22 NOV 2026 17:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -942,7 +942,7 @@ Overfull \hbox (10.1658pt too wide) in alignment at lines 255--264
 
 [13] [14] [15]
 Cap\'{\i }tulo 4.
-<../../assets/diagram_as_is.png, id=330, 939.51pt x 316.3017pt>
+<../../assets/diagram_as_is.png, id=345, 939.51pt x 316.3017pt>
 File: ../../assets/diagram_as_is.png Graphic file (type png)
 <use ../../assets/diagram_as_is.png>
 Package pdftex.def Info: ../../assets/diagram_as_is.png  used on input line 276.
@@ -1215,7 +1215,7 @@ Overfull \hbox (15.85669pt too wide) in alignment at lines 303--312
  []
 
 [17] [18]
-<../../assets/diagrama_processo_v3.png, id=351, 936.6192pt x 828.2142pt>
+<../../assets/diagrama_processo_v3.png, id=366, 936.6192pt x 828.2142pt>
 File: ../../assets/diagrama_processo_v3.png Graphic file (type png)
 <use ../../assets/diagrama_processo_v3.png>
 Package pdftex.def Info: ../../assets/diagrama_processo_v3.png  used on input line 320.
@@ -5082,7 +5082,7 @@ Overfull \hbox (10.16623pt too wide) in alignment at lines 628--671
 
 LaTeX Warning: Reference `sec:mer' on page 43 undefined on input line 707.
 
-<../../assets/diagram_der.jpeg, id=465, 1467.4825pt x 728.7225pt>
+<../../assets/diagram_der.jpeg, id=480, 1467.4825pt x 728.7225pt>
 File: ../../assets/diagram_der.jpeg Graphic file (type jpg)
 <use ../../assets/diagram_der.jpeg>
 Package pdftex.def Info: ../../assets/diagram_der.jpeg  used on input line 711.
@@ -5389,31 +5389,244 @@ Underfull \hbox (badness 10000) in paragraph at lines 790--790
 
 [45] [46] [47]
 Cap\'{\i }tulo 7.
+
+Overfull \hbox (21.07251pt too wide) in paragraph at lines 803--804
+[]\T1/cmr/bx/n/12 Interfaces: \T1/cmr/m/n/12 te-las res-pon-si-vas pri-o-ri-zando dis-po-si-ti-vos mó-veis, com-pos-tas por feed/mural
+ []
+
 [48
 
 ]
+Overfull \hbox (4.47534pt too wide) in alignment at lines 811--816
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (4.47534pt too wide) in alignment at lines 816--820
+ [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 821--821
+[]|\T1/cmr/m/n/12 RF01 a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 823--823
+[]|\T1/cmr/m/n/12 Emissor do
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 823--823
+[]|\T1/cmr/m/n/12 RF02,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 823--823
+\T1/cmr/m/n/12 RF03,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 823--823
+\T1/cmr/m/n/12 RF04,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 823--823
+\T1/cmr/m/n/12 RF10,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 823--823
+\T1/cmr/m/n/12 RF15,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 823--823
+\T1/cmr/m/n/12 RF16,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 825--825
+[]|\T1/cmr/m/n/12 Avaliação de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 825--825
+[]|\T1/cmr/m/n/12 RF06,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 825--825
+\T1/cmr/m/n/12 RF07,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 825--825
+\T1/cmr/m/n/12 RF08,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 827--827
+[]|\T1/cmr/m/n/12 Destinatário
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 829--829
+[]|\T1/cmr/m/n/12 Tutor do
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 831--831
+[]|\T1/cmr/m/n/12 Triagem de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 831--831
+[]|\T1/cmr/m/n/12 RF05,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 831--831
+\T1/cmr/m/n/12 RF11,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 831--831
+\T1/cmr/m/n/12 RF12,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 831--831
+\T1/cmr/m/n/12 RF13,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 833--833
+[]|\T1/cmr/m/n/12 Resposta de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 833--833
+[]|\T1/cmr/m/n/12 Respondente
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 833--833
+\T1/cmr/m/n/12 (di-re-ção,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 833--833
+\T1/cmr/m/n/12 co-or-de-na-ção,
+ []
+
+
+Overfull \hbox (4.47534pt too wide) in alignment at lines 820--835
+ [] [] [] [] 
+ []
+
+<../../assets/telas/Slide1.PNG, id=520, 406.51875pt x 722.7pt>
+File: ../../assets/telas/Slide1.PNG Graphic file (type png)
+<use ../../assets/telas/Slide1.PNG>
+Package pdftex.def Info: ../../assets/telas/Slide1.PNG  used on input line 839.
+(pdftex.def)             Requested size: 138.3634pt x 245.97836pt.
+[49]
+<../../assets/telas/Slide2.PNG, id=533, 406.51875pt x 722.7pt>
+File: ../../assets/telas/Slide2.PNG Graphic file (type png)
+<use ../../assets/telas/Slide2.PNG>
+Package pdftex.def Info: ../../assets/telas/Slide2.PNG  used on input line 846.
+(pdftex.def)             Requested size: 138.3634pt x 245.97836pt.
+<../../assets/telas/Slide3.PNG, id=534, 406.51875pt x 722.7pt>
+File: ../../assets/telas/Slide3.PNG Graphic file (type png)
+<use ../../assets/telas/Slide3.PNG>
+Package pdftex.def Info: ../../assets/telas/Slide3.PNG  used on input line 853.
+(pdftex.def)             Requested size: 138.3634pt x 245.97836pt.
+ [50
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.857 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.857 
+       <../../assets/telas/Slide1.PNG> <../../assets/telas/Slide2.PNG>]
+<../../assets/telas/Slide4.PNG, id=541, 406.51875pt x 722.7pt>
+File: ../../assets/telas/Slide4.PNG Graphic file (type png)
+<use ../../assets/telas/Slide4.PNG>
+Package pdftex.def Info: ../../assets/telas/Slide4.PNG  used on input line 860.
+(pdftex.def)             Requested size: 138.3634pt x 245.97836pt.
+<../../assets/telas/Slide5.PNG, id=542, 406.51875pt x 722.7pt>
+File: ../../assets/telas/Slide5.PNG Graphic file (type png)
+<use ../../assets/telas/Slide5.PNG>
+Package pdftex.def Info: ../../assets/telas/Slide5.PNG  used on input line 867.
+(pdftex.def)             Requested size: 138.3634pt x 245.97836pt.
+ [51
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.871 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.871 
+       <../../assets/telas/Slide3.PNG> <../../assets/telas/Slide4.PNG>]
+<../../assets/telas/Slide6.PNG, id=549, 406.51875pt x 722.7pt>
+File: ../../assets/telas/Slide6.PNG Graphic file (type png)
+<use ../../assets/telas/Slide6.PNG>
+Package pdftex.def Info: ../../assets/telas/Slide6.PNG  used on input line 874.
+(pdftex.def)             Requested size: 138.3634pt x 245.97836pt.
+<../../assets/telas/Slide7.PNG, id=550, 406.51875pt x 722.7pt>
+File: ../../assets/telas/Slide7.PNG Graphic file (type png)
+<use ../../assets/telas/Slide7.PNG>
+Package pdftex.def Info: ../../assets/telas/Slide7.PNG  used on input line 881.
+(pdftex.def)             Requested size: 138.3634pt x 245.97836pt.
+ [52
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.885 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.885 
+       <../../assets/telas/Slide5.PNG> <../../assets/telas/Slide6.PNG>]
+Overfull \hbox (17.0043pt too wide) in paragraph at lines 891--892
+\T1/cmr/m/n/12 lei-tura (\T1/cmr/bx/n/12 ENVIO\T1/cmr/m/n/12 , \T1/cmr/bx/n/12 VI-SU-A-LI-ZA-CAO\T1/cmr/m/n/12 ) e in-for-ma-ções aca-dê-mi-cas con-sul-ta-das (\T1/cmr/bx/n/12 NOTA\T1/cmr/m/n/12 ,
+ []
+
+[53
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7.7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.894 \end{itemize}
+                    <../../assets/telas/Slide7.PNG>] [54]
 Cap\'{\i }tulo 8.
-[49
+[55
 
 ]
 Cap\'{\i }tulo 9.
-[50
+[56
 
 ]
 Cap\'{\i }tulo 10.
-[51
+[57
 
 ]
 Cap\'{\i }tulo 11.
-[52
+[58
 
 ]
 Cap\'{\i }tulo 12.
-[53
+[59
 
 ]
 Cap\'{\i }tulo 13.
-[54
+[60
 
 ] (projato_si_2026_2_grupo1_final.aux)
  ***********
@@ -5425,20 +5638,20 @@ L3 programming layer <2026-09-09>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `projato_si_2026_2_grupo1_final.out' has not changed.
-(rerunfilecheck)             Checksum: FE86A3B2E584DCB908072C4DB30717DC;9475.
+(rerunfilecheck)             Checksum: 4D1F15BE7D17F1A65D78CAF485E63710;10123.
  ) 
 Here is how much of TeX's memory you used:
- 12156 strings out of 467310
- 195160 string characters out of 5402813
- 740518 words of memory out of 5000000
- 41321 multiletter control sequences out of 15000+600000
+ 12234 strings out of 467310
+ 197310 string characters out of 5402813
+ 741099 words of memory out of 5000000
+ 41382 multiletter control sequences out of 15000+600000
  640642 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,6n,79p,1225b,630s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\luans\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\luans\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\luans\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\luans\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\luans\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\luans\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\luans\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\luans\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\luans\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\luans\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><C:/Users/luans/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/luans/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on projato_si_2026_2_grupo1_final.pdf (55 pages, 1350924 bytes).
+Output written on projato_si_2026_2_grupo1_final.pdf (61 pages, 1423967 bytes).
 PDF statistics:
- 1026 PDF objects out of 1200 (max. 8388607)
- 119 named destinations out of 1000 (max. 500000)
- 400 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1102 PDF objects out of 1200 (max. 8388607)
+ 136 named destinations out of 1000 (max. 500000)
+ 459 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -793,6 +793,106 @@ Para validar se o modelo de dados sustenta o que foi especificado nos requisitos
 
 \chapter{Concepção da solução e prototipação}
 
+\section{Visão da solução}
+
+A solução proposta consiste em uma aplicação de comunicação e acompanhamento escolar, concebida com abordagem \textit{mobile-first} e suporte a acesso \textit{web}, voltada a instituições de ensino básico. Sua arquitetura funcional organiza os fluxos definidos no processo TO-BE em torno de dois eixos principais — a divulgação moderada e segmentada de avisos/comunicados e o canal estruturado de mensagens e atendimento —, além da consulta de informações acadêmicas (notas e frequências) sem interferir nos sistemas administrativos internos ou na gestão da secretaria.
+
+\begin{itemize}
+    \item \textbf{Usuários e perfis:} a plataforma atende aos papéis mapeados na comunidade escolar — \textbf{Emissor do aviso} (direção, coordenação e professores), \textbf{Avaliador} (direção, coordenação e secretaria), \textbf{Distribuidor / triagem}, \textbf{Respondente} (direção, coordenação e professores), \textbf{Tutor / responsável legal}, \textbf{Aluno} e \textbf{Destinatários} —, com permissões condicionadas ao nível de acesso e ao vínculo institucional.
+    \item \textbf{Principais funcionalidades:} criação e salvamento de avisos; definição de público-alvo (turmas, perfis ou vínculos) e canais de divulgação; submissão e avaliação de autorização com registro de aprovação ou indeferimento motivado; publicação e exibição segmentada no mural; registro de visualização/ciência; consulta de notas, frequências e declarações conforme o perfil; e envio, triagem, eventual devolução para redistribuição e resposta oficial a mensagens.
+    \item \textbf{Interfaces:} telas responsivas priorizando dispositivos móveis, compostas por feed/mural de avisos segmentados, formulário de criação e configuração de comunicados, painel de avaliação e moderação, caixa de entrada e fila de atendimento de mensagens e visão de acompanhamento acadêmico.
+    \item \textbf{Fluxo geral de uso:} na comunicação institucional, o emissor elabora o aviso, define público e canais e, quando exigido pelas regras escolares, submete à avaliação antes da publicação para os destinatários autorizados. No atendimento, o tutor envia uma mensagem particular, que passa pela triagem para o respondente competente; caso o setor não seja o correto, a mensagem pode retornar para redistribuição até a emissão da resposta oficial visualizada pelo tutor.
+\end{itemize}
+
+\section{Protótipos de interface}
+
+Os protótipos de interface ilustram as interações centrais do sistema em telas de uso móvel, conectando cada tela ao perfil de usuário, aos requisitos funcionais atendidos e à sua finalidade operacional. O Quadro~\ref{tab:prototipos-interface} sintetiza os protótipos previstos e indica as respectivas figuras, apresentadas em sequência a seguir.
+
+\begin{longtable}{|p{2.9cm}|p{2.5cm}|p{2.2cm}|p{6.8cm}|}
+\caption{Relação entre protótipos de interface, perfis de usuário, requisitos associados e finalidades.} \label{tab:prototipos-interface} \\
+\hline
+\textbf{Tela / Protótipo} & \textbf{Usuário} & \textbf{RF associado} & \textbf{Finalidade} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Tela / Protótipo} & \textbf{Usuário} & \textbf{RF associado} & \textbf{Finalidade} \\
+\hline
+\endhead
+Tela de Login \newline (Figura~\ref{fig:tela-login}) & Todos os usuários & RF01 a RF19 & Permitir autenticação segura e direcionamento para o painel de funcionalidades conforme perfil e vínculo. \\
+\hline
+Criação de aviso \newline (Figura~\ref{fig:tela-criacao-aviso}) & Emissor do aviso & RF02, RF03, RF04, RF10, RF15, RF16, RF17 & Permitir redigir o comunicado, selecionar público-alvo e canais, indicar necessidade de autorização e submeter, publicar ou cancelar o aviso. \\
+\hline
+Avaliação de avisos \newline (Figura~\ref{fig:tela-avaliacao-aviso}) & Avaliador & RF06, RF07, RF08, RF09 & Exibir solicitações pendentes de autorização para aprovar ou indeferir com justificativa motivada e disparar a comunicação ao emissor. \\
+\hline
+Mural de avisos \newline (Figura~\ref{fig:tela-mural-avisos}) & Destinatário (tutor, aluno, comunidade) & RF19 & Apresentar apenas os avisos publicados direcionados ao perfil/vínculo do usuário e registrar a consulta e ciência do comunicado. \\
+\hline
+Envio de mensagem particular \newline (Figura~\ref{fig:tela-envio-mensagem}) & Tutor do aluno & RF01, RF18 & Permitir redigir e enviar dúvidas, justificativas ou solicitações à escola e acompanhar o status e a resposta oficial recebida. \\
+\hline
+Triagem de mensagens \newline (Figura~\ref{fig:tela-triagem-mensagens}) & Distribuidor e Respondente & RF05, RF11, RF12, RF13, RF14 & Encaminhar mensagens recebidas à fila adequada, avaliar pertinência, devolver para redistribuição quando incorreto ou enviar resposta oficial. \\
+\hline
+Resposta de mensagem \newline (Figura~\ref{fig:tela-resposta-mensagem}) & Respondente (direção, coordenação, professor) & RF14, RF18 & Permitir redigir e enviar a resposta oficial à mensagem recebida, registrando o envio e a visualização pelo tutor. \\
+\hline
+\end{longtable}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=0.35\textheight,keepaspectratio]{../../assets/telas/Slide1.PNG}
+    \caption{Tela de Login.}
+    \label{fig:tela-login}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=0.35\textheight,keepaspectratio]{../../assets/telas/Slide2.PNG}
+    \caption{Tela de criação e segmentação de aviso.}
+    \label{fig:tela-criacao-aviso}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=0.35\textheight,keepaspectratio]{../../assets/telas/Slide3.PNG}
+    \caption{Tela de avaliação de avisos.}
+    \label{fig:tela-avaliacao-aviso}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=0.35\textheight,keepaspectratio]{../../assets/telas/Slide4.PNG}
+    \caption{Tela do mural de avisos.}
+    \label{fig:tela-mural-avisos}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=0.35\textheight,keepaspectratio]{../../assets/telas/Slide5.PNG}
+    \caption{Tela de envio de mensagem particular.}
+    \label{fig:tela-envio-mensagem}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=0.35\textheight,keepaspectratio]{../../assets/telas/Slide6.PNG}
+    \caption{Tela de triagem de mensagens.}
+    \label{fig:tela-triagem-mensagens}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=0.35\textheight,keepaspectratio]{../../assets/telas/Slide7.PNG}
+    \caption{Tela de resposta de mensagem.}
+    \label{fig:tela-resposta-mensagem}
+\end{figure}
+
+\section{Privacidade, segurança e qualidade da informação}
+
+A concepção da solução incorpora mecanismos de proteção de dados, controle de acesso e qualidade informacional coerentes com o modelo de dados e com os requisitos do projeto:
+
+\begin{itemize}
+    \item \textbf{Dados pessoais tratados e minimização:} o sistema trata dados cadastrais e de vínculo institucional de pessoas (\textbf{PESSOA}, \textbf{ALUNO}, \textbf{RESPONSAVEL}, \textbf{FUNCIONARIO}, \textbf{PARENTESCO}), registros de comunicação e atendimento (\textbf{AVISO}, \textbf{MENSAGEM}, \textbf{RESPOSTA\_MENSAGEM}), eventos de entrega e leitura (\textbf{ENVIO}, \textbf{VISUALIZACAO}) e informações acadêmicas consultadas (\textbf{NOTA}, \textbf{FREQUENCIA}). A coleta limita-se ao estritamente necessário para identificação, vinculação escolar, comunicação segmentada e consulta autorizada, evitando campos supérfluos e mantendo apartados os processos administrativos e financeiros internos.
+    \item \textbf{Controle de acesso e segurança:} o acesso a dados e ações segue o controle baseado em perfil e vínculo (\textbf{NIVEL\_ACESSO} e vínculos de turma/parentesco): direção e coordenação acessam todos os dados; a secretaria consulta notas e frequências de todos os alunos; professores acessam apenas suas turmas; alunos acessam apenas os próprios dados; responsáveis/tutores acessam dados de seus tutelados; apenas funcionários criam/postam avisos; e somente direção, coordenação e secretaria aprovam avisos. Credenciais são armazenadas de forma protegida (\texttt{senha\_hash}) e o acesso indevido é bloqueado por perfil e escopo de vínculo.
+    \item \textbf{Integridade, disponibilidade e qualidade dos dados:} a consistência é preservada pelo encadeamento entre entidades, identificadores e estados do ciclo de vida (rascunho, pendente de autorização, aprovado/indeferido, publicado, cancelado e status de mensagens/respostas), evitando registros órfãos ou divergentes. A disponibilidade e a qualidade da informação apoiam-se em interfaces móveis responsivas, notificações oportunas, segmentação por público e vigência no calendário escolar, além de registros confiáveis de envio e visualização para reduzir incertezas de ciência e ruído informacional.
+\end{itemize}
+
 \chapter{Verificação e testes}
 
 \chapter{Integração e consistência dos artefatos}

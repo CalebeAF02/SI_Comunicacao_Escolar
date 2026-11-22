@@ -1,0 +1,49 @@
+\babel@toc {brazil}{}\relax 
+\contentsline {chapter}{\numberline {1}Introdução}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Finalidade do documento}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Problema e justificativa}{3}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Problema atual}{3}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Atores afetados, evidências e consequências observadas}{3}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Delimitação do problema}{4}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Justificativa}{4}{subsection.1.2.4}%
+\contentsline {section}{\numberline {1.3}Escopo e limites}{4}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Incluído no escopo}{4}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Fora do escopo}{5}{subsection.1.3.2}%
+\contentsline {chapter}{\numberline {2}Visão geral do projeto}{6}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Objetivos e resultados esperados}{6}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Objetivo geral}{6}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Objetivos específicos}{6}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Resultados e benefícios esperados}{6}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}Stakeholders e necessidades}{7}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Premissas, restrições e riscos}{8}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Premissas e hipóteses}{8}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Restrições e limitações}{8}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Riscos identificados}{9}{subsection.2.3.3}%
+\contentsline {chapter}{\numberline {3}Sistema de Informação e contexto organizacional}{10}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Visão sistêmica}{10}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Pessoas, processos, dados e tecnologia}{11}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Dados, informação, conhecimento e decisão}{13}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Análise dos processos}{16}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Processo atual — BPMN AS-IS}{16}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Problemas e oportunidades de melhoria}{17}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Processo proposto — TO-BE}{18}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Especificação dos requisitos}{21}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Origem e rastreabilidade dos requisitos}{21}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Requisitos funcionais e não funcionais}{26}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Requisitos funcionais priorizáveis}{26}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Requisitos não funcionais priorizáveis}{27}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}Histórias de usuário}{28}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Cenários BDD}{32}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Modelagem dos dados}{39}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Descrição conceitual — MER}{39}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Representação gráfica — DER}{43}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Regras e validação do modelo}{45}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Relacionamentos relevantes e cardinalidades}{45}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Correspondência entre dados, requisitos e processo}{45}{subsection.6.3.2}%
+\contentsline {chapter}{\numberline {7}Concepção da solução e prototipação}{48}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Verificação e testes}{49}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Integração e consistência dos artefatos}{50}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Planejamento e responsabilidades}{51}{chapter.10}%
+\contentsline {chapter}{\numberline {11}Considerações finais}{52}{chapter.11}%
+\contentsline {chapter}{\numberline {12}Referências}{53}{chapter.12}%
+\contentsline {chapter}{\numberline {13}Anexos}{54}{chapter.13}%

@@ -45,8 +45,14 @@
 \contentsline {section}{\numberline {7.2}Protótipos de interface}{49}{section.7.2}%
 \contentsline {section}{\numberline {7.3}Privacidade, segurança e qualidade da informação}{53}{section.7.3}%
 \contentsline {chapter}{\numberline {8}Verificação e testes}{55}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Integração e consistência dos artefatos}{56}{chapter.9}%
-\contentsline {chapter}{\numberline {10}Planejamento e responsabilidades}{57}{chapter.10}%
-\contentsline {chapter}{\numberline {11}Considerações finais}{58}{chapter.11}%
-\contentsline {chapter}{\numberline {12}Referências}{59}{chapter.12}%
-\contentsline {chapter}{\numberline {13}Anexos}{60}{chapter.13}%
+\contentsline {section}{\numberline {8.1}Estratégia de verificação}{55}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Casos e cenários de teste}{55}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Resultados e pendências}{62}{section.8.3}%
+\contentsline {chapter}{\numberline {9}Integração e consistência dos artefatos}{63}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Correções após revisões das entregas anteriores}{64}{section.9.1}%
+\contentsline {chapter}{\numberline {10}Planejamento e responsabilidades}{65}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Etapas e situação atual}{65}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Contribuições individuais}{66}{section.10.2}%
+\contentsline {chapter}{\numberline {11}Considerações finais}{68}{chapter.11}%
+\contentsline {chapter}{\numberline {12}Referências}{69}{chapter.12}%
+\contentsline {chapter}{\numberline {13}Anexos}{70}{chapter.13}%

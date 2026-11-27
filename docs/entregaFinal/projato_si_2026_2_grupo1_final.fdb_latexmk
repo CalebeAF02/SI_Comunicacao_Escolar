@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1795377683.14607 "c:/Users/luans/OneDrive/Documentos/Aulas/UnB/Disciplinas/2026_2 SI/SI_Comunicacao_Escolar/docs/entregaFinal/projato_si_2026_2_grupo1_final.tex" "projato_si_2026_2_grupo1_final.pdf" "projato_si_2026_2_grupo1_final" 1795377687.31013 0
+["pdflatex"] 1795741342.69345 "c:/Users/luans/OneDrive/Documentos/Aulas/UnB/Disciplinas/2026_2 SI/SI_Comunicacao_Escolar/docs/entregaFinal/projato_si_2026_2_grupo1_final.tex" "projato_si_2026_2_grupo1_final.pdf" "projato_si_2026_2_grupo1_final" 1795741351.79282 0
+  "../../assets/der.png" 1795736615 147210 2b28431a856a6ed7c8a5409550216189 ""
   "../../assets/diagram_as_is.png" 1795301663 244725 2e3bedbdc52c44cf734c47ffd4dd11c3 ""
-  "../../assets/diagram_der.jpeg" 1795360292 228573 ef6a8ab9001a457643de6f6c65eb49f2 ""
   "../../assets/diagrama_processo_v3.png" 1793537932 626850 8f83d3891928496c456703ff13a816ff ""
   "../../assets/telas/Slide1.PNG" 1795376756 7237 743224415d088cc1a9d717aed4e2d1e5 ""
   "../../assets/telas/Slide2.PNG" 1795376756 8480 70a3d2e8ededdfb93bf74c6aa8152319 ""
@@ -15,6 +15,7 @@
   "C:/Users/luans/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1440.pk" 1795302739 40136 6e7415cca55d0a6afa3fe45e4becd504 ""
   "C:/Users/luans/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1728.pk" 1795298978 49100 aa3db6b811fe69686f3fad6576bef298 ""
   "C:/Users/luans/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx2488.pk" 1795298981 72288 a30f574080c798fea1636c4778e26e3f ""
+  "C:/Users/luans/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0800.pk" 1795741339 19080 e27cbff0a882564c5bfbee4590cd9514 ""
   "C:/Users/luans/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1200.pk" 1795298980 28440 8c5e37843271aab440f2178cd5637371 ""
   "C:/Users/luans/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1440.pk" 1795298983 34320 97bc4c6219532f7f6a7978cdf475b3b9 ""
   "C:/Users/luans/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1728.pk" 1795298985 42516 b0b0744bb415b3ac19dedbe385de11f5 ""
@@ -26,6 +27,7 @@
   "C:/Users/luans/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecbx1440.tfm" 993061960 3196 0b37fa3083e15c57cfa8c4ff52f2807a ""
   "C:/Users/luans/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecbx1728.tfm" 993061962 3204 d35cb76836b6cb4ed404dd64a550530d ""
   "C:/Users/luans/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecbx2488.tfm" 993061966 3192 b0a07ba84fb3fb36d088c4f796e254b9 ""
+  "C:/Users/luans/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm0800.tfm" 993062118 3152 11ecf5aad6aacf00ff18f394ab23a8b5 ""
   "C:/Users/luans/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm1200.tfm" 993062126 3152 4850ff0163852b7fab34bd55e1197f28 ""
   "C:/Users/luans/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm1440.tfm" 993062128 3168 3bd7b08ba4330af81521911744311212 ""
   "C:/Users/luans/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm1728.tfm" 993062128 3168 11457c8185ce67fb79662ba8b03d6db1 ""
@@ -110,11 +112,11 @@
   "C:/Users/luans/AppData/Local/Programs/MiKTeX/tex/latex/tools/tabularx.sty" 1793366916 7243 8b721d4f043b17b3e2ea32173c7958d7 ""
   "C:/Users/luans/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/luans/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "c:/Users/luans/OneDrive/Documentos/Aulas/UnB/Disciplinas/2026_2 SI/SI_Comunicacao_Escolar/docs/entregaFinal/projato_si_2026_2_grupo1_final.tex" 1795377678 107904 6e2db5d0dfc311b367b1bdcb91731c58 ""
-  "projato_si_2026_2_grupo1_final.aux" 1795377686 15155 b953b20af277621b650d7fa45f5ccf20 "pdflatex"
-  "projato_si_2026_2_grupo1_final.out" 1795377686 10123 4d1f15be7d17f1a65d78caf485e63710 "pdflatex"
-  "projato_si_2026_2_grupo1_final.tex" 1795377678 107904 6e2db5d0dfc311b367b1bdcb91731c58 ""
-  "projato_si_2026_2_grupo1_final.toc" 1795377686 4662 c4f1aa79c3dfad461838e621c12c2d2b "pdflatex"
+  "c:/Users/luans/OneDrive/Documentos/Aulas/UnB/Disciplinas/2026_2 SI/SI_Comunicacao_Escolar/docs/entregaFinal/projato_si_2026_2_grupo1_final.tex" 1795741326 131904 ae5156b3df92eb8be821bb75c0bdff66 ""
+  "projato_si_2026_2_grupo1_final.aux" 1795741349 18013 503c1493e3d1303d3bbc7cf8febc8dfc "pdflatex"
+  "projato_si_2026_2_grupo1_final.out" 1795741349 11387 05654c952a8927965bfb08a166d16799 "pdflatex"
+  "projato_si_2026_2_grupo1_final.tex" 1795741326 131904 ae5156b3df92eb8be821bb75c0bdff66 ""
+  "projato_si_2026_2_grupo1_final.toc" 1795741349 5213 619d00bdda2364ff0b4e0e958b63b43d "pdflatex"
   (generated)
   "projato_si_2026_2_grupo1_final.aux"
   "projato_si_2026_2_grupo1_final.fls"

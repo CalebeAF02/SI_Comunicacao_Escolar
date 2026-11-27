@@ -708,7 +708,7 @@ O Diagrama Entidade-Relacionamento (DER) apresentado na Figura~\ref{fig:der-mode
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{../../assets/diagram_der.jpeg}
+    \includegraphics[width=\textwidth]{../../assets/der.png}
     \caption{Diagrama Entidade-Relacionamento (DER) do sistema em notação Peter Chen.}
     \label{fig:der-modelo}
 \end{figure}
@@ -895,9 +895,237 @@ A concepção da solução incorpora mecanismos de proteção de dados, controle
 
 \chapter{Verificação e testes}
 
+\section{Estratégia de verificação}
+
+Na etapa atual de concepção, a verificação proposta para o projeto combina análise estática dos artefatos com a especificação de cenários comportamentais para validação posterior:
+
+\begin{itemize}
+    \item \textbf{Inspeção de protótipos de interface:} confere campos, ações e fluxos de telas por perfil de usuário frente aos requisitos.
+    \item \textbf{Revisão de regras e modelo de dados:} confronta regras de negócio, permissões e vínculos com o MER, o DER e a matriz de rastreabilidade.
+    \item \textbf{Cenários BDD:} formaliza condições iniciais, ações e resultados esperados (\textit{Dado / Quando / Então}) para fluxos normais, desvios e exceções.
+    \item \textbf{Testes em sistema implementado (etapa futura):} execução em ambiente de teste com dados controlados para validar funcionalidades, interface móvel, permissões e persistência.
+\end{itemize}
+
+Cabe distinguir que: \textit{testes planejados} definem casos, entradas e resultados esperados a partir da especificação; \textit{testes executados} registram a rodada prática sobre protótipo ou sistema, com status e evidências. Aqui, todos os testes são \textit{planejados}.
+
+\section{Casos e cenários de teste}
+
+O Quadro~\ref{tab:casos-teste} reúne os casos de teste planejados cobrindo integralmente os cenários BDD especificados na Seção de cenários BDD, incorporando de forma complementar os detalhamentos de fluxo, atributos e referências de telas apresentados no resumo de testes (\texttt{T01} a \texttt{T05}).
+
+\begin{longtable}{|p{1.2cm}|p{2.0cm}|p{3.8cm}|p{4.0cm}|p{1.6cm}|p{2.0cm}|}
+\caption{Casos e cenários de teste planejados a partir dos cenários BDD e do slide complementar.} \label{tab:casos-teste} \\
+\hline
+\textbf{Teste} & \textbf{RF/BDD} & \textbf{Pré-condição/entrada} & \textbf{Resultado esperado} & \textbf{Situação} & \textbf{Evidência} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Teste} & \textbf{RF/BDD} & \textbf{Pré-condição/entrada} & \textbf{Resultado esperado} & \textbf{Situação} & \textbf{Evidência} \\
+\hline
+\endhead
+CT01 & RF01 / BDD01.1 & Tutor autenticado na Tela de envio de mensagem particular (Figura~\ref{fig:tela-envio-mensagem}); campos obrigatórios da mensagem preenchidos. & Mensagem registrada e encaminhada para a fila de triagem da escola. & Planejado & Não executada \\
+\hline
+CT02 & RF01 / BDD01.2 & Tutor na tela de criação de mensagem; envio acionado com um ou mais campos obrigatórios em branco. & Sistema exibe alerta de validação e bloqueia o envio até o preenchimento. & Planejado & Não executada \\
+\hline
+CT03 & RF02 / BDD02.1 & Emissor autenticado na Tela de criação de aviso (Figura~\ref{fig:tela-criacao-aviso}); título e descrição preenchidos e salvamento acionado. & Registro de \texttt{AVISO} salvo com sucesso e disponibilizado para as etapas seguintes. & Planejado & Não executada \\
+\hline
+CT04 & RF02 / BDD02.2 & Emissor redigindo um aviso; clique no botão de cancelar a edição. & Sistema descarta dados não salvos e retorna à tela anterior. & Planejado & Não executada \\
+\hline
+CT05 & RF03 / BDD03.1 & Emissor configurando aviso na Figura~\ref{fig:tela-criacao-aviso}; seleção de turmas específicas ou perfis de destinatários e aplicação da regra. & Público-alvo vinculado ao comunicado em \texttt{AVISO\_SEGMENTACAO}. & Planejado & Não executada \\
+\hline
+CT06 & RF03 / BDD03.2 & Emissor tenta salvar configuração de público sem selecionar nenhum grupo de destinatários. & Sistema exibe mensagem solicitando selecionar ao menos um grupo-alvo. & Planejado & Não executada \\
+\hline
+CT07 & RF04 / BDD04.1 & Emissor definindo distribuição de aviso; seleção de canais específicos (ex.: painel de avisos / WhatsApp) e confirmação. & Preferências de entrega registradas nos canais escolhidos. & Planejado & Não executada \\
+\hline
+CT08 & RF04 / BDD04.2 & Emissor tenta salvar configuração de envio sem selecionar canal de comunicação disponível. & Sistema emite aviso informando a necessidade de selecionar canais de comunicação. & Planejado & Não executada \\
+\hline
+CT09 & RF05 / BDD05.1 & Nova mensagem de tutor recebida; distribuidor na Tela de triagem de mensagens (Figura~\ref{fig:tela-triagem-mensagens}) analisa o teor e encaminha. & Mensagem passa a constar na fila de atendimento do setor ou respondente designado. & Planejado & Não executada \\
+\hline
+CT10 & RF05 / BDD05.2 & Mensagem recebida possui dados vagos que impedem identificar setor ou responsável; distribuidor tenta encaminhar. & Sistema permite ao distribuidor responder diretamente ao remetente informando a ocorrência. & Planejado & Não executada \\
+\hline
+CT11 & RF06 / BDD06.1 & Existe aviso pendente aguardando autorização; avaliador acessa painel na Tela de avaliação de avisos (Figura~\ref{fig:tela-avaliacao-aviso}) e abre solicitação. & Detalhes do aviso e opções de decisão (Aprovar ou Rejeitar) exibidos. & Planejado & Não executada \\
+\hline
+CT12 & RF06 / BDD06.2 & Avaliador tenta abrir solicitação de aviso já avaliada e encerrada por outro usuário. & Sistema informa que o item não está mais pendente de análise. & Planejado & Não executada \\
+\hline
+CT13 & RF07 / BDD07.1 & Avaliador registra decisão de autorização positiva (\textit{Sim}) para aviso pendente. & Sistema encaminha o aviso para a etapa de liberação e postagem. & Planejado & Não executada \\
+\hline
+CT14 & RF07 / BDD07.2 & Avaliador registra decisão de autorização negativa (\textit{Não}) para aviso avaliado. & Sistema desvia o fluxo para registro de inviabilidade e notificação do emissor. & Planejado & Não executada \\
+\hline
+CT15 & RF08 / BDD08.1 & Avaliador na Figura~\ref{fig:tela-avaliacao-aviso} preenche justificativa técnica e confirma rejeição do aviso. & Sistema salva status de inviabilidade (ex.: \texttt{RECUSADA}) com parecer e notifica o emissor. & Planejado & Não executada \\
+\hline
+CT16 & RF08 / BDD08.2 & Avaliador tenta rejeitar aviso sem preencher o campo de justificativa obrigatória. & Sistema bloqueia a ação de rejeição e exige o preenchimento do motivo. & Planejado & Não executada \\
+\hline
+CT17 & RF09 / BDD09.1 & Aviso autorizado pelo avaliador; sistema atualiza o status do comunicado. & Sistema emite comunicação formal de aprovação ao emissor para liberação da postagem. & Planejado & Não executada \\
+\hline
+CT18 & RF09 / BDD09.2 & Ocorre falha de comunicação na rede ao tentar emitir a notificação de aprovação ao emissor. & Sistema gera log de erro e permite nova tentativa de envio da notificação. & Planejado & Não executada \\
+\hline
+CT19 & RF10 / BDD10.1 & Emissor finalizando configuração do aviso na Figura~\ref{fig:tela-criacao-aviso}; informa \texttt{exige\_autorizacao} conforme normas da escola. & Fluxo direciona para validação prévia (\texttt{true}) ou dispensa conforme a regra informada. & Planejado & Não executada \\
+\hline
+CT20 & RF10 / BDD10.2 & Emissor deixa de responder ao critério de autorização prévia e tenta avançar no cadastro. & Sistema exibe alerta solicitando a definição do status de autorização. & Planejado & Não executada \\
+\hline
+CT21 & RF11 / BDD11.1 & Mensagem encaminhada à fila do respondente; respondente abre e lê o conteúdo da solicitação. & Sistema registra visualização da mensagem e início da avaliação de pertinência. & Planejado & Não executada \\
+\hline
+CT22 & RF11 / BDD11.2 & Respondente tenta acessar mensagem que foi cancelada pelo remetente. & Sistema exibe mensagem informando que o chamado foi encerrado. & Planejado & Não executada \\
+\hline
+CT23 & RF12 / BDD12.1 & Respondente verifica que a demanda é de sua competência e seleciona atendimento direto. & Sistema abre a interface de resposta ao tutor (Figura~\ref{fig:tela-resposta-mensagem}). & Planejado & Não executada \\
+\hline
+CT24 & RF12 / BDD12.2 & Respondente verifica que a mensagem caiu no setor incorreto e seleciona devolução. & Sistema envia a demanda de volta para a triagem. & Planejado & Não executada \\
+\hline
+CT25 & RF13 / BDD13.1 & Respondente aciona devolução da mensagem por incorreção de setor ou responsável. & Mensagem retorna automaticamente à triagem geral com status pendente de redistribuição. & Planejado & Não executada \\
+\hline
+CT26 & RF13 / BDD13.2 & Triagem está temporariamente indisponível no momento da devolução da mensagem. & Sistema armazena a solicitação em fila de segurança e notifica o administrador. & Planejado & Não executada \\
+\hline
+CT27 & RF14 / BDD14.1 & Respondente na Tela de resposta de mensagem (Figura~\ref{fig:tela-resposta-mensagem}) preenche resposta oficial e clica em enviar. & Resposta definitiva registrada, status atualizado (ex.: \texttt{RESPONDIDO}) e disponibilizada ao tutor. & Planejado & Não executada \\
+\hline
+CT28 & RF14 / BDD14.2 & Respondente tenta enviar resposta com o texto em branco. & Sistema bloqueia o envio e informa que o campo de resposta é obrigatório. & Planejado & Não executada \\
+\hline
+CT29 & RF15 / BDD15.1 & Aviso requer validação prévia; emissor clica em submeter para autorização na Figura~\ref{fig:tela-criacao-aviso}. & Sistema registra o \texttt{AVISO} e o encaminha para a fila de análise do avaliador. & Planejado & Não executada \\
+\hline
+CT30 & RF15 / BDD15.2 & Emissor tenta solicitar autorização para rascunho corrompido ou inconsistente. & Sistema cancela o envio e aponta as inconsistências nos dados do aviso. & Planejado & Não executada \\
+\hline
+CT31 & RF16 / BDD16.1 & Aviso aprovado pelo avaliador ou dispensado de autorização; emissor confirma a postagem. & Sistema publica o comunicado nos canais selecionados e o disponibiliza aos destinatários. & Planejado & Não executada \\
+\hline
+CT32 & RF16 / BDD16.2 & Falha de conexão com os canais de envio ocorre no momento da publicação do aviso. & Sistema armazena o aviso em fila de reenvio automático e alerta o suporte. & Planejado & Não executada \\
+\hline
+CT33 & RF17 / BDD17.1 & Emissor decide encerrar aviso em rascunho ou recusado e aciona o cancelamento. & Sistema encerra o fluxo operacional e arquiva o registro definitivamente. & Planejado & Não executada \\
+\hline
+CT34 & RF17 / BDD17.2 & Emissor tenta cancelar um aviso que já foi totalmente publicado. & Sistema bloqueia cancelamento direto, informa restrição e exige retificação. & Planejado & Não executada \\
+\hline
+CT35 & RF18 / BDD18.1 & Escola enviou resposta à demanda do tutor; tutor acessa seu perfil e abre a aba de mensagens. & Sistema exibe a resposta oficial enviada pelo respondente. & Planejado & Não executada \\
+\hline
+CT36 & RF18 / BDD18.2 & Tutor consulta o histórico do chamado antes de haver resposta da escola. & Sistema exibe o chamado com status pendente de atendimento. & Planejado & Não executada \\
+\hline
+CT37 & RF19 / BDD19.1 & Aviso aprovado e publicado para o público-alvo do usuário; destinatário acessa o Mural de avisos (Figura~\ref{fig:tela-mural-avisos}). & Comunicado exibido no feed do destinatário e leitura com data/hora registrada em \texttt{VISUALIZACAO}. & Planejado & Não executada \\
+\hline
+CT38 & RF19 / BDD19.2 & Usuário pertence a grupo distinto do público-alvo do aviso; acessa o mural de comunicados. & Sistema oculta o aviso da visualização desse usuário. & Planejado & Não executada \\
+\hline
+CT39 & RNF01 / BDD20.1 & Usuário autenticado acessa a aplicação em dispositivo móvel, navega pelo mural e recebe nova notificação. & Interface ajusta-se à tela móvel e exibe a notificação de forma oportuna. & Planejado & Não executada \\
+\hline
+CT40 & RNF01 / BDD20.2 & Usuário acessa a aplicação em resolução reduzida de smartphone e abre formulários de aviso ou resposta. & Campos e botões permanecem legíveis e operáveis sem sobreposição. & Planejado & Não executada \\
+\hline
+CT41 & RNF02 / BDD21.1 & Usuário autenticado com perfil de professor vinculado apenas à turma A consulta dados acadêmicos. & Sistema exibe apenas dados dos alunos da turma A e bloqueia demais turmas. & Planejado & Não executada \\
+\hline
+CT42 & RNF02 / BDD21.2 & Usuário com perfil de aluno ou responsável (\texttt{criar\_aviso = false}, \texttt{aval\_aviso = false}) tenta criar/aprovar aviso ou acessar aluno sem vínculo. & Sistema bloqueia a operação e exibe alerta de permissão insuficiente. & Planejado & Não executada \\
+\hline
+CT43 & RNF03 / BDD22.1 & Aviso passou por criação, aprovação, publicação e leitura; emissor ou avaliador consulta histórico e acompanhamento. & Status de moderação e registros de entrega e leitura refletem fielmente as ações. & Planejado & Não executada \\
+\hline
+CT44 & RNF03 / BDD22.2 & Solicitação de tutor foi redistribuída e respondida pelo setor competente; histórico é consultado. & Registro mantém a sequência íntegra e atualizada das movimentações e da resposta final. & Planejado & Não executada \\
+\hline
+CT45 & RNF04 / BDD23.1 & Aviso categorizado e agendado conforme calendário escolar para turma específica; destinatário acessa no período vigente. & Aviso exibido com sua categoria dentro do intervalo válido do calendário. & Planejado & Não executada \\
+\hline
+CT46 & RNF04 / BDD23.2 & Aviso possui data de validade expirada no calendário escolar; destinatário acessa o mural de avisos ativos. & Comunicado expirado não é exibido como aviso vigente no mural principal. & Planejado & Não executada \\
+\hline
+CT47 & RNF05 / BDD24.1 & Usuário preenche formulário de cadastro de aviso ou envio de mensagem na interface. & Sistema exige apenas dados necessários à finalidade de comunicação, atendimento ou vínculo. & Planejado & Não executada \\
+\hline
+CT48 & RNF05 / BDD24.2 & Estrutura de dados persistida para comunicação e acompanhamento escolar é auditada quanto à finalidade. & Nenhum dado pessoal supérfluo ou fora do escopo escolar é coletado ou armazenado. & Planejado & Não executada \\
+\hline
+\end{longtable}
+
+\section{Resultados e pendências}
+
+Este capítulo constitui uma \textbf{especificação de testes planejados} elaborada a partir dos requisitos, histórias de usuário, cenários BDD, protótipos de interface e modelo de dados; \textbf{não houve execução prática nem validação dinâmica sobre um sistema implementado}, de modo que os resultados de execução e evidências empíricas não constam nesta versão do plano.
+
+\begin{itemize}
+    \item \textbf{Pendências de validação organizacional e de regras:} permanecem sujeitas à confirmação formal junto à instituição escolar as categorias que exigem aprovação prévia, as regras de agendamento/expiração no calendário escolar, os canais externos efetivamente integrados e a dinâmica de resposta/réplica em mensagens.
+    \item \textbf{Pendências de implementação e execução:} a realização dos casos de teste \texttt{CT01} a \texttt{CT48} e a coleta de evidências (capturas de tela, registros de log e verificações de banco de dados) ficam condicionadas ao desenvolvimento e à disponibilização do ambiente de teste do sistema.
+\end{itemize}
+
 \chapter{Integração e consistência dos artefatos}
 
+A coerência do projeto é mantida ao conectar cada problema de comunicação escolar ao processo correspondente (\textit{TO-BE}), aos requisitos (\texttt{RF}/\texttt{RNF}), às entidades e relacionamentos do modelo de dados, às telas prototipadas e aos casos de teste planejados.
+
+\begin{longtable}{|p{2.5cm}|p{2.3cm}|p{1.9cm}|p{2.5cm}|p{2.3cm}|p{2.1cm}|}
+\caption{Rastreabilidade e integração entre problema, processo, requisitos, dados, protótipos e testes.} \label{tab:integracao-artefatos} \\
+\hline
+\textbf{Problema / necessidade} & \textbf{Etapa BPMN} & \textbf{Requisito} & \textbf{Entidade(s) DER} & \textbf{Protótipo} & \textbf{Teste} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Problema / necessidade} & \textbf{Etapa BPMN} & \textbf{Requisito} & \textbf{Entidade(s) DER} & \textbf{Protótipo} & \textbf{Teste} \\
+\hline
+\endhead
+Envio estruturado de mensagens particulares pelos responsáveis & Registrar / enviar mensagem & RF01 & \texttt{USUARIO}, \texttt{MENSAGEM}, \texttt{ALUNO}, \texttt{PARENTESCO} & Tela de envio de mensagem & CT01, CT02 \\
+\hline
+Elaboração e cancelamento de avisos institucionais & Criar / editar aviso & RF02, RF17 & \texttt{AVISO}, \texttt{USUARIO}, \texttt{CATEGORIA\_AVISO} & Tela de criação de aviso & CT03, CT04, CT33, CT34 \\
+\hline
+Segmentação de público-alvo e escolha de canais de envio & Definir público e canais & RF03, RF04 & \texttt{AVISO}, \texttt{TURMA}, \texttt{PERFIL}, \texttt{CANAL} & Tela de criação de aviso & CT05--CT08 \\
+\hline
+Triagem e direcionamento de mensagens recebidas & Triar e encaminhar mensagem & RF05 & \texttt{MENSAGEM}, \texttt{SETOR}, \texttt{USUARIO} & Tela de triagem de mensagens & CT09, CT10 \\
+\hline
+Autorização prévia, justificativa de recusa e notificação & Avaliar e autorizar aviso & RF06--RF10, RF15 & \texttt{AVISO}, \texttt{AVALIACAO\_AVISO}, \texttt{USUARIO} & Tela de autorização de aviso & CT11--CT20, CT29, CT30 \\
+\hline
+Atendimento, devolução e resposta de mensagens & Analisar, devolver ou responder & RF11--RF14, RF18 & \texttt{MENSAGEM}, \texttt{RESPOSTA\_MENSAGEM}, \texttt{SETOR} & Tela de resposta de mensagem & CT21--CT28, CT35, CT36 \\
+\hline
+Publicação e consulta segmentada no mural de avisos & Publicar e exibir no mural & RF16, RF19 & \texttt{AVISO}, \texttt{VISUALIZACAO}, \texttt{USUARIO} & Mural de avisos & CT31, CT32, CT37, CT38 \\
+\hline
+Usabilidade móvel, permissões, auditoria, vigência e privacidade & Regras transversais do processo & RNF01--RNF05 & \texttt{USUARIO}, \texttt{NIVEL\_ACESSO}, \texttt{ALUNO\_TURMA}, \texttt{OFERTA\_ACADEMICA} & \texttt{Slide1.PNG} a \texttt{Slide7.PNG} & CT39--CT48 \\
+\hline
+\end{longtable}
+
+\section{Correções após revisões das entregas anteriores}
+
+As revisões entre as entregas anteriores correlacionam-se com os artefatos nos seguintes pontos:
+
+\begin{itemize}
+    \item \textbf{Alinhamento entre BPMN, requisitos e modelo de dados:} etapas de triagem, devolução, autorização prévia, recusa com justificativa e publicação foram padronizadas entre o fluxo \textit{TO-BE}, os requisitos funcionais e as entidades/atributos do MER/DER.
+    \item \textbf{Controle de acesso e vínculos institucionais:} refinamento das permissões por perfil e vínculo acadêmico/familiar (\texttt{NIVEL\_ACESSO}, \texttt{PARENTESCO}, \texttt{ALUNO\_TURMA}, \texttt{OFERTA\_ACADEMICA} e sinalizadores de permissão), evitando acessos indevidos a avisos ou dados escolares.
+    \item \textbf{Coerência entre protótipos e cenários de teste:} conferência dos fluxos e campos das telas com os cenários BDD e casos de teste (\texttt{CT01} a \texttt{CT48}), mantendo explícito o caráter planejado dos testes nesta fase de concepção.
+\end{itemize}
+
 \chapter{Planejamento e responsabilidades}
+
+\section{Etapas e situação atual}
+
+O planejamento busca consolidar as etapas desenvolvidas ao longo do projeto, a distribuição de responsabilidades entre os integrantes do grupo, o estado atual de cada artefato e os próximos passos necessários para o encerramento da concepção ou eventual evolução para implementação.
+
+\begin{longtable}{|p{3.6cm}|p{3.4cm}|p{2.4cm}|p{5.2cm}|}
+\caption{Etapas do projeto, responsáveis, situação atual e pendências ou próximos passos.} \label{tab:etapas-situacao} \\
+\hline
+\textbf{Atividade / artefato} & \textbf{Responsável(is)} & \textbf{Situação} & \textbf{Pendência ou próximo passo} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Atividade / artefato} & \textbf{Responsável(is)} & \textbf{Situação} & \textbf{Pendência ou próximo passo} \\
+\hline
+\endhead
+Introdução, escopo e visão geral (Capítulos 1 e 2) & Calebe Alves Freitas, Leonardo Nehrer Sequeira, Luan Silveira Alves de Moura, Maira Silva de Arruda & Elaborado & Revisão final conjunta de coerência textual e limites do escopo. \\
+\hline
+Contexto organizacional e análise de processos AS-IS / TO-BE (Capítulos 3 e 4) & Calebe Alves Freitas, Leonardo Nehrer Sequeira, Luan Silveira Alves de Moura, Maira Silva de Arruda & Elaborado & Confirmar regras institucionais pendentes (moderação, canais e calendário) com a escola. \\
+\hline
+Especificação de requisitos, histórias de usuário e cenários BDD (Capítulo 5) & Calebe Alves Freitas, Leonardo Nehrer Sequeira, Luan Silveira Alves de Moura, Maira Silva de Arruda & Elaborado & Validar com stakeholders as dúvidas de regra de negócio identificadas na rastreabilidade. \\
+\hline
+Modelagem conceitual MER, DER e validação do modelo (Capítulo 6) & Luan Silveira Alves de Moura e equipe & Em revisão & Confirmar notação gráfica/cardinalidades e atualizar imagem do DER conforme ajustes acordados. \\
+\hline
+Concepção da solução e protótipos de interface \texttt{Slide1.PNG}--\texttt{Slide7.PNG} (Capítulo 7) & Luan Silveira Alves de Moura e equipe & Elaborado & Conferir enquadramento visual das telas e ajustar legendas/referências após compilação final. \\
+\hline
+Estratégia e casos de teste planejados \texttt{CT01}--\texttt{CT48} (Capítulo 8) & Equipe do projeto & Planejado & Executar testes apenas em etapa futura, após implementação do sistema. \\
+\hline
+Integração e consistência dos artefatos (Capítulo 9) & Equipe do projeto & Elaborado & Revisar nomes exatos de entidades/tabelas após fechamento do DER e revisar demais capítulos finais (10 a 12). \\
+\hline
+\end{longtable}
+
+\section{Contribuições individuais}
+
+As contribuições individuais registradas a seguir refletem entregas e responsabilidades específicas de cada integrante do projeto, para além da autoria coletiva do documento e da participação em apresentações.
+
+\begin{longtable}{|p{3.2cm}|p{4.0cm}|p{4.0cm}|p{3.4cm}|}
+\caption{Registro de contribuições individuais, artefatos produzidos e pendências assumidas por integrante.} \label{tab:contribuicoes-individuais} \\
+\hline
+\textbf{Integrante} & \textbf{Atividades realizadas} & \textbf{Artefatos / evidências produzidos} & \textbf{Pendências assumidas} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Integrante} & \textbf{Atividades realizadas} & \textbf{Artefatos / evidências produzidos} & \textbf{Pendências assumidas} \\
+\hline
+\endhead
+Calebe Alves Freitas & Participação na estruturação de requisitos, regras de fluxo e revisão de artefatos do projeto. & Contribuições na matriz de requisitos, histórias de usuário, cenários BDD e revisão textual. & Conferir alinhamento final dos fluxos de comunicação com os requisitos priorizados. \\
+\hline
+Leonardo Nehrer Sequeira & Apoio na definição de cenários, organização de artefatos e síntese de apresentação/testes. & Síntese de casos de teste/apresentação e apoio na revisão dos capítulos. & Validar consistência dos cenários de teste com eventuais ajustes finais no relatório. \\
+\hline
+Luan Silveira Alves de Moura & Consolidação do relatório em \LaTeX, modelagem conceitual (MER/DER e validação), concepção da solução e prototipação (\texttt{Slide1.PNG}--\texttt{Slide7.PNG}), verificação e testes planejados (\texttt{CT01}--\texttt{CT48}), integração de artefatos e planejamento. & Documento \texttt{.tex} consolidado, seções de modelagem/validação, protótipos de tela, capítulos de testes, integração e planejamento. & Atualizar imagem final do DER após confirmação em aula e revisar capítulos finais (10 a 12). \\
+\hline
+Maira Silva de Arruda & Colaboração na análise de processos, requisitos e revisão de consistência documental. & Contribuições em requisitos, histórias de usuário/BDD e revisão de quadros e textos. & Revisar pontos de confirmação de regras institucionais junto à equipe. \\
+\hline
+\end{longtable}
 
 \chapter{Considerações finais}
 

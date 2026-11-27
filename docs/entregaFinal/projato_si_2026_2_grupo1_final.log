@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.11.17)  22 NOV 2026 17:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.11.17)  26 NOV 2026 22:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -942,7 +942,7 @@ Overfull \hbox (10.1658pt too wide) in alignment at lines 255--264
 
 [13] [14] [15]
 Cap\'{\i }tulo 4.
-<../../assets/diagram_as_is.png, id=345, 939.51pt x 316.3017pt>
+<../../assets/diagram_as_is.png, id=375, 939.51pt x 316.3017pt>
 File: ../../assets/diagram_as_is.png Graphic file (type png)
 <use ../../assets/diagram_as_is.png>
 Package pdftex.def Info: ../../assets/diagram_as_is.png  used on input line 276.
@@ -1215,7 +1215,7 @@ Overfull \hbox (15.85669pt too wide) in alignment at lines 303--312
  []
 
 [17] [18]
-<../../assets/diagrama_processo_v3.png, id=366, 936.6192pt x 828.2142pt>
+<../../assets/diagrama_processo_v3.png, id=396, 936.6192pt x 828.2142pt>
 File: ../../assets/diagrama_processo_v3.png Graphic file (type png)
 <use ../../assets/diagrama_processo_v3.png>
 Package pdftex.def Info: ../../assets/diagrama_processo_v3.png  used on input line 320.
@@ -5082,11 +5082,11 @@ Overfull \hbox (10.16623pt too wide) in alignment at lines 628--671
 
 LaTeX Warning: Reference `sec:mer' on page 43 undefined on input line 707.
 
-<../../assets/diagram_der.jpeg, id=480, 1467.4825pt x 728.7225pt>
-File: ../../assets/diagram_der.jpeg Graphic file (type jpg)
-<use ../../assets/diagram_der.jpeg>
-Package pdftex.def Info: ../../assets/diagram_der.jpeg  used on input line 711.
-(pdftex.def)             Requested size: 455.24411pt x 226.05731pt.
+<../../assets/der.png, id=510, 1081.79156pt x 515.67656pt>
+File: ../../assets/der.png Graphic file (type png)
+<use ../../assets/der.png>
+Package pdftex.def Info: ../../assets/der.png  used on input line 711.
+(pdftex.def)             Requested size: 455.24411pt x 217.00757pt.
 [43]
 Overfull \hbox (4.95172pt too wide) in paragraph at lines 720--721
 []\T1/cmr/bx/n/12 Estrutura aca-dê-mica e acom-pa-nha-mento es-co-lar: TURMA \T1/cmr/m/n/12 e \T1/cmr/bx/n/12 DIS-CI-PLINA
@@ -5097,7 +5097,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.6.1}) h
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.728 
-       <../../assets/diagram_der.jpeg>]
+       <../../assets/der.png (PNG copy)>]
 Overfull \hbox (25.02039pt too wide) in paragraph at lines 735--736
 \T1/cmr/m/n/12 por meio de \T1/cmr/bx/n/12 ALUNO_TURMA \T1/cmr/m/n/12 (re-la-ção muitos-para-muitos as-so-ci-a-tiva), e \T1/cmr/bx/n/12 TURMA\T1/cmr/m/n/12 ,
  []
@@ -5526,18 +5526,18 @@ Overfull \hbox (4.47534pt too wide) in alignment at lines 820--835
  [] [] [] [] 
  []
 
-<../../assets/telas/Slide1.PNG, id=520, 406.51875pt x 722.7pt>
+<../../assets/telas/Slide1.PNG, id=550, 406.51875pt x 722.7pt>
 File: ../../assets/telas/Slide1.PNG Graphic file (type png)
 <use ../../assets/telas/Slide1.PNG>
 Package pdftex.def Info: ../../assets/telas/Slide1.PNG  used on input line 839.
 (pdftex.def)             Requested size: 138.3634pt x 245.97836pt.
 [49]
-<../../assets/telas/Slide2.PNG, id=533, 406.51875pt x 722.7pt>
+<../../assets/telas/Slide2.PNG, id=563, 406.51875pt x 722.7pt>
 File: ../../assets/telas/Slide2.PNG Graphic file (type png)
 <use ../../assets/telas/Slide2.PNG>
 Package pdftex.def Info: ../../assets/telas/Slide2.PNG  used on input line 846.
 (pdftex.def)             Requested size: 138.3634pt x 245.97836pt.
-<../../assets/telas/Slide3.PNG, id=534, 406.51875pt x 722.7pt>
+<../../assets/telas/Slide3.PNG, id=564, 406.51875pt x 722.7pt>
 File: ../../assets/telas/Slide3.PNG Graphic file (type png)
 <use ../../assets/telas/Slide3.PNG>
 Package pdftex.def Info: ../../assets/telas/Slide3.PNG  used on input line 853.
@@ -5553,12 +5553,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.7.2}) h
                                                   \__shipout_drop_firstpage_...
 l.857 
        <../../assets/telas/Slide1.PNG> <../../assets/telas/Slide2.PNG>]
-<../../assets/telas/Slide4.PNG, id=541, 406.51875pt x 722.7pt>
+<../../assets/telas/Slide4.PNG, id=571, 406.51875pt x 722.7pt>
 File: ../../assets/telas/Slide4.PNG Graphic file (type png)
 <use ../../assets/telas/Slide4.PNG>
 Package pdftex.def Info: ../../assets/telas/Slide4.PNG  used on input line 860.
 (pdftex.def)             Requested size: 138.3634pt x 245.97836pt.
-<../../assets/telas/Slide5.PNG, id=542, 406.51875pt x 722.7pt>
+<../../assets/telas/Slide5.PNG, id=572, 406.51875pt x 722.7pt>
 File: ../../assets/telas/Slide5.PNG Graphic file (type png)
 <use ../../assets/telas/Slide5.PNG>
 Package pdftex.def Info: ../../assets/telas/Slide5.PNG  used on input line 867.
@@ -5574,12 +5574,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.7.4}) h
                                                   \__shipout_drop_firstpage_...
 l.871 
        <../../assets/telas/Slide3.PNG> <../../assets/telas/Slide4.PNG>]
-<../../assets/telas/Slide6.PNG, id=549, 406.51875pt x 722.7pt>
+<../../assets/telas/Slide6.PNG, id=579, 406.51875pt x 722.7pt>
 File: ../../assets/telas/Slide6.PNG Graphic file (type png)
 <use ../../assets/telas/Slide6.PNG>
 Package pdftex.def Info: ../../assets/telas/Slide6.PNG  used on input line 874.
 (pdftex.def)             Requested size: 138.3634pt x 245.97836pt.
-<../../assets/telas/Slide7.PNG, id=550, 406.51875pt x 722.7pt>
+<../../assets/telas/Slide7.PNG, id=580, 406.51875pt x 722.7pt>
 File: ../../assets/telas/Slide7.PNG Graphic file (type png)
 <use ../../assets/telas/Slide7.PNG>
 Package pdftex.def Info: ../../assets/telas/Slide7.PNG  used on input line 881.
@@ -5606,27 +5606,2142 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.7.7}) h
 l.894 \end{itemize}
                     <../../assets/telas/Slide7.PNG>] [54]
 Cap\'{\i }tulo 8.
+
+Underfull \hbox (badness 10000) in paragraph at lines 918--918
+[]|\T1/cmr/bx/n/12 Pré-
+ []
+
+
+Overfull \hbox (4.33824pt too wide) in paragraph at lines 918--918
+[]|\T1/cmr/bx/n/12 Situação| 
+ []
+
+
+Overfull \hbox (34.96622pt too wide) in alignment at lines 915--920
+ [] [] [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 922--922
+[]|\T1/cmr/bx/n/12 Pré-
+ []
+
+
+Overfull \hbox (4.33824pt too wide) in paragraph at lines 922--922
+[]|\T1/cmr/bx/n/12 Situação| 
+ []
+
+
+Overfull \hbox (34.96622pt too wide) in alignment at lines 920--924
+ [] [] [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 925--925
+[]|\T1/cmr/m/n/12 RF01 /
+ []
+
+
+Underfull \hbox (badness 3724) in paragraph at lines 925--925
+\T1/cmr/m/n/12 gura []7.5[]); cam-pos
+ []
+
+
+Underfull \hbox (badness 1688) in paragraph at lines 925--925
+[]|\T1/cmr/m/n/12 Mensagem re-gis-trada
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 925--925
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 927--927
+[]|\T1/cmr/m/n/12 RF01 /
+ []
+
+
+Underfull \hbox (badness 1430) in paragraph at lines 927--927
+\T1/cmr/m/n/12 a-ção de men-sa-gem;
+ []
+
+
+Underfull \hbox (badness 3536) in paragraph at lines 927--927
+\T1/cmr/m/n/12 um ou mais cam-
+ []
+
+
+Underfull \hbox (badness 1648) in paragraph at lines 927--927
+[]|\T1/cmr/m/n/12 Sistema exibe alerta
+ []
+
+
+Underfull \hbox (badness 2970) in paragraph at lines 927--927
+\T1/cmr/m/n/12 de va-li-da-ção e blo-
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 927--927
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 929--929
+[]|\T1/cmr/m/n/12 RF02 /
+ []
+
+
+Underfull \hbox (badness 4168) in paragraph at lines 929--929
+\T1/cmr/m/n/12 aviso (Fi-gura []7.2[]);
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 929--929
+\T1/cmr/m/n/12 tí-tulo e des-cri-ção
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 929--929
+[]|\T1/cmr/m/n/12 Registro de \T1/cmtt/m/n/12 AVISO
+ []
+
+
+Underfull \hbox (badness 1264) in paragraph at lines 929--929
+\T1/cmr/m/n/12 salvo com su-cesso e
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 929--929
+\T1/cmr/m/n/12 dis-po-ni-bi-li-zado para
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 929--929
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 931--931
+[]|\T1/cmr/m/n/12 RF02 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 931--931
+[]|\T1/cmr/m/n/12 Emissor re-di-gindo
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 931--931
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 933--933
+[]|\T1/cmr/m/n/12 RF03 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 933--933
+[]|\T1/cmr/m/n/12 Emissor con-fi-gu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 933--933
+\T1/cmr/m/n/12 rando aviso na
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 933--933
+\T1/cmr/m/n/12 Fi-gura []7.2[]; se-le-ção
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 933--933
+[]|\T1/cmr/m/n/12 Público-alvo vin-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 933--933
+\T1/cmr/m/n/12 cu-lado ao co-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 933--933
+\T1/cmr/m/n/12 mu-ni-cado em
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 933--933
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 935--935
+[]|\T1/cmr/m/n/12 RF03 /
+ []
+
+
+Underfull \hbox (badness 6094) in paragraph at lines 935--935
+[]|\T1/cmr/m/n/12 Emissor tenta sal-
+ []
+
+
+Underfull \hbox (badness 1057) in paragraph at lines 935--935
+\T1/cmr/m/n/12 var con-fi-gu-ra-ção de
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 935--935
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 937--937
+[]|\T1/cmr/m/n/12 RF04 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 937--937
+[]|\T1/cmr/m/n/12 Emissor de-fi-nindo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 937--937
+\T1/cmr/m/n/12 se-le-ção de ca-nais
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 937--937
+\T1/cmr/m/n/12 es-pe-cí-fi-cos (ex.:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 937--937
+\T1/cmr/m/n/12 pai-nel de avi-sos
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 937--937
+\T1/cmr/m/n/12 / What-sApp) e
+ []
+
+
+Underfull \hbox (badness 7704) in paragraph at lines 937--937
+[]|\T1/cmr/m/n/12 Preferências de en-
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 937--937
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 939--939
+[]|\T1/cmr/m/n/12 RF04 /
+ []
+
+
+Underfull \hbox (badness 3260) in paragraph at lines 939--939
+[]|\T1/cmr/m/n/12 Sistema emite aviso
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 939--939
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 941--941
+[]|\T1/cmr/m/n/12 RF05 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 941--941
+[]|\T1/cmr/m/n/12 Nova men-sa-gem
+ []
+
+
+Underfull \hbox (badness 7814) in paragraph at lines 941--941
+\T1/cmr/m/n/12 de tu-tor re-ce-bida;
+ []
+
+
+Underfull \hbox (badness 1472) in paragraph at lines 941--941
+\T1/cmr/m/n/12 sa-gens (Fi-gura []7.6[])
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 941--941
+\T1/cmr/m/n/12 ana-lisa o teor e
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 941--941
+[]|\T1/cmr/m/n/12 Mensagem passa a
+ []
+
+
+Underfull \hbox (badness 7685) in paragraph at lines 941--941
+\T1/cmr/m/n/12 cons-tar na fila de
+ []
+
+
+Underfull \hbox (badness 7047) in paragraph at lines 941--941
+\T1/cmr/m/n/12 aten-di-mento do se-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 941--941
+\T1/cmr/m/n/12 tor ou res-pon-dente
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 941--941
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 943--943
+[]|\T1/cmr/m/n/12 RF05 /
+ []
+
+
+Underfull \hbox (badness 6510) in paragraph at lines 943--943
+[]|\T1/cmr/m/n/12 Mensagem re-ce-bida
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 943--943
+\T1/cmr/m/n/12 pos-sui da-dos va-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 943--943
+\T1/cmr/m/n/12 gos que im-pe-dem
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 943--943
+\T1/cmr/m/n/12 iden-ti-fi-car se-tor
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 943--943
+\T1/cmr/m/n/12 ou res-pon-sá-vel;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 943--943
+\T1/cmr/m/n/12 dis-tri-bu-i-dor tenta
+ []
+
+
+Underfull \hbox (badness 5475) in paragraph at lines 943--943
+[]|\T1/cmr/m/n/12 Sistema per-mite ao
+ []
+
+
+Underfull \hbox (badness 6708) in paragraph at lines 943--943
+\T1/cmr/m/n/12 tente in-for-mando a
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 943--943
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 945--945
+[]|\T1/cmr/m/n/12 RF06 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 945--945
+[]|\T1/cmr/m/n/12 Existe aviso pen-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 945--945
+\T1/cmr/m/n/12 dente aguar-dando
+ []
+
+
+Underfull \hbox (badness 2799) in paragraph at lines 945--945
+\T1/cmr/m/n/12 au-to-ri-za-ção; ava-li-a-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 945--945
+[]|\T1/cmr/m/n/12 Detalhes do aviso
+ []
+
+
+Underfull \hbox (badness 1496) in paragraph at lines 945--945
+\T1/cmr/m/n/12 e op-ções de de-ci-são
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 945--945
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 947--947
+[]|\T1/cmr/m/n/12 RF06 /
+ []
+
+
+Underfull \hbox (badness 1082) in paragraph at lines 947--947
+[]|\T1/cmr/m/n/12 Sistema in-forma que
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 947--947
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 949--949
+[]|\T1/cmr/m/n/12 RF07 /
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 949--949
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 951--951
+[]|\T1/cmr/m/n/12 RF07 /
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 951--951
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 953--953
+[]|\T1/cmr/m/n/12 RF08 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 953--953
+[]|\T1/cmr/m/n/12 Avaliador na Fi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 953--953
+\T1/cmr/m/n/12 gura []7.3[] pre-en-che
+ []
+
+
+Underfull \hbox (badness 1715) in paragraph at lines 953--953
+[]|\T1/cmr/m/n/12 Sistema salva sta-tus
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 953--953
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 955--955
+[]|\T1/cmr/m/n/12 RF08 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 955--955
+[]|\T1/cmr/m/n/12 Sistema blo-queia a
+ []
+
+
+Underfull \hbox (badness 6332) in paragraph at lines 955--955
+\T1/cmr/m/n/12 ação de re-jei-ção e
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 955--955
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 957--957
+[]|\T1/cmr/m/n/12 RF09 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 957--957
+\T1/cmr/m/n/12 ava-li-a-dor; sis-tema
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 957--957
+[]|\T1/cmr/m/n/12 Sistema emite co-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 957--957
+\T1/cmr/m/n/12 para li-be-ra-ção da
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 957--957
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 959--959
+[]|\T1/cmr/m/n/12 RF09 /
+ []
+
+
+Underfull \hbox (badness 1320) in paragraph at lines 959--959
+[]|\T1/cmr/m/n/12 Sistema gera log de
+ []
+
+
+Underfull \hbox (badness 1248) in paragraph at lines 959--959
+\T1/cmr/m/n/12 erro e per-mite nova
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 959--959
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 961--961
+[]|\T1/cmr/m/n/12 RF10 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 961--961
+[]|\T1/cmr/m/n/12 Emissor fi-na-li-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 961--961
+\T1/cmr/m/n/12 zando con-fi-gu-ra-ção
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 961--961
+\T1/cmr/m/n/12 do aviso na Fi-
+ []
+
+
+Underfull \hbox (badness 6493) in paragraph at lines 961--961
+\T1/cmr/m/n/12 gura []7.2[]; in-forma
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 961--961
+\T1/cmtt/m/n/12 exige_autorizacao
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 961--961
+\T1/cmr/m/n/12 va-li-da-ção pré-via
+ []
+
+
+Underfull \hbox (badness 7099) in paragraph at lines 961--961
+\T1/cmr/m/n/12 (\T1/cmtt/m/n/12 true\T1/cmr/m/n/12 ) ou dis-pensa
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 961--961
+\T1/cmr/m/n/12 con-forme a re-gra
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 961--961
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 963--963
+[]|\T1/cmr/m/n/12 RF10 /
+ []
+
+
+Underfull \hbox (badness 1648) in paragraph at lines 963--963
+[]|\T1/cmr/m/n/12 Sistema exibe alerta
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 963--963
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 965--965
+[]|\T1/cmr/m/n/12 RF11 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 965--965
+[]|\T1/cmr/m/n/12 Mensagem en-ca-
+ []
+
+
+Underfull \hbox (badness 2903) in paragraph at lines 965--965
+\T1/cmr/m/n/12 mi-nhada à fila do
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 965--965
+\T1/cmr/m/n/12 res-pon-dente; res-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 965--965
+\T1/cmr/m/n/12 pon-dente abre e
+ []
+
+
+Underfull \hbox (badness 6477) in paragraph at lines 965--965
+\T1/cmr/m/n/12 lê o con-te-údo da
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 965--965
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 967--967
+[]|\T1/cmr/m/n/12 RF11 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 967--967
+[]|\T1/cmr/m/n/12 Respondente tenta
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 967--967
+\T1/cmr/m/n/12 aces-sar men-sa-gem
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 967--967
+\T1/cmr/m/n/12 que foi can-ce-lada
+ []
+
+
+Underfull \hbox (badness 1107) in paragraph at lines 967--967
+\T1/cmr/m/n/12 gem in-for-mando que
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 967--967
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 969--969
+[]|\T1/cmr/m/n/12 RF12 /
+ []
+
+
+Underfull \hbox (badness 2020) in paragraph at lines 969--969
+\T1/cmr/m/n/12 le-ci-ona aten-di-mento
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 969--969
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 971--971
+[]|\T1/cmr/m/n/12 RF12 /
+ []
+
+
+Underfull \hbox (badness 1320) in paragraph at lines 971--971
+[]|\T1/cmr/m/n/12 Sistema en-via a de-
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 971--971
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 973--973
+[]|\T1/cmr/m/n/12 RF13 /
+ []
+
+
+Underfull \hbox (badness 3000) in paragraph at lines 973--973
+[]|\T1/cmr/m/n/12 Respondente aci-ona
+ []
+
+
+Underfull \hbox (badness 1616) in paragraph at lines 973--973
+\T1/cmr/m/n/12 gem por in-cor-re-ção
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 973--973
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 975--975
+[]|\T1/cmr/m/n/12 RF13 /
+ []
+
+
+Underfull \hbox (badness 7344) in paragraph at lines 975--975
+\T1/cmr/m/n/12 ra-ri-a-mente in-dis-po-
+ []
+
+
+Underfull \hbox (badness 2384) in paragraph at lines 975--975
+[]|\T1/cmr/m/n/12 Sistema ar-ma-zena a
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 975--975
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 977--977
+[]|\T1/cmr/m/n/12 RF14 /
+ []
+
+
+Underfull \hbox (badness 2197) in paragraph at lines 977--977
+\T1/cmr/m/n/12 sa-gem (Fi-gura []7.7[])
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 977--977
+\T1/cmr/m/n/12 pre-en-che res-posta
+ []
+
+
+Underfull \hbox (badness 6220) in paragraph at lines 977--977
+\T1/cmr/m/n/12 ofi-cial e clica em
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 977--977
+[]|\T1/cmr/m/n/12 Resposta de-fi-ni-tiva
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 977--977
+\T1/cmr/m/n/12 re-gis-trada, sta-tus
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 977--977
+\T1/cmr/m/n/12 atu-a-li-zado (ex.:
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 977--977
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 979--979
+[]|\T1/cmr/m/n/12 RF14 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 979--979
+[]|\T1/cmr/m/n/12 Respondente tenta
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 979--979
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 981--981
+[]|\T1/cmr/m/n/12 RF15 /
+ []
+
+
+Underfull \hbox (badness 6047) in paragraph at lines 981--981
+\T1/cmr/m/n/12 clica em sub-me-ter
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 981--981
+[]|\T1/cmr/m/n/12 Sistema re-gis-tra o
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 981--981
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 983--983
+[]|\T1/cmr/m/n/12 RF15 /
+ []
+
+
+Underfull \hbox (badness 1237) in paragraph at lines 983--983
+\T1/cmr/m/n/12 vio e aponta as in-
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 983--983
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 985--985
+[]|\T1/cmr/m/n/12 RF16 /
+ []
+
+
+Underfull \hbox (badness 2913) in paragraph at lines 985--985
+\T1/cmr/m/n/12 emis-sor con-firma a
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 985--985
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 987--987
+[]|\T1/cmr/m/n/12 RF16 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 987--987
+[]|\T1/cmr/m/n/12 Falha de co-ne-xão
+ []
+
+
+Underfull \hbox (badness 5133) in paragraph at lines 987--987
+\T1/cmr/m/n/12 com os ca-nais de
+ []
+
+
+Underfull \hbox (badness 2384) in paragraph at lines 987--987
+[]|\T1/cmr/m/n/12 Sistema ar-ma-zena o
+ []
+
+
+Underfull \hbox (badness 7558) in paragraph at lines 987--987
+\T1/cmr/m/n/12 en-vio au-to-má-tico e
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 987--987
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 989--989
+[]|\T1/cmr/m/n/12 RF17 /
+ []
+
+
+Underfull \hbox (badness 2799) in paragraph at lines 989--989
+[]|\T1/cmr/m/n/12 Emissor de-cide en-
+ []
+
+
+Underfull \hbox (badness 3460) in paragraph at lines 989--989
+\T1/cmr/m/n/12 cu-nho ou re-cu-sado
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 989--989
+[]|\T1/cmr/m/n/12 Sistema en-cerra o
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 989--989
+\T1/cmr/m/n/12 fluxo ope-ra-ci-o-nal e
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 989--989
+\T1/cmr/m/n/12 ar-quiva o re-gis-tro
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 989--989
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 991--991
+[]|\T1/cmr/m/n/12 RF17 /
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 991--991
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 993--993
+[]|\T1/cmr/m/n/12 RF18 /
+ []
+
+
+Underfull \hbox (badness 6575) in paragraph at lines 993--993
+[]|\T1/cmr/m/n/12 Escola en-viou res-
+ []
+
+
+Underfull \hbox (badness 2027) in paragraph at lines 993--993
+\T1/cmr/m/n/12 tu-tor; tu-tor acessa
+ []
+
+
+Underfull \hbox (badness 1210) in paragraph at lines 993--993
+\T1/cmr/m/n/12 posta ofi-cial en-vi-ada
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 993--993
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 995--995
+[]|\T1/cmr/m/n/12 RF18 /
+ []
+
+
+Underfull \hbox (badness 3792) in paragraph at lines 995--995
+\T1/cmr/m/n/12 tó-rico do cha-mado
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 995--995
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 997--997
+[]|\T1/cmr/m/n/12 RF19 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 997--997
+[]|\T1/cmr/m/n/12 Aviso apro-vado e
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 997--997
+\T1/cmr/m/n/12 pu-bli-cado para o
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 997--997
+\T1/cmr/m/n/12 á-rio; des-ti-na-tá-rio
+ []
+
+
+Underfull \hbox (badness 2134) in paragraph at lines 997--997
+\T1/cmr/m/n/12 acessa o Mu-ral de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 997--997
+[]|\T1/cmr/m/n/12 Comunicado exi-bido
+ []
+
+
+Underfull \hbox (badness 2088) in paragraph at lines 997--997
+\T1/cmr/m/n/12 no feed do des-ti-na-
+ []
+
+
+Underfull \hbox (badness 3128) in paragraph at lines 997--997
+\T1/cmr/m/n/12 tá-rio e lei-tura com
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 997--997
+\T1/cmr/m/n/12 data/hora re-gis-trada
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 997--997
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 999--999
+[]|\T1/cmr/m/n/12 RF19 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 999--999
+[]|\T1/cmr/m/n/12 Usuário per-tence
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 999--999
+\T1/cmr/m/n/12 a grupo dis-tinto
+ []
+
+
+Underfull \hbox (badness 4084) in paragraph at lines 999--999
+\T1/cmr/m/n/12 do público-alvo do
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 999--999
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1001--1001
+[]|\T1/cmr/m/n/12 RNF01 /
+ []
+
+
+Underfull \hbox (badness 1609) in paragraph at lines 1001--1001
+[]|\T1/cmr/m/n/12 Usuário au-ten-ti-cado
+ []
+
+
+Underfull \hbox (badness 6775) in paragraph at lines 1001--1001
+\T1/cmr/m/n/12 acessa a apli-ca-ção
+ []
+
+
+Underfull \hbox (badness 1622) in paragraph at lines 1001--1001
+[]|\T1/cmr/m/n/12 Interface ajusta-se à
+ []
+
+
+Underfull \hbox (badness 1527) in paragraph at lines 1001--1001
+\T1/cmr/m/n/12 no-ti-fi-ca-ção de forma
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 1001--1001
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1003
+[]|\T1/cmr/m/n/12 RNF01 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1003
+[]|\T1/cmr/m/n/12 Usuário acessa a
+ []
+
+
+Underfull \hbox (badness 4634) in paragraph at lines 1003--1003
+\T1/cmr/m/n/12 apli-ca-ção em re-so-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1003--1003
+\T1/cmr/m/n/12 lu-ção re-du-zida de
+ []
+
+
+Underfull \hbox (badness 3460) in paragraph at lines 1003--1003
+\T1/cmr/m/n/12 smartphone e abre
+ []
+
+
+Underfull \hbox (badness 7468) in paragraph at lines 1003--1003
+\T1/cmr/m/n/12 ma-ne-cem le-gí-veis e
+ []
+
+
+Underfull \hbox (badness 1038) in paragraph at lines 1003--1003
+\T1/cmr/m/n/12 ope-rá-veis sem so-bre-
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 1003--1003
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1005--1005
+[]|\T1/cmr/m/n/12 RNF02 /
+ []
+
+
+Underfull \hbox (badness 1609) in paragraph at lines 1005--1005
+[]|\T1/cmr/m/n/12 Usuário au-ten-ti-cado
+ []
+
+
+Underfull \hbox (badness 1248) in paragraph at lines 1005--1005
+\T1/cmr/m/n/12 turma A e blo-queia
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 1005--1005
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1007
+[]|\T1/cmr/m/n/12 RNF02 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1007
+\T1/cmr/m/n/12 (\T1/cmtt/m/n/12 criar_aviso =
+ []
+
+
+Underfull \hbox (badness 3954) in paragraph at lines 1007--1007
+\T1/cmtt/m/n/12 false\T1/cmr/m/n/12 , \T1/cmtt/m/n/12 aval_aviso
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1007
+\T1/cmtt/m/n/12 = false\T1/cmr/m/n/12 ) tenta
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1007
+\T1/cmr/m/n/12 criar/aprovar aviso
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1007
+[]|\T1/cmr/m/n/12 Sistema blo-queia
+ []
+
+
+Underfull \hbox (badness 3302) in paragraph at lines 1007--1007
+\T1/cmr/m/n/12 a ope-ra-ção e exibe
+ []
+
+
+Underfull \hbox (badness 4713) in paragraph at lines 1007--1007
+\T1/cmr/m/n/12 alerta de per-mis-são
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 1007--1007
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1009--1009
+[]|\T1/cmr/m/n/12 RNF03 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1009--1009
+[]|\T1/cmr/m/n/12 Aviso pas-sou por
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1009--1009
+\T1/cmr/m/n/12 cri-a-ção, apro-va-ção,
+ []
+
+
+Underfull \hbox (badness 1127) in paragraph at lines 1009--1009
+\T1/cmr/m/n/12 con-sulta his-tó-rico e
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 1009--1009
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1011--1011
+[]|\T1/cmr/m/n/12 RNF03 /
+ []
+
+
+Underfull \hbox (badness 8189) in paragraph at lines 1011--1011
+\T1/cmr/m/n/12 foi re-dis-tri-bu-ída e
+ []
+
+
+Underfull \hbox (badness 1400) in paragraph at lines 1011--1011
+\T1/cmr/m/n/12 res-pon-dida pelo se-
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 1011--1011
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1013--1013
+[]|\T1/cmr/m/n/12 RNF04 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1013--1013
+\T1/cmr/m/n/12 agen-dado con-forme
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1013--1013
+\T1/cmr/m/n/12 ca-len-dá-rio es-co-lar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1013--1013
+\T1/cmr/m/n/12 para turma es-pe-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1013--1013
+\T1/cmr/m/n/12 cí-fica; des-ti-na-tá-rio
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1013--1013
+\T1/cmr/m/n/12 acessa no pe-rí-odo
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 1013--1013
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1015
+[]|\T1/cmr/m/n/12 RNF04 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1015
+\T1/cmr/m/n/12 ca-len-dá-rio es-co-lar;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1015
+\T1/cmr/m/n/12 des-ti-na-tá-rio acessa
+ []
+
+
+Underfull \hbox (badness 3333) in paragraph at lines 1015--1015
+\T1/cmr/m/n/12 o mu-ral de avi-sos
+ []
+
+
+Underfull \hbox (badness 1642) in paragraph at lines 1015--1015
+\T1/cmr/m/n/12 não é exi-bido como
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 1015--1015
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1017--1017
+[]|\T1/cmr/m/n/12 RNF05 /
+ []
+
+
+Underfull \hbox (badness 1072) in paragraph at lines 1017--1017
+\T1/cmr/m/n/12 ção, aten-di-mento ou
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 1017--1017
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1019--1019
+[]|\T1/cmr/m/n/12 RNF05 /
+ []
+
+
+Underfull \hbox (badness 1331) in paragraph at lines 1019--1019
+[]|\T1/cmr/m/n/12 Estrutura de da-dos
+ []
+
+
+Underfull \hbox (badness 3679) in paragraph at lines 1019--1019
+\T1/cmr/m/n/12 per-sis-tida para co-
+ []
+
+
+Underfull \hbox (badness 1584) in paragraph at lines 1019--1019
+\T1/cmr/m/n/12 nha-mento es-co-lar é
+ []
+
+
+Overfull \hbox (5.21442pt too wide) in paragraph at lines 1019--1019
+[]|\T1/cmr/m/n/12 Planejado| 
+ []
+
+
+Overfull \hbox (34.96622pt too wide) in alignment at lines 924--1021
+ [] [] [] [] [] [] 
+ []
+
 [55
 
-]
+] [56] [57] [58] [59] [60] [61] [62]
 Cap\'{\i }tulo 9.
-[56
 
-]
+Underfull \hbox (badness 10000) in paragraph at lines 1039--1039
+[]|\T1/cmr/bx/n/12 Etapa
+ []
+
+
+Overfull \hbox (1.6055pt too wide) in paragraph at lines 1039--1039
+[]|\T1/cmr/bx/n/12 Requisito| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1039--1039
+[]|\T1/cmr/bx/n/12 Entidade(s)
+ []
+
+
+Overfull \hbox (6.51346pt too wide) in alignment at lines 1036--1041
+ [] [] [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1043--1043
+[]|\T1/cmr/bx/n/12 Etapa
+ []
+
+
+Overfull \hbox (1.6055pt too wide) in paragraph at lines 1043--1043
+[]|\T1/cmr/bx/n/12 Requisito| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1043--1043
+[]|\T1/cmr/bx/n/12 Entidade(s)
+ []
+
+
+Overfull \hbox (6.51346pt too wide) in alignment at lines 1041--1045
+ [] [] [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 7486) in paragraph at lines 1046--1046
+[]|\T1/cmr/m/n/12 Envio es-tru-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1046--1046
+\T1/cmr/m/n/12 tu-rado de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1046--1046
+\T1/cmr/m/n/12 men-sa-gens
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1046--1046
+\T1/cmr/m/n/12 par-ti-cu-la-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1046--1046
+\T1/cmr/m/n/12 res pe-los
+ []
+
+
+Underfull \hbox (badness 7981) in paragraph at lines 1046--1046
+[]|\T1/cmr/m/n/12 Registrar /
+ []
+
+
+Underfull \hbox (badness 1424) in paragraph at lines 1046--1046
+\T1/cmr/m/n/12 en-viar men-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1046--1046
+[]|\T1/cmtt/m/n/12 USUARIO\T1/cmr/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1046--1046
+\T1/cmtt/m/n/12 MENSAGEM\T1/cmr/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1046--1046
+\T1/cmtt/m/n/12 ALUNO\T1/cmr/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1046--1047
+[]|\T1/cmr/m/n/12 CT01,
+ []
+
+
+Underfull \hbox (badness 1406) in paragraph at lines 1048--1048
+[]|\T1/cmr/m/n/12 Elaboração e
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1048--1048
+\T1/cmr/m/n/12 can-ce-la-mento
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1048--1048
+\T1/cmr/m/n/12 de avi-sos
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1048--1048
+[]|\T1/cmr/m/n/12 RF02,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1048--1048
+[]|\T1/cmtt/m/n/12 AVISO\T1/cmr/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1048--1048
+\T1/cmtt/m/n/12 USUARIO\T1/cmr/m/n/12 ,
+ []
+
+
+Overfull \hbox (21.4705pt too wide) in paragraph at lines 1048--1048
+\T1/cmtt/m/n/12 CATEGORIA_AVISO| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1048--1049
+[]|\T1/cmr/m/n/12 CT03,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1048--1049
+\T1/cmr/m/n/12 CT04,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1048--1049
+\T1/cmr/m/n/12 CT33,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1050--1050
+[]|\T1/cmr/m/n/12 Segmentação
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1050--1050
+\T1/cmr/m/n/12 de público-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1050--1050
+[]|\T1/cmr/m/n/12 Definir
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1050--1050
+\T1/cmr/m/n/12 pú-blico e
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1050--1050
+[]|\T1/cmr/m/n/12 RF03,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1050--1050
+\T1/cmtt/m/n/12 PERFIL\T1/cmr/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1050--1051
+[]|\T1/cmr/m/n/12 CT05--
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1052--1052
+\T1/cmr/m/n/12 re-ci-o-na-mento
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1052--1052
+[]|\T1/cmtt/m/n/12 MENSAGEM\T1/cmr/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1052--1052
+\T1/cmtt/m/n/12 SETOR\T1/cmr/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1052--1053
+[]|\T1/cmr/m/n/12 CT09,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1054--1054
+[]|\T1/cmr/m/n/12 Autorização
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1054--1054
+\T1/cmr/m/n/12 pré-via, jus-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1054--1054
+\T1/cmr/m/n/12 ti-fi-ca-tiva
+ []
+
+
+Underfull \hbox (badness 4846) in paragraph at lines 1054--1054
+\T1/cmr/m/n/12 de re-cusa e
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1054--1054
+[]|\T1/cmr/m/n/12 RF06--
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1054--1054
+\T1/cmr/m/n/12 RF10,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1054--1054
+[]|\T1/cmtt/m/n/12 AVISO\T1/cmr/m/n/12 ,
+ []
+
+
+Overfull \hbox (24.73358pt too wide) in paragraph at lines 1054--1054
+\T1/cmtt/m/n/12 AVALIACAO_AVISO\T1/cmr/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1054--1055
+[]|\T1/cmr/m/n/12 CT11--
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1054--1055
+\T1/cmr/m/n/12 CT20,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1054--1055
+\T1/cmr/m/n/12 CT29,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1056--1056
+[]|\T1/cmr/m/n/12 Atendimento,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1056--1056
+\T1/cmr/m/n/12 de-vo-lu-ção e
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1056--1056
+\T1/cmr/m/n/12 res-posta de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1056--1056
+[]|\T1/cmr/m/n/12 Analisar,
+ []
+
+
+Underfull \hbox (badness 4013) in paragraph at lines 1056--1056
+\T1/cmr/m/n/12 de-vol-ver ou
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1056--1056
+[]|\T1/cmr/m/n/12 RF11--
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1056--1056
+\T1/cmr/m/n/12 RF14,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1056--1056
+[]|\T1/cmtt/m/n/12 MENSAGEM\T1/cmr/m/n/12 ,
+ []
+
+
+Overfull \hbox (37.08057pt too wide) in paragraph at lines 1056--1056
+\T1/cmtt/m/n/12 RESPOSTA_MENSAGEM\T1/cmr/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1056--1056
+[]|\T1/cmr/m/n/12 Tela de
+ []
+
+
+Underfull \hbox (badness 5726) in paragraph at lines 1056--1056
+\T1/cmr/m/n/12 res-posta de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1056--1057
+[]|\T1/cmr/m/n/12 CT21--
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1056--1057
+\T1/cmr/m/n/12 CT28,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1056--1057
+\T1/cmr/m/n/12 CT35,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1058--1058
+[]|\T1/cmr/m/n/12 Publicação
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1058--1058
+\T1/cmr/m/n/12 e con-sulta
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1058--1058
+\T1/cmr/m/n/12 seg-men-tada
+ []
+
+
+Underfull \hbox (badness 1406) in paragraph at lines 1058--1058
+\T1/cmr/m/n/12 no mu-ral de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1058--1058
+[]|\T1/cmr/m/n/12 Publicar e
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1058--1058
+\T1/cmr/m/n/12 exi-bir no
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1058--1058
+[]|\T1/cmr/m/n/12 RF16,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1058--1058
+[]|\T1/cmtt/m/n/12 AVISO\T1/cmr/m/n/12 ,
+ []
+
+
+Overfull \hbox (6.2131pt too wide) in paragraph at lines 1058--1058
+\T1/cmtt/m/n/12 VISUALIZACAO\T1/cmr/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1058--1058
+[]|\T1/cmr/m/n/12 Mural de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1058--1059
+[]|\T1/cmr/m/n/12 CT31,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1058--1059
+\T1/cmr/m/n/12 CT32,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1058--1059
+\T1/cmr/m/n/12 CT37,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1060--1060
+[]|\T1/cmr/m/n/12 Usabilidade
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1060--1060
+\T1/cmr/m/n/12 mó-vel, per-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1060--1060
+\T1/cmr/m/n/12 mis-sões,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1060--1060
+\T1/cmr/m/n/12 au-di-to-ria,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1060--1060
+\T1/cmr/m/n/12 vi-gên-cia e
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1060--1060
+[]|\T1/cmr/m/n/12 Regras
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1060--1060
+\T1/cmr/m/n/12 trans-ver-sais
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1060--1060
+[]|\T1/cmr/m/n/12 RNF01--
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1060--1060
+[]|\T1/cmtt/m/n/12 USUARIO\T1/cmr/m/n/12 ,
+ []
+
+
+Overfull \hbox (6.2131pt too wide) in paragraph at lines 1060--1060
+\T1/cmtt/m/n/12 NIVEL_ACESSO\T1/cmr/m/n/12 ,
+ []
+
+
+Overfull \hbox (27.644pt too wide) in paragraph at lines 1060--1060
+\T1/cmtt/m/n/12 OFERTA_ACADEMICA| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1060--1060
+[]|\T1/cmtt/m/n/12 Slide1.PNG
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1060--1060
+\T1/cmr/m/n/12 a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1060--1061
+[]|\T1/cmr/m/n/12 CT39--
+ []
+
+
+Overfull \hbox (6.51346pt too wide) in alignment at lines 1045--1062
+ [] [] [] [] [] [] 
+ []
+
+[63
+
+] [64]
 Cap\'{\i }tulo 10.
-[57
+
+Underfull \hbox (badness 4913) in paragraph at lines 1083--1084
+[]|\T1/cmr/bx/n/12 Pendência ou pró-ximo
+ []
+
+
+Overfull \hbox (10.1658pt too wide) in alignment at lines 1080--1085
+ [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 4913) in paragraph at lines 1087--1088
+[]|\T1/cmr/bx/n/12 Pendência ou pró-ximo
+ []
+
+
+Overfull \hbox (10.1658pt too wide) in alignment at lines 1085--1089
+ [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 1314) in paragraph at lines 1090--1090
+[]|\T1/cmr/m/n/12 Introdução, es-copo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1090--1090
+[]|\T1/cmr/m/n/12 Calebe Al-ves
+ []
+
+
+Underfull \hbox (badness 2277) in paragraph at lines 1090--1090
+\T1/cmr/m/n/12 Frei-tas, Le-o-nardo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1090--1090
+\T1/cmr/m/n/12 Neh-rer Se-queira,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1090--1090
+\T1/cmr/m/n/12 Luan Sil-veira
+ []
+
+
+Underfull \hbox (badness 3240) in paragraph at lines 1090--1090
+\T1/cmr/m/n/12 Al-ves de Moura,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1090--1090
+\T1/cmr/m/n/12 Maira Silva de
+ []
+
+
+Underfull \hbox (badness 1242) in paragraph at lines 1092--1092
+[]|\T1/cmr/m/n/12 Contexto or-ga-ni-za-
+ []
+
+
+Underfull \hbox (badness 2343) in paragraph at lines 1092--1092
+\T1/cmr/m/n/12 pro-ces-sos AS-IS /
+ []
+
+
+Underfull \hbox (badness 4752) in paragraph at lines 1092--1092
+\T1/cmr/m/n/12 TO-BE (Ca-pí-tu-los
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1092--1092
+[]|\T1/cmr/m/n/12 Calebe Al-ves
+ []
+
+
+Underfull \hbox (badness 2277) in paragraph at lines 1092--1092
+\T1/cmr/m/n/12 Frei-tas, Le-o-nardo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1092--1092
+\T1/cmr/m/n/12 Neh-rer Se-queira,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1092--1092
+\T1/cmr/m/n/12 Luan Sil-veira
+ []
+
+
+Underfull \hbox (badness 3240) in paragraph at lines 1092--1092
+\T1/cmr/m/n/12 Al-ves de Moura,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1092--1092
+\T1/cmr/m/n/12 Maira Silva de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1094--1094
+[]|\T1/cmr/m/n/12 Especificação de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1094--1094
+[]|\T1/cmr/m/n/12 Calebe Al-ves
+ []
+
+
+Underfull \hbox (badness 2277) in paragraph at lines 1094--1094
+\T1/cmr/m/n/12 Frei-tas, Le-o-nardo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1094--1094
+\T1/cmr/m/n/12 Neh-rer Se-queira,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1094--1094
+\T1/cmr/m/n/12 Luan Sil-veira
+ []
+
+
+Underfull \hbox (badness 3240) in paragraph at lines 1094--1094
+\T1/cmr/m/n/12 Al-ves de Moura,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1094--1094
+\T1/cmr/m/n/12 Maira Silva de
+ []
+
+
+Underfull \hbox (badness 1242) in paragraph at lines 1096--1096
+[]|\T1/cmr/m/n/12 Modelagem con-cei-
+ []
+
+
+Underfull \hbox (badness 1132) in paragraph at lines 1096--1096
+[]|\T1/cmr/m/n/12 Luan Sil-veira Al-
+ []
+
+
+Underfull \hbox (badness 3219) in paragraph at lines 1096--1096
+\T1/cmr/m/n/12 ves de Moura e
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1096--1097
+[]|\T1/cmr/m/n/12 Confirmar no-ta-ção grá-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1096--1097
+\T1/cmr/m/n/12 fica/cardinalidades e atu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1096--1097
+\T1/cmr/m/n/12 a-li-zar ima-gem do DER
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1098--1098
+[]|\T1/cmr/m/n/12 Concepção da
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1098--1098
+\T1/cmr/m/n/12 so-lu-ção e pro-tó-
+ []
+
+
+Underfull \hbox (badness 4492) in paragraph at lines 1098--1098
+\T1/cmr/m/n/12 ti-pos de in-ter-face
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1098--1098
+\T1/cmtt/m/n/12 Slide1.PNG\T1/cmr/m/n/12 --
+ []
+
+
+Underfull \hbox (badness 1132) in paragraph at lines 1098--1098
+[]|\T1/cmr/m/n/12 Luan Sil-veira Al-
+ []
+
+
+Underfull \hbox (badness 3219) in paragraph at lines 1098--1098
+\T1/cmr/m/n/12 ves de Moura e
+ []
+
+
+Underfull \hbox (badness 2042) in paragraph at lines 1100--1100
+[]|\T1/cmr/m/n/12 Estratégia e ca-sos
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1100--1100
+\T1/cmr/m/n/12 de teste pla-ne-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1100--1100
+\T1/cmr/m/n/12 ja-dos \T1/cmtt/m/n/12 CT01\T1/cmr/m/n/12 --\T1/cmtt/m/n/12 CT48
+ []
+
+
+Overfull \hbox (10.1658pt too wide) in alignment at lines 1089--1104
+ [] [] [] [] 
+ []
+
+[65
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 1113--1114
+[]|\T1/cmr/bx/n/12 Pendências
+ []
+
+
+Overfull \hbox (10.1658pt too wide) in alignment at lines 1110--1115
+ [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1117--1118
+[]|\T1/cmr/bx/n/12 Pendências
+ []
+
+
+Overfull \hbox (10.1658pt too wide) in alignment at lines 1115--1119
+ [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1120--1120
+[]|\T1/cmr/m/n/12 Calebe Al-ves
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1120--1121
+[]|\T1/cmr/m/n/12 Conferir ali-nha-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1120--1121
+\T1/cmr/m/n/12 mento fi-nal dos
+ []
+
+
+Underfull \hbox (badness 7344) in paragraph at lines 1120--1121
+\T1/cmr/m/n/12 flu-xos de co-mu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1120--1121
+\T1/cmr/m/n/12 ni-ca-ção com os
+ []
+
+
+Underfull \hbox (badness 1147) in paragraph at lines 1122--1122
+[]|\T1/cmr/m/n/12 Leonardo Neh-rer
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1122--1122
+[]|\T1/cmr/m/n/12 Apoio na de-fi-ni-ção
+ []
+
+
+Underfull \hbox (badness 3128) in paragraph at lines 1122--1122
+\T1/cmr/m/n/12 de ce-ná-rios, or-ga-ni-
+ []
+
+
+Underfull \hbox (badness 2293) in paragraph at lines 1122--1122
+[]|\T1/cmr/m/n/12 Síntese de ca-sos de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1122--1122
+\T1/cmr/m/n/12 teste/apresentação e
+ []
+
+
+Underfull \hbox (badness 1917) in paragraph at lines 1122--1123
+[]|\T1/cmr/m/n/12 Validar con-sis-tên-
+ []
+
+
+Underfull \hbox (badness 3312) in paragraph at lines 1124--1124
+[]|\T1/cmr/m/n/12 Consolidação do re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1124--1124
+\T1/cmr/m/n/12 la-tó-rio em L[]T[]X,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1124--1124
+\T1/cmr/m/n/12 mo-de-la-gem con-cei-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1124--1124
+\T1/cmr/m/n/12 tual (MER/DER e
+ []
+
+
+Underfull \hbox (badness 7740) in paragraph at lines 1124--1124
+\T1/cmr/m/n/12 pa-ção (\T1/cmtt/m/n/12 Slide1.PNG\T1/cmr/m/n/12 --
+ []
+
+
+Underfull \hbox (badness 6284) in paragraph at lines 1124--1124
+\T1/cmr/m/n/12 ção de ar-te-fa-tos e
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1124--1124
+[]|\T1/cmr/m/n/12 Documento \T1/cmtt/m/n/12 .tex
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1124--1124
+\T1/cmr/m/n/12 con-so-li-dado, se-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1124--1124
+\T1/cmr/m/n/12 ções de mo-de-la-
+ []
+
+
+Underfull \hbox (badness 2065) in paragraph at lines 1124--1125
+[]|\T1/cmr/m/n/12 Atualizar ima-gem
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1124--1125
+\T1/cmr/m/n/12 con-fir-ma-ção em
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1124--1125
+\T1/cmr/m/n/12 aula e re-vi-sar
+ []
+
+
+Underfull \hbox (badness 7685) in paragraph at lines 1126--1126
+[]|\T1/cmr/m/n/12 Maira Silva de
+ []
+
+
+Overfull \hbox (10.1658pt too wide) in alignment at lines 1119--1128
+ [] [] [] [] 
+ []
+
+[66] [67]
 Cap\'{\i }tulo 11.
-[58
+[68
 
 ]
 Cap\'{\i }tulo 12.
-[59
+[69
 
 ]
 Cap\'{\i }tulo 13.
-[60
+[70
 
 ] (projato_si_2026_2_grupo1_final.aux)
  ***********
@@ -5638,20 +7753,20 @@ L3 programming layer <2026-09-09>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `projato_si_2026_2_grupo1_final.out' has not changed.
-(rerunfilecheck)             Checksum: 4D1F15BE7D17F1A65D78CAF485E63710;10123.
+(rerunfilecheck)             Checksum: 05654C952A8927965BFB08A166D16799;11387.
  ) 
 Here is how much of TeX's memory you used:
- 12234 strings out of 467310
- 197310 string characters out of 5402813
- 741099 words of memory out of 5000000
- 41382 multiletter control sequences out of 15000+600000
- 640642 words of font info for 69 fonts, out of 8000000 for 9000
+ 12270 strings out of 467310
+ 197642 string characters out of 5402813
+ 748918 words of memory out of 5000000
+ 41397 multiletter control sequences out of 15000+600000
+ 641406 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,6n,79p,1225b,630s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\luans\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\luans\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\luans\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\luans\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\luans\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\luans\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\luans\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\luans\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\luans\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\luans\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><C:/Users/luans/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/luans/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on projato_si_2026_2_grupo1_final.pdf (61 pages, 1423967 bytes).
+ 74i,8n,79p,1225b,630s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\luans\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\luans\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\luans\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\luans\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\luans\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\luans\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\luans\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\luans\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\luans\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\luans\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\luans\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><C:/Users/luans/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/luans/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+Output written on projato_si_2026_2_grupo1_final.pdf (71 pages, 1393196 bytes).
 PDF statistics:
- 1102 PDF objects out of 1200 (max. 8388607)
- 136 named destinations out of 1000 (max. 500000)
- 459 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1231 PDF objects out of 1440 (max. 8388607)
+ 156 named destinations out of 1000 (max. 500000)
+ 507 words of extra memory for PDF output out of 10000 (max. 10000000)
 
